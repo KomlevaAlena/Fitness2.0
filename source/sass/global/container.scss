@@ -8,7 +8,9 @@
     padding: 0 32px;
   }
 
-  @include vp-1023 {
+//изменила ширину
+
+  @include vp-1365 {
     padding: 0 24px;
   }
 
