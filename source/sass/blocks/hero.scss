@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   background-image: linear-gradient(0.25turn, rgba(0, 62, 183, 1), rgba(237, 2, 51, 1));
+  padding-bottom: 120px;
 }
 
 .hero-wrapper {
@@ -53,12 +54,11 @@
 
 .hero-place__item {
   width: 270px;
-  font-family: "AlumniSans-Thin", "Arial", sans-serif;
+  font-family: "AlumniSans-ExtraBold", "Arial", sans-serif;
   text-transform: uppercase;
 
   &:nth-child(1) {
     font-size: 54px;
-    font-style: bold;
     font-weight: 600;
     line-height: 54px;
     letter-spacing: 1.62px;
@@ -66,7 +66,6 @@
 
   &:nth-child(2) {
     font-size: 92px;
-    font-style: bold;
     font-weight: 800;
     line-height: 110px;
     letter-spacing: 4.6px;
@@ -79,11 +78,16 @@
 }
 
 .hero-button {
-  width: 185px;
+  width: 221px;
   margin-left: auto;
   margin-top: 50px;
   color: rgba(255, 255, 255, 1);
   border-color: rgba(255, 255, 255, 1);
+  font-family: "Roboto-Condensed-Regular", "Arial", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  line-height: 12px;
+  font-weight: 700;
 }
 
 .hero-image {

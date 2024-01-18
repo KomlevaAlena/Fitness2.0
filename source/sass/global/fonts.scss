@@ -1,16 +1,24 @@
 @font-face {
-  font-family: "AlumniSans-Thin";
+  font-family: "AlumniSans-ExtraBold";
   font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/AlumniSans-Thin.woff2") format("woff2");
+  font-weight: 800;
+  src: url("/fonts/AlumniSans-ExtraBold.woff2") format("woff2");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "AlumniSans-Thin";
+  font-family: "AlumniSans-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/AlumniSans-SemiBold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AlumniSans-Regular";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/AlumniSans-Thin.woff") format("woff");
+  src: url("/fonts/AlumniSans-Regular.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -23,10 +31,10 @@
 }
 
 @font-face {
-  font-family: "Roboto-Condensed-Regular";
+  font-family: "Roboto-Condensed-Bold";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/Roboto-Condensed-Regular.woff") format("woff");
+  src: url("/fonts/Roboto-Condensed-Bold.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -35,13 +43,5 @@
   font-style: normal;
   font-weight: 400;
   src: url("/fonts/rouble.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "rouble";
-  font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/rouble.woff") format("woff");
   font-display: swap;
 }
