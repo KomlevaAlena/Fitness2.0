@@ -1,0 +1,28 @@
+.main-header {
+  background-image: linear-gradient(0.25turn, rgba(0, 62, 183, 1), rgba(237, 2, 51, 1));
+}
+
+.main-nav {
+  width: 1366px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-nav__list {
+  width: 1366px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: right;
+  font-family: "Roboto-Condensed-Regular", "Arial", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.main-nav__tel {
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: 2px;
+}
