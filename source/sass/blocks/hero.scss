@@ -12,7 +12,7 @@
   display: grid;
   grid-template-columns: repeat(113px, 270px, 500px);
   grid-template-rows: repeat(2, auto);
-  column-gap: 70px; //как сделать отступ только у одной колонки?
+  column-gap: 70px;
 }
 
 .hero-list {
