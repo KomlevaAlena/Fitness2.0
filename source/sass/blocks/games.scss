@@ -1,0 +1,130 @@
+.games {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 120px;
+  color: rgba(255, 255, 255, 1);
+  width: 1160px;
+}
+
+.games-wrapper {
+  background-color: rgba(237, 2, 51, 1);
+  display: grid;
+  grid-template-columns: repeat(180px, 92px);
+  grid-template-rows: repeat(3, auto);
+  column-gap: 68px;
+  margin: 0 auto;
+  width: 500px;
+}
+
+.games-title {
+  display: block;
+  width: 180px;
+  grid-column-start: 1;
+  margin-left: 80px;
+  font-family: "AlumniSans-SemiBold", "Arial", sans-serif;
+  font-size: 82px;
+  font-weight: 600;
+  line-height: 76px;
+  letter-spacing: 2.46px;
+}
+
+.games-description {
+  display: block;
+  width: 277px;
+  margin-left: 80px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-family: "Roboto-Condensed-Regular", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.games-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+.games-item {
+  display: block;
+  font-family: "Roboto-Condensed-Regular", "Arial", sans-serif;
+  margin-right: 80px;
+
+  &:first-of-type {
+    margin-top: 80px;
+  }
+
+  &:nth-of-type(2) {
+    margin-top: 24px;
+  }
+
+  &__title {
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__number {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    flex-direction: row;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    width: 37px;
+    margin: 0;
+    margin-top: 6px;
+    padding: 0;
+    padding-top: 7px;
+    border-top: 1px solid rgba(255, 255, 255, 1);
+
+    &:nth-of-type(1) {
+      width: 85px;
+    }
+
+    &:nth-of-type(2) {
+      width: 92px; //неправильно
+    }
+  }
+
+  &__date {
+    display: block;
+    width: 37px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    margin: 0;
+    padding: 0;
+    min-width: 64px;
+    padding-top: 7px;
+    padding-left: 5px;
+  }
+}
+
+.games-button {
+  display: block;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  border-color: rgba(255, 255, 255, 1);
+  width: 340px;
+  margin: 0;
+  margin-left: 80px;
+  margin-bottom: 80px;
+  padding: 27px 56px;
+  grid-column-start: 1;
+  grid-row-start: 3;
+  grid-column-end: 3;
+}
