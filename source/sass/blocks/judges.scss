@@ -1,0 +1,56 @@
+.judges {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  flex-direction: column;
+  width: 1160px;
+}
+
+.judges-title {
+  display: block;
+  padding: 0;
+  margin-right: auto;
+  width: 335px;
+  margin-top: 120px;
+  margin-bottom: 45px;
+  font-family: "AlumniSans-SemiBold", "Arial", sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 1.62px;
+  color: rgba(16, 38, 84, 1);
+}
+
+.judges-button {
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: none;
+  width: 16px;
+  height: 32px;
+  background-color: transparent;
+}
+
+.button-prev {
+  position: absolute;
+  content: "";
+  background-image: url("/img/svg/prev-arrow.svg");
+  background-size: 16px 32px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  top: 365px;
+  left: -16px;
+}
+
+.button-next {
+  position: absolute;
+  content: "";
+  background-image: url("/img/svg/next-arrow.svg");
+  background-size: 16px 32px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  top: 365px;
+  right: -16px;
+}
