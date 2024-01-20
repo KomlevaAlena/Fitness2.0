@@ -6,6 +6,7 @@
   margin: 0 auto;
   flex-direction: column;
   width: 1160px;
+  padding-bottom: 120px;
 }
 
 .judges-title {
@@ -41,7 +42,7 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
   top: 365px;
-  left: -16px;
+  left: -56px;
 }
 
 .button-next {
@@ -52,5 +53,81 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
   top: 365px;
-  right: -16px;
+  right: -56px;
+}
+
+.judges-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1160px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.judges-card {
+  position: relative;
+}
+
+.judges-card__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 144px;
+  padding: 0;
+  list-style-type: disc;
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+
+  &-item {
+    padding-bottom: 12px;
+  }
+
+  &:last-child {
+    padding-bottom: 40px;
+  }
+}
+
+.judges-card__title {
+  position: absolute;
+  content: "";
+  text-align: center;
+  font-family: "Roboto-Condensed-Regular", "Arial", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 1);
+  top: 25px;
+  left: 25%;
+}
+
+.judges-card__wrapper {
+  position: absolute;
+  content: "";
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 260px;
+  padding: 0;
+  background-color: rgba(16, 38, 84, 0.89);
+  top: 0;
+}
+
+.judges-card__description {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 75px;
+  padding-bottom: 33px;
+  color: rgba(182, 189, 204, 1);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
 }
