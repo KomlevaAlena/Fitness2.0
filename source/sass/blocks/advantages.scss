@@ -44,7 +44,7 @@
 
   &__title {
     display: block;
-    width: 203px;
+    width: 220px;
     padding: 0;
     margin: 0;
     font-size: 22px;
@@ -56,6 +56,8 @@
 
   &__description {
     display: block;
+    margin: 0;
+    padding: 0;
     width: 203px;
     font-size: 16px;
     font-weight: 300;
@@ -63,7 +65,7 @@
     grid-column-start: 2;
     grid-row-start: 1;
     grid-row-end: 3;
-    padding-top: 8px;
+    padding-top: 28px;
   }
 
   &__number {
@@ -121,6 +123,7 @@
 .advantages-card__center {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: start;
   width: 240px;
   margin: 0 auto;
@@ -135,7 +138,9 @@
   .advantages-card__number {
     display: block;
     margin: 0 auto;
-    margin-top: 70px;
+    padding: 0;
+    padding-top: 70px;
+    text-align: center;
     background: rgba(255, 255, 255, 1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -144,10 +149,20 @@
 
   .advantages-card__number--unit {
     order: -1;
+    width: 135px;
     margin: 0 auto;
-    margin-top: 12px;
+    padding: 0;
+    padding-top: 12px;
     font-size: 26px;
     font-weight: 700;
     line-height: 26px;
+    text-align: center;
+  }
+
+  .advantages-card__description {
+    width: 172px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 42px;
   }
 }
