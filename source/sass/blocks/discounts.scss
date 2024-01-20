@@ -1,0 +1,142 @@
+.discounts {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: start;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.discounts-title {
+  display: block;
+  font-family: "AlumniSans-SemiBold", "Arial", sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 1.62px;
+  text-align: center;
+  margin-top: 120px;
+}
+
+.discounts-list {
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 120px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  gap: 40px;
+  list-style-type: none;
+}
+
+.discounts-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: start;
+  align-items: self-start;
+  width: 560px;
+  margin: 0 auto;
+  padding: 0;
+  color: rgba(28, 51, 116, 1);
+  border: 7px solid;
+  border-image: linear-gradient(97deg, rgba(237, 2, 51, 1) 17.6%, rgba(0, 62, 183, 1) 95.31%);
+  border-image-slice: 1;
+
+  &:first-of-type {
+    position: relative;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: rgba(237, 2, 51, 1);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+
+    .discounts-item__title {
+      margin-left: 45px;
+      margin-top: 40px;
+    }
+
+    .discounts-description {
+      width: 177px;
+      margin-top: 15px;
+      margin-left: 45px;
+      text-align: start;
+    }
+
+    .discounts-button {
+      margin-left: 45px;
+      margin-top: 174px;
+      margin-bottom: 57px;
+      color: rgba(255, 255, 255, 1);
+      border-bottom: 1px solid rgba(255, 255, 255, 1);
+    }
+
+    .discounts-image {
+      position: absolute;
+      content: "";
+      left: 50%;
+    }
+  }
+
+  &:nth-of-type(2) {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  &:nth-of-type(3) {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+
+.discounts-item__title {
+  display: block;
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+  margin-left: 35px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.discounts-price {
+  display: block;
+  padding: 0;
+  margin: 0;
+  margin-top: 15px;
+  margin-left: 45px;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 70px;
+}
+
+.discounts-description {
+  display: block;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 35px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.discounts-button {
+  display: block;
+  padding: 0;
+  margin: 0;
+  margin-top: 67px;
+  margin-left: 35px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 14px;
+  letter-spacing: 0.7px;
+  border-bottom: 1px solid rgba(16, 38, 84, 1);
+}
