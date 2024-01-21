@@ -1,0 +1,21 @@
+.faq {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 120px;
+  color: rgba(16, 38, 84, 1);
+  background-color: rgba(248, 249, 252, 1);
+  width: 1366px;
+}
+
+.faq-title {
+  display: block;
+  width: 341px;
+  margin-left: 103px;
+  font-family: "AlumniSans-SemiBold", "Arial", sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 1.62px;
+}
