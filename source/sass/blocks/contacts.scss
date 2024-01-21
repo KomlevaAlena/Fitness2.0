@@ -1,4 +1,5 @@
 .contacts-wrapper {
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(683px, 683px);
   grid-template-rows: repeat(3, auto);
@@ -14,14 +15,14 @@
   justify-content: start;
   flex-direction: column;;
   margin: 0;
-  padding: 60px 170px 60px 130px;
+  padding: 60px 170px 60px 103px;
   color: rgba(16, 38, 84, 1);
   border-top: 1px solid rgba(116, 129, 156, 1);
 }
 
 .contacts-title {
   display: block;
-  width: 563px;
+  width: 400px;
   margin: 0;
   font-family: "AlumniSans-SemiBold", "Arial", sans-serif;
   font-size: 54px;
@@ -34,10 +35,10 @@
 .contacts-list {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: repeat(2, 220px);
   grid-template-rows: repeat(2, auto);
-  column-gap: 100px;
-  width: 563px;
+  column-gap: 120px;
+  width: 400px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -59,6 +60,7 @@
   flex-wrap: wrap;
   justify-content: start;
   flex-direction: column;
+  width: 220px;
   margin: 0;
   padding: 0;
 
@@ -97,9 +99,18 @@
 
 .contacts-item__title {
   display: block;
+  width: 220px;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
   margin: 0;
   padding: 0;
+}
+
+.contacts-item__description {
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+  width: 220px;
 }

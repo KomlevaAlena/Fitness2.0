@@ -5,16 +5,15 @@
   flex-wrap: wrap;
   justify-content: start;
   flex-direction: column;
-  //width: 563px;
   margin: 0;
-  padding: 60px 170px 60px 130px;
+  padding: 60px 170px 60px 103px;
   background-color: rgba(16, 38, 84, 1);
   color: rgba(255, 255, 255, 1);
 }
 
 .free-title {
   display: block;
-  width: 563px;
+  width: 410px;
   margin: 0;
   font-family: "AlumniSans-SemiBold", "Arial", sans-serif;
   font-size: 54px;
@@ -27,7 +26,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
-  width: 563px;
+  width: 410px;
   margin: 0;
   padding: 0;
 }
@@ -36,7 +35,7 @@
   display: block;
   margin: 0;
   margin-top: 38px;
-  width: 298px;
+  width: 410px;
   padding: 27px 56px;
   border: 2px solid rgba(255, 255, 255, 1);
   background-color: rgba(16, 38, 84, 1);
@@ -47,11 +46,14 @@
   letter-spacing: 0.6px;
 }
 
+.form-area__name {
+  margin-right: 30px;
+}
+
 .form-area__field {
   display: block;
   width: 190px;
   margin-top: 33px;
-  margin-right: 30px;
   background-color: rgba(16, 38, 84, 1);
   color: rgba(255, 255, 255, 1);
   border: none;

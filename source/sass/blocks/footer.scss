@@ -1,0 +1,110 @@
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 41px;
+  padding-bottom: 41px;
+  width: 1366px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(3, 10, 26, 1);
+}
+
+.footer-nav__logo-link {
+  display: block;
+  width: 109px;
+  margin: 0;
+  padding: 0;
+  margin-left: 103px;
+}
+
+.footer-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-nav__item {
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-right: 40px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer-nav__link {
+  display: block;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-social__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  margin-right: 103px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-social__item {
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer-social__link {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 25px;
+  height: 25px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 50%;
+}
+
+.icon-vk {
+  display: block;
+  width: 14px;
+  height: 14px;
+  margin: 0 auto;
+}
+
+.icon-ok {
+  display: block;
+  width: 9px;
+  height: 16px;
+  margin: 0 auto;
+}
+
+.icon-reddit {
+  display: block;
+  width: 14px;
+  height: 14px;
+  margin: 0 auto;
+}
