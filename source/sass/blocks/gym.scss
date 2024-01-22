@@ -80,3 +80,100 @@
   top: 288px;
   left: -77px;
 }
+
+.gym-video__play {
+  position: relative;
+  content: "";
+  display: block;
+  width: 98px;
+  height: 98px;
+  background-color: transparent;
+  border: 2px solid rgba(237, 2, 51, 1);
+  border-radius: 50%;
+  z-index: 5;
+  top: -38%;
+  left: 7%;
+
+  &::before {
+    position: relative;
+    content: "";
+    display: block;
+    width: 72px;
+    height: 72px;
+    background-image: linear-gradient(97deg, rgba(237, 2, 51, 1) 17.6%, rgba(0, 62, 183, 1) 95.31%);
+    border-radius: 50%;
+    z-index: 5;
+    margin-top: 13px;
+    margin-left: 13px;
+  }
+
+  &::after {
+    position: relative;
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8.5px 0 8.5px 17px;
+    border-color: transparent transparent transparent rgba(255, 255, 255, 1);
+    z-index: 6;
+    top: -45px;
+    left: 42px;
+  }
+
+  &:hover {
+    border: 2px solid rgba(16, 38, 84, 1);
+    outline: none;
+
+    &::before {
+      background-image: none;
+      background-color: rgba(255, 255, 255, 1);
+    }
+
+    &::after {
+      border-color: transparent transparent transparent rgba(16, 38, 84, 1);
+    }
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid rgba(16, 38, 84, 1);
+
+    &::before {
+      background-image: none;
+      background-color: rgba(255, 255, 255, 1);
+    }
+
+    &::after {
+      border-color: transparent transparent transparent rgba(16, 38, 84, 1);
+    }
+  }
+
+  &:active {
+    outline: none;
+    border: 2px solid rgba(16, 38, 84, 1);
+
+    &::before {
+      background-image: none;
+      background-color: rgba(255, 255, 255, 1);
+    }
+
+    &::after {
+      border-color: transparent transparent transparent rgba(16, 38, 84, 1);
+    }
+  }
+
+  &:disabled {
+    outline: none;
+    border: 2px solid rgba(16, 38, 84, 0.5);
+
+    &::before {
+      background-image: none;
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    &::after {
+      border-color: transparent transparent transparent rgba(16, 38, 84, 0.5);
+    }
+  }
+}
