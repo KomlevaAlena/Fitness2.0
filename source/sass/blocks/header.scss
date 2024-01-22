@@ -23,7 +23,67 @@
   line-height: 26px;
 }
 
+.main-nav__logo-link {
+  display: block;
+  padding: 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+
+  &:hover {
+    outline: none;
+    border: none;
+    opacity: 0.75;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 1);
+  }
+
+  &:active {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+  }
+
+  &:disabled {
+    outline: none;
+    border: none;
+    opacity: 0.5;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+}
+
 .main-nav__tel {
   color: rgba(255, 255, 255, 1);
   letter-spacing: 2px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+
+  &:hover {
+    color: rgba(28, 51, 116, 1);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+  }
+
+  &:focus {
+    color: rgba(28, 51, 116, 1);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+  }
+
+  &:active {
+    color: rgba(16, 38, 84, 1);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(16, 38, 84, 1);
+  }
+
+  &:disabled {
+    color: rgba(248, 249, 252, 1);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+  }
 }
