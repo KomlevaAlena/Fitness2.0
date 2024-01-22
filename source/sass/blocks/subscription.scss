@@ -62,9 +62,37 @@
   font-weight: 400;
   line-height: 20px;
 
+  &:hover {
+    outline: none;
+    border: none;
+    color: rgba(16, 38, 84, 1);
+    border-bottom: 2px solid rgba(209, 10, 66, 1);
+  }
+
+  &:focus {
+    outline: none;
+    border: none;
+    color: rgba(16, 38, 84, 1);
+    border-bottom: 2px solid rgba(209, 10, 66, 1);
+  }
+
+  &:active {
+    outline: none;
+    border: none;
+    color: rgba(16, 38, 84, 1);
+    border-bottom: 2px solid rgba(209, 10, 66, 1);
+  }
+
   &--active {
     color: rgba(16, 38, 84, 1);
     border-bottom: 2px solid rgba(209, 10, 66, 1);
+  }
+
+  &:disabled {
+    color: rgba(16, 38, 84, 0.3);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgba(16, 38, 84, 0.3);
   }
 }
 
@@ -92,7 +120,44 @@
 
   &--active {
     padding: 70px 58px;
-    border: 7px solid rgba(209, 10, 66, 1);
+    border: 7px solid;
+    border-image: linear-gradient(97deg, rgba(237, 2, 51, 1) 17.6%, rgba(0, 62, 183, 1) 95.31%);
+    border-image-slice: 1;
+
+    .subscription-card__button {
+      border: 1px solid rgba(16, 38, 84, 0);
+
+      &:hover {
+        color: rgba(16, 58, 174, 1);
+        background-color: rgba(255, 255, 255, 1);
+        background-image: none;
+        outline: none;
+        border: 1px solid rgba(16, 38, 84, 1);
+      }
+
+      &:focus {
+        color: rgba(16, 58, 174, 1);
+        background-color: rgba(255, 255, 255, 1);
+        background-image: none;
+        outline: none;
+        border: 1px solid rgba(16, 38, 84, 1);
+      }
+
+      &:active {
+        color: rgba(16, 38, 84, 1);
+        background-color: rgba(255, 255, 255, 1);
+        background-image: none;
+        outline: none;
+        border: 1px solid rgba(16, 38, 84, 0);
+      }
+
+      &:disabled {
+        color: rgba(255, 255, 255, 0.5);
+        background-color: transparent;
+        outline: none;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+      }
+    }
   }
 
   &:first-of-type {
@@ -154,6 +219,34 @@
   display: block;
   margin: 0 auto;
   margin-top: 35px;
-  width: 205px;
+  width: 208px;
   padding: 27px 44px;
+
+  &:hover {
+    color: rgba(255, 255, 255, 1);
+    background-image: linear-gradient(0.25turn, rgba(237, 2, 51, 1),  rgba(0, 62, 183, 1));
+    outline: none;
+    border: 1px solid rgba(16, 38, 84, 0);
+  }
+
+  &:focus {
+    color: rgba(255, 255, 255, 1);
+    background-image: linear-gradient(0.25turn, rgba(237, 2, 51, 1),  rgba(0, 62, 183, 1));
+    outline: none;
+    border: 1px solid rgba(16, 38, 84, 0);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.7);
+    background-image: linear-gradient(0.25turn, rgba(237, 2, 51, 1),  rgba(0, 62, 183, 1));
+    outline: none;
+    border: 1px solid rgba(16, 38, 84, 0);
+  }
+
+  &:disabled {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
 }
