@@ -17,8 +17,34 @@
   display: block;
   width: 109px;
   margin: 0;
-  padding: 0;
+  padding: 5px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
   margin-left: 103px;
+
+  &:hover {
+    outline: none;
+    border: none;
+    opacity: 0.75;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 1);
+  }
+
+  &:active {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+  }
+
+  &:disabled {
+    outline: none;
+    border: none;
+    opacity: 0.5;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
 }
 
 .footer-nav__list {
@@ -47,8 +73,31 @@
   display: block;
   text-align: center;
   margin: 0;
-  padding: 0;
   color: rgba(255, 255, 255, 1);
+  padding: 5px 10px;
+  border: 1px solid rgba(255, 255, 255, 0);
+
+  &:hover {
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 1);
+  }
+
+  &:active {
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0);
+  }
+
+  &:disabled {
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0);
+    opacity: 0.4;
+  }
 }
 
 .footer-social__list {
