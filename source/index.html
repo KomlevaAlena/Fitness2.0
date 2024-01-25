@@ -607,10 +607,12 @@
               <h2 class="free-title">Бесплатное занятие</h2>
               <form class="free-form form" action="https://echo.htmlacademy.ru/" method="post">
                 <span class="form-area__name">
-                  <input class="form-area__field" type="text" id="form-area__name" name="form-name" placeholder="Имя">
+                  <input class="form-area__field" type="text" id="form-area__name" name="form-name" placeholder="Имя" minlength="2" required>
+                  <span class="form-area__field--error">Чтото пошло не так!</span>
                 </span>
                 <span class="form-area__phone">
-                  <input class="form-area__field" type="text" id="form-phone" name="form-phone" placeholder="Телефон">
+                  <input class="form-area__field" type="text" id="form-phone" name="form-phone" placeholder="Телефон" minlength="11" required>
+                  <span class="form-area__field--error">Чтото пошло не так!</span>
                 </span>
                 <button class="button free-form__button" type="submit">Отправить</button>
               </form>
