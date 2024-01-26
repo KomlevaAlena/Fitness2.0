@@ -180,7 +180,12 @@
             </ul>
             <a class="games-button button" href="#">заполнить заявку</a>
           </div>
-          <img class="games-image" src="img/crossfit-games.jpg" width="660" height="500" alt="Мужчина выполняющий упражнение."><!--тут будут изображения в вебпи-->
+          <!--тут будут изображения в вебпи <img class="games-image" src="img/crossfit-games.jpg" width="660" height="500" alt="Мужчина выполняющий упражнение.">-->
+          <picture class="games-image">
+            <source media="(max-width: 767px)" srcset="img/Crossfit-games-mobile-1x.jpg 1x, img/Crossfit-games-mobile-2x.jpg 2x">
+            <source media="(max-width: 1365px)" srcset="img/Crossfit-games-tablet-1x.jpg 1x, img/Crossfit-games-tablet-2x.jpg 2x">
+            <img src="img/Crossfit-games-1x.jpg" srcset="img/Crossfit-games-2x.jpg"  width="660" height="401" alt="Мужчина выполняющий упражнение.">
+          </picture>
         </section>
         <section class="judges">
           <h2 class="judges-title">Жюри</h2>

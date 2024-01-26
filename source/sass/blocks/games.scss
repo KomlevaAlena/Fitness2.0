@@ -11,9 +11,9 @@
 .games-wrapper {
   background-color: rgba(237, 2, 51, 1);
   display: grid;
-  grid-template-columns: repeat(180px, 92px);
+  grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(3, auto);
-  column-gap: 68px;
+  column-gap: 0;
   margin: 0 auto;
   width: 500px;
 }
@@ -92,7 +92,7 @@
     border-top: 1px solid rgba(255, 255, 255, 1);
 
     &:nth-of-type(1) {
-      width: 85px;
+      width: 64px;
     }
 
     &:nth-of-type(2) {
@@ -108,7 +108,6 @@
     line-height: 16px;
     margin: 0;
     padding: 0;
-    min-width: 64px;
     padding-top: 7px;
     padding-left: 5px;
   }
@@ -154,5 +153,80 @@
     background-color: transparent;
     outline: none;
     border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+}
+
+@include vp-1365 {
+  .games {
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 768px;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .games-wrapper {
+    width: 292px;
+    margin: 0;
+    padding: 40px 45px 45px 45px;
+  }
+
+  .games-title  {
+    padding: 0;
+    margin: 0;
+    width: 106px;
+    font-size: 48px;
+    line-height: 46px;
+    letter-spacing: 1.44px;
+  }
+
+  .games-list {
+    padding: 0;
+    margin: 0;
+    width: 56px;
+  }
+
+  .games-image {
+    display: block;
+    width: 401px;
+  }
+
+  .games-description {
+    width: 202px;
+    margin-left: 0;
+    margin-top: 6px;
+    margin-bottom: 21px;
+  }
+
+  .games-item {
+    margin-right: 0;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    &:nth-of-type(2) {
+      margin-top: 10px;
+    }
+  }
+
+  .games-item__number {
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: 0;
+    padding: 2px;
+  }
+
+  .games-item__date {
+    font-size: 10px;
+    line-height: 10px;
+    margin-top: 0;
+    padding: 2px;
+  }
+
+  .games-button {
+    width: 224px;
+    margin: 0;
+    padding: 22px 52px;
   }
 }
