@@ -47,7 +47,11 @@
                 <a class="hero-button button" href="#">Купить абонемент</a>
               </li>
             </ul>
-            <img class="hero-image" src="img/superman.jpg" width="500" height="524" alt="Спортивный мужчина в футболке с символом Супермена."><!--тут будут изображения в вебпи-->
+            <!--тут будут изображения в вебпи <img class="hero-image" src="img/superman.jpg" width="500" height="524" alt="Спортивный мужчина в футболке с символом Супермена.">-->
+            <picture class="hero-image">
+              <source media="(max-width: 1365px)" srcset="img/superman-tablet-1х.webp 1x, img/superman-tablet-2х.webp 2x">
+              <img src="img/superman-1х.webp" srcset="img/superman-2х.webp"  width="500" height="524" alt="Спортивный мужчина в футболке с символом Супермена.">
+            </picture>
           </div>
         </section>
         <section class="gym">
@@ -63,7 +67,12 @@
             </p>
           </div>
           <div class="gym-wrapper__media">
-            <img class="gym-image" src="img/gym-view.jpg" width="660" height="401" alt="Оющий вид спортзала, белый с контрастными тренаженами."><!--тут будут изображения в вебпи-->
+            <!--тут будут изображения в вебпи <img class="gym-image" src="img/gym-view.jpg" width="660" height="401" alt="Оющий вид спортзала, белый с контрастными тренаженами.">-->
+            <picture class="gym-image">
+              <source media="(max-width: 767px)" srcset="img/gym-view-mobile-1x.webp 1x, img/gym-view-mobile-2x.webp 2x">
+              <source media="(max-width: 1365px)" srcset="img/gym-view-tablet-1x.webp 1x, img/gym-view-tablet-2x.webp 2x">
+              <img src="img/gym-view-1x.webp" srcset="img/gym-view-2x.webp"  width="660" height="401" alt="Общий вид спортзала, белый с контрастными тренаженами.">
+            </picture>
             <video class="gym-video" src="https://www.youtube.com/watch?v=9TZXsZItgdw" width="364" height="228" poster="img/gym-video.jpg">
               <code>Обзор зала</code>
             </video> <!--нужен source?-->
