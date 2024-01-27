@@ -75,6 +75,8 @@
     background-image: linear-gradient(0.25turn, rgba(237, 2, 51, 1),  rgba(0, 62, 183, 1));
     outline: none;
     border: 1px solid rgba(16, 38, 84, 0);
+    border-left: 1px solid rgba(237, 2, 51, 1);
+    border-right: 1px solid rgba(0, 62, 183, 1);
   }
 
   &:focus {
@@ -82,6 +84,8 @@
     background-image: linear-gradient(0.25turn, rgba(237, 2, 51, 1),  rgba(0, 62, 183, 1));
     outline: none;
     border: 1px solid rgba(16, 38, 84, 0);
+    border-left: 1px solid rgba(237, 2, 51, 1);
+    border-right: 1px solid rgba(0, 62, 183, 1);
   }
 
   &:active {
@@ -89,6 +93,8 @@
     background-image: linear-gradient(0.25turn, rgba(237, 2, 51, 1),  rgba(0, 62, 183, 1));
     outline: none;
     border: 1px solid rgba(16, 38, 84, 0);
+    border-left: 1px solid rgba(237, 2, 51, 1);
+    border-right: 1px solid rgba(0, 62, 183, 1);
   }
 
   &:disabled {
@@ -101,6 +107,8 @@
 
 .button-active {
   border: 1px solid rgba(255, 255, 255, 0);
+  border-left: 1px solid rgba(237, 2, 51, 1);
+  border-right: 1px solid rgba(0, 62, 183, 1);
 }
 
 .faq-item__list--accordion {
@@ -126,6 +134,11 @@
 
 .accordion__element {
   position: relative;
+  padding: 0;
+}
+
+.accordion__wrapper {
+  padding: 0;
 }
 
 .accordion__title {
@@ -138,7 +151,7 @@
   line-height: 24px;
   margin: 0;
   padding: 0;
-  padding-top: 33px;
+  padding-top: 34px;
 }
 
 .accordion__button {
@@ -293,5 +306,59 @@
         background-color: rgba(255, 255, 255, 0.3);
       }
     }
+  }
+}
+
+@include vp-1365 {
+  .faq {
+    width: 768px;
+  }
+
+  .faq-title {
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: 1.26px;
+    text-align: center;
+  }
+
+  .faq-list {
+    width: 678px;
+  }
+
+  .faq-item {
+    width: 678px;
+  }
+
+  .faq-item__list {
+    width: 678px;
+    margin-top: 40px;
+  }
+
+  .faq-item__list--accordion {
+    width: 678px;
+  }
+
+  .accordion {
+    width: 678px;
+  }
+
+  .accordion__title {
+    width: 638px;
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  .accordion__description {
+    display: block;
+    width: 638px;
+    margin-top: 11px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
   }
 }
