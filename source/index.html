@@ -277,8 +277,8 @@
             </li>
             <li class="judges-card">
               <img class="judges-image" src="img/mary.jpg" width="260" height="294" alt="Мария Кетова">
+              <h3 class="judges-card__title">Мария Кетова</h3>
               <div class="judges-card__wrapper">
-                <h3 class="judges-card__title">Мария Кетова</h3>
                 <p class="judges-card__description">CrossFit</p>
                 <ul class="judges-card__list">
                   <li class="judges-card__list-item">Certified Level 3 Trainer</li>
@@ -328,7 +328,12 @@
               <span class="discounts-price">4999</span>
               <p class="discounts-description">Безлимитный абонемент в тренажерный зал</p>
               <a class="discounts-button" href="#">подробнее</a>
-              <img class="discounts-image" src="img/discounts.jpg" width="280" height="462" alt="Женщина в голубом купальнике."><!--тут будут изображения в вебпи-->
+              <!--тут будут изображения в вебпи <img class="discounts-image" src="img/discounts.jpg" width="280" height="462" alt="Женщина в голубом купальнике.">-->
+              <picture class="discounts-image">
+                <source media="(max-width: 767px)" srcset="img/discounts-mobile-1x.webp 1x, img/discounts-mobile-2x.webp 2x">
+                <source media="(max-width: 1365px)" srcset="img/discounts-tablet-1x.webp 1x, img/discounts-tablet-2x.webp 2x">
+                <img src="img/discounts-1x.webp" srcset="img/discounts-2x.webp"  width="280" height="462" alt="Женщина в голубом купальнике.">
+              </picture>
             </li>
             <li class="discounts-item">
               <h3 class="discounts-item__title">Месяц бесплатно</h3>
