@@ -216,6 +216,8 @@
   .gym-description {
     width: 502px;
     margin-top: 36px;
+    font-size: 16px;
+    line-height: 24px;
 
     &:nth-of-type(3) {
       display: none;
@@ -256,5 +258,84 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+
+  .gym-wrapper__description {
+    width: 290px;
+    margin: 0 auto;
+    margin-top: 70px;
+    align-items: start;
+    text-align: start;
+  }
+
+  .gym-title {
+    margin: 0;
+    margin-right: auto;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0.96px;
+  }
+
+  .gym-subtitle {
+    margin: 0;
+    margin-right: auto;
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 13px;
+  }
+
+  .gym-description {
+    width: 279px;
+    margin-top: 40px;
+    font-size: 14px;
+    line-height: 22px;
+
+    &:nth-of-type(3) {
+      display: none;
+    }
+  }
+
+  .gym-wrapper__media {
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .gym-image {
+    display: block;
+    width: 320px;
+  }
+
+  .gym-video {
+    display: block;
+    width: 320px;
+    top: 353px;
+    left: 0;
+  }
+
+  .gym-video__play {
+    display: block;
+    width: 72px;
+    height: 72px;
+    top: 92px;
+    left: 120px;
+
+    &::before {
+      width: 52px;
+      height: 52px;
+      margin-top: 8px;
+      margin-left: 8px;
+    }
+
+    &::after {
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 6px 0 6px 12px;
+      border-color: transparent transparent transparent rgba(255, 255, 255, 1);
+      top: -37px;
+      left: 2px;
+    }
   }
 }
