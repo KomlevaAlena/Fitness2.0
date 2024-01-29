@@ -208,3 +208,50 @@
     top: 326px;
   }
 }
+
+@include vp-767 {
+  .judges {
+    width: 320px;
+    padding-bottom: 70px;
+  }
+
+  .judges-title {
+    width: 66px;
+    padding-top: 70px;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0.96px;
+  }
+
+  .judges-list {
+    width: 226px;
+    margin: 0 auto;
+    margin-top: 42px;
+  }
+
+  .judges-card {
+    width: 226px;
+  }
+
+  .judges-card__wrapper {
+    width: 226px;
+  }
+
+  .judges-image {
+    width: 226px;
+  }
+
+  .button-prev {
+    left: 0;
+    top: 254px;
+  }
+
+  .button-next {
+    right: 0;
+    top: 254px;
+  }
+
+  //.judges-card__title {
+  //  display: none;
+  //}
+}
