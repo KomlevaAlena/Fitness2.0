@@ -363,3 +363,56 @@
     line-height: 24px;
   }
 }
+
+@include vp-767 {
+  .faq {
+    width: 320px;
+    padding-bottom: 70px;
+  }
+
+  .faq-title {
+    width: 202px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0.96px;
+  }
+
+  .faq-list {
+    width: 320px;
+  }
+
+  .faq-item {
+    width: 290px;
+  }
+
+  .faq-item__list {
+    width: 290px;
+    margin-top: 40px;
+  }
+
+  .faq-item__list--accordion {
+    width: 290px;
+  }
+
+  .accordion {
+    width: 290px;
+  }
+
+  .accordion__title {
+    width: 216px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .accordion__description {
+    display: block;
+    width: 290px;
+    margin-top: 20px;
+    margin-bottom: 22px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+  }
+}

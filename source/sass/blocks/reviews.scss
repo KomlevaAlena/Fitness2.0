@@ -161,3 +161,64 @@
     line-height: 20px;
   }
 }
+
+@include vp-767 {
+  .reviews {
+    width: 320px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+
+    .button-prev {
+      left: 0;
+    }
+
+    .button-next {
+      right: 0;
+    }
+  }
+
+  .reviews-title {
+    width: 290px;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 46px;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0.96px;
+    text-align: center;
+  }
+
+  .reviews-list {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .reviews-card {
+    width: 226px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px 25px;
+
+    &__title {
+      margin: 0 auto;
+      width: 176px;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 20px;
+      margin-top: 10px;
+    }
+
+    &__description {
+      width: 176px;
+      margin: 0 auto;
+      margin-top: 16px;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}
