@@ -640,13 +640,21 @@
                  Зал просторный, даже в вечернее время нет очередей»</p>
             </li>
             <li class="reviews-card">
-              <img class="reviews-image" src="img/orlova.png" width="80" height="80" alt="Анна Орлова">
+              <picture class="reviews-imag">
+                <source media="(max-width: 767px)" srcset="img/orlova-1x.webp 1x, img/orlova-1x.webp 2x" width="80" height="80">
+                <source media="(max-width: 1365px)" srcset="img/orlova-1x.webp 1x, img/orlova-2x.webp 2x" width="80" height="80">
+                <img src="img/orlova-1x.webp" srcset="img/orlova-2x.webp"  width="80" height="80" alt="Анна Орлова">
+              </picture>
               <h3 class="reviews-card__title">Анна Орлова</h3>
               <p class="reviews-card__description">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный.
                  Зал просторный, даже в вечернее время нет очередей»</p>
             </li>
             <li class="reviews-card">
-              <img class="reviews-image" src="img/orlova.png" width="80" height="80" alt="Анна Орлова">
+              <picture class="reviews-imag">
+                <source media="(max-width: 767px)" srcset="img/orlova-1x.webp 1x, img/orlova-1x.webp 2x" width="80" height="80">
+                <source media="(max-width: 1365px)" srcset="img/orlova-1x.webp 1x, img/orlova-2x.webp 2x" width="80" height="80">
+                <img src="img/orlova-1x.webp" srcset="img/orlova-2x.webp"  width="80" height="80" alt="Анна Орлова">
+              </picture>
               <h3 class="reviews-card__title">Анна Орлова</h3>
               <p class="reviews-card__description">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный.
                  Зал просторный, даже в вечернее время нет очередей»</p>
@@ -717,26 +725,23 @@
           <ul class="footer-social__list">
             <li class="footer-social__item">
               <a class="footer-social__link link-vk" href="#">
-                <span class="visually-hidden">В контакте</span>
-                <svg class="footer-social__icon icon-vk" width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/sprite.svg#vk"></use>
-                </svg>
+                <div class="link-vk__icon">
+                  <span class="visually-hidden">В контакте</span>
+                </div>
               </a>
             </li>
             <li class="footer-social__item">
               <a class="footer-social__link link-ok" href="#">
-                <span class="visually-hidden">Одноклассники</span>
-                <svg class="footer-social__icon icon-ok" width="9" height="16" viewBox="0 0 9 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/sprite.svg#ok"></use>
-                </svg>
+                <div class="link-ok__icon">
+                  <span class="visually-hidden">Одноклассники</span>
+                </div>
               </a>
             </li>
             <li class="footer-social__item">
               <a class="footer-social__link link-reddit" href="#">
-                <span class="visually-hidden">Reddit</span>
-                <svg class="footer-social__icon icon-reddit" width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/sprite.svg#reddit"></use>
-                </svg>
+                <div class="link-reddit__icon">
+                  <span class="visually-hidden">Reddit</span>
+                </div>
               </a>
             </li>
           </ul>

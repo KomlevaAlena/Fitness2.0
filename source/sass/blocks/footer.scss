@@ -144,25 +144,37 @@
   border-radius: 50%;
 }
 
-.icon-vk {
+.link-vk__icon {
   display: block;
-  width: 14px;
-  height: 14px;
   margin: 0 auto;
+  mask-image: url("/img/stack.svg#sprite_vk");
+  width: 15px;
+  height: 15px;
+  mask-repeat: no-repeat;
+  mask-size: 15px 15px;
+  background-color: rgba(3, 10, 26, 1);
 }
 
-.icon-ok {
+.link-ok__icon {
   display: block;
-  width: 9px;
-  height: 16px;
   margin: 0 auto;
+  mask-image: url("/img/stack.svg#sprite_ok");
+  width: 10px;
+  height: 17px;
+  mask-repeat: no-repeat;
+  mask-size: 10px 17px;
+  background-color: rgba(3, 10, 26, 1);
 }
 
-.icon-reddit {
+.link-reddit__icon {
   display: block;
-  width: 14px;
-  height: 14px;
   margin: 0 auto;
+  mask-image: url("/img/stack.svg#sprite_reddit");
+  width: 15px;
+  height: 15px;
+  mask-repeat: no-repeat;
+  mask-size: 15px 15px;
+  background-color: rgba(3, 10, 26, 1);
 }
 
 @include vp-1365 {
