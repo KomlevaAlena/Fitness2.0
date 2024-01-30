@@ -142,6 +142,30 @@
   height: 25px;
   background-color: rgba(255, 255, 255, 1);
   border-radius: 50%;
+
+  &:hover {
+    border: none;
+    outline: none;
+    background-color: rgba(16, 58, 174, 1);
+  }
+
+  &:focus {
+    border: none;
+    outline: none;
+    background-color: rgba(16, 58, 174, 1);
+  }
+
+  &:active {
+    border: none;
+    outline: none;
+    background-color: rgba(16, 38, 84, 1);
+  }
+
+  &:disabled {
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .link-vk__icon {
@@ -153,6 +177,22 @@
   mask-repeat: no-repeat;
   mask-size: 15px 15px;
   background-color: rgba(3, 10, 26, 1);
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  &:focus {
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  &:active {
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  &:disabled {
+    background-color: rgba(3, 10, 26, 1);
+  }
 }
 
 .link-ok__icon {
@@ -164,6 +204,22 @@
   mask-repeat: no-repeat;
   mask-size: 10px 17px;
   background-color: rgba(3, 10, 26, 1);
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  &:focus {
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  &:active {
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  &:disabled {
+    background-color: rgba(3, 10, 26, 1);
+  }
 }
 
 .link-reddit__icon {
@@ -175,6 +231,22 @@
   mask-repeat: no-repeat;
   mask-size: 15px 15px;
   background-color: rgba(3, 10, 26, 1);
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  &:focus {
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  &:active {
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  &:disabled {
+    background-color: rgba(3, 10, 26, 1);
+  }
 }
 
 @include vp-1365 {
