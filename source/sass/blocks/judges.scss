@@ -51,24 +51,43 @@
 .button-prev {
   position: absolute;
   content: "";
-  background-image: url("/img/svg/prev-arrow.svg");
-  background-size: 16px 32px;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 1);
   top: 365px;
   left: -56px;
 }
 
+.button-prev__icon {
+  display: block;
+  margin: 0 auto;
+  mask-image: url("/img/stack.svg#sprite_prev-arrow");
+  width: 18px;
+  height: 34px;
+  mask-repeat: no-repeat;
+  mask-size: 18px 34px;
+  background-color: rgba(16, 38, 84, 1);
+}
+
 .button-next {
+  display: block;
   position: absolute;
   content: "";
-  background-image: url("/img/svg/next-arrow.svg");
-  background-size: 16px 32px;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 1);
   top: 365px;
   right: -56px;
 }
+
+.button-next__icon {
+  display: block;
+  margin: 0 auto;
+  mask-image: url("/img/stack.svg#sprite_next-arrow");
+  width: 18px;
+  height: 34px;
+  mask-repeat: no-repeat;
+  mask-size: 18px 34px;
+  background-color: rgba(16, 38, 84, 1);
+}
+
+
 
 .judges-list {
   display: flex;
