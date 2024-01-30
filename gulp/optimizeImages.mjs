@@ -1,17 +1,16 @@
 import gulp from 'gulp';
-import rename from 'gulp-rename';
+//import rename from 'gulp-rename';
 import imagemin from 'gulp-imagemin';
 import webp from 'gulp-webp';
-import svgstore from 'gulp-svgstore';
 import pngQuant from 'imagemin-pngquant';
 import mozJpeg from 'imagemin-mozjpeg';
 import svgo from 'imagemin-svgo';
+import {stacksvg} from 'gulp-stacksvg';
 
-const sprite = () =>
+const makeStack = () =>
   gulp
-      .src('source/img/sprite/*.svg')
-      .pipe(svgstore({inlineSvg: true}))
-      .pipe(rename('sprite.svg'))
+      .src('build/img/**/*.svg')
+      .pipe(stacksvg())
       .pipe(gulp.dest('build/img'));
 
 const optimizeSvg = () =>
@@ -74,4 +73,4 @@ const createWebp = () => {
       .pipe(gulp.dest(`source/img/${root}`));
 };
 
-export {sprite, createWebp, optimizeSvg, optimizePng, optimizeJpg};
+export {createWebp, optimizeSvg, optimizePng, optimizeJpg, makeStack};
