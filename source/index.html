@@ -630,7 +630,11 @@
           <button class="reviews-button button-prev"><span class="visually-hidden">Назад</span></button>
           <ol class="reviews-list">
             <li class="reviews-card">
-              <img class="reviews-image" src="img/orlova.png" width="80" height="80" alt="Анна Орлова">
+              <picture class="reviews-imag">
+                <source media="(max-width: 767px)" srcset="img/orlova-1x.webp 1x, img/orlova-1x.webp 2x" width="80" height="80">
+                <source media="(max-width: 1365px)" srcset="img/orlova-1x.webp 1x, img/orlova-2x.webp 2x" width="80" height="80">
+                <img src="img/orlova-1x.webp" srcset="img/orlova-2x.webp"  width="80" height="80" alt="Анна Орлова">
+              </picture>
               <h3 class="reviews-card__title">Анна Орлова</h3>
               <p class="reviews-card__description">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный.
                  Зал просторный, даже в вечернее время нет очередей»</p>
