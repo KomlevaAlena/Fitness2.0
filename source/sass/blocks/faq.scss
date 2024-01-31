@@ -11,9 +11,10 @@
 
 .faq-title {
   display: block;
-  width: 341px;
-  margin-left: 103px;
+  width: 1160px;
+  margin: 0 auto;
   margin-top: 120px;
+  margin-bottom: 51px;
   font-family: "AlumniSans-SemiBold", "Arial", sans-serif;
   font-size: 54px;
   font-weight: 600;
@@ -25,7 +26,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
-  width: 1160px;
+  flex-direction: column;
+  width: 260px;
   margin: 0 auto;
   padding: 0;
   list-style-type: none;
@@ -36,10 +38,22 @@
   flex-wrap: wrap;
   justify-content: start;
   flex-direction: row;
-  width: 1160px;
+  width: 260px;
   margin: 0;
-  margin-left: auto;
+  margin-top: 10px;
   padding: 0;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.subscription-card__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 860px;
+  margin: 0 auto;
 }
 
 .faq-item__list {
@@ -47,8 +61,7 @@
   flex-wrap: wrap;
   justify-content: start;
   width: 860px;
-  margin: 0;
-  margin-left: auto;
+  margin: 0 auto;
   padding: 0;
   list-style-type: none;
   border-top: 1px solid rgba(28, 51, 116, 0.2);
@@ -158,6 +171,83 @@
   position: absolute;
   content: "";
   display: block;
+  border-radius: 50%;
+  padding: 20px;
+  right: 0;
+  top: 33px;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(28, 51, 116, 1);
+  border: none;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 1);
+    right: 10px;
+  }
+
+  &::after {
+    display: none;
+  }
+
+  &:hover {
+    border: 1px solid rgba(16, 38, 84, 1);
+
+    &::before {
+      background-color: rgba(255, 255, 255, 1);
+    }
+
+    &::after {
+      background-color: rgba(255, 255, 255, 1);
+    }
+  }
+
+  &:focus {
+    border: 1px solid rgba(16, 38, 84, 1);
+
+    &::before {
+      background-color: rgba(255, 255, 255, 1);
+    }
+
+    &::after {
+      background-color: rgba(255, 255, 255, 1);
+    }
+  }
+
+  &:active {
+    border: 1px solid rgba(16, 38, 84, 1);
+    background-color: rgba(255, 255, 255, 1);
+
+    &::before {
+      background-color: rgba(16, 38, 84, 1);
+    }
+
+    &::after {
+      background-color: transparent;
+    }
+  }
+
+  &:disabled {
+    border: 1px solid rgba(16, 38, 84, 0.3);
+    background-color: transparent;
+
+    &::before {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    &::after {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+.accordion__element.is-active > .accordion__button {
+  position: absolute;
+  content: "";
+  display: block;
   width: 18px;
   height: 18px;
   border-radius: 50%;
@@ -233,78 +323,6 @@
 
     &::after {
       background-color: rgba(255, 255, 255, 0.3);
-    }
-  }
-}
-
-.is-active {
-  .accordion__button {
-    width: 20px;
-    height: 20px;
-    background-color: rgba(28, 51, 116, 1);
-    border: none;
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 20px;
-      height: 1px;
-      background-color: rgba(255, 255, 255, 1);
-      right: 10px;
-    }
-
-    &::after {
-      display: none;
-    }
-
-    &:hover {
-      border: 1px solid rgba(16, 38, 84, 1);
-
-      &::before {
-        background-color: rgba(255, 255, 255, 1);
-      }
-
-      &::after {
-        background-color: rgba(255, 255, 255, 1);
-      }
-    }
-
-    &:focus {
-      border: 1px solid rgba(16, 38, 84, 1);
-
-      &::before {
-        background-color: rgba(255, 255, 255, 1);
-      }
-
-      &::after {
-        background-color: rgba(255, 255, 255, 1);
-      }
-    }
-
-    &:active {
-      border: 1px solid rgba(16, 38, 84, 1);
-      background-color: rgba(255, 255, 255, 1);
-
-      &::before {
-        background-color: rgba(16, 38, 84, 1);
-      }
-
-      &::after {
-        display: none;
-      }
-    }
-
-    &:disabled {
-      border: 1px solid rgba(16, 38, 84, 0.3);
-      background-color: transparent;
-
-      &::before {
-        background-color: rgba(255, 255, 255, 0.3);
-      }
-
-      &::after {
-        background-color: rgba(255, 255, 255, 0.3);
-      }
     }
   }
 }
