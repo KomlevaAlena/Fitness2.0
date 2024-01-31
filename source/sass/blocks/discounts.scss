@@ -68,35 +68,62 @@
     }
 
     .discounts-button {
+      position: relative;
       margin-left: 45px;
       margin-top: 174px;
       margin-bottom: 44px;
       padding: 10px 10px 5px 10px;
       color: rgba(255, 255, 255, 1);
-      border-bottom: 1px solid rgba(255, 255, 255, 1);
+      border: 1px solid rgba(255, 255, 255, 0);
+
+      &::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 79px;
+        height: 1px;
+        top: 29px;
+        background-color: rgba(255, 255, 255, 1);
+      }
 
       &:hover {
         padding: 10px 10px 5px 10px;
         color: rgba(255, 255, 255, 0.8);
-        border-bottom: 1px solid rgba(255, 255, 255, 1);
+        border: 1px solid rgba(255, 255, 255, 0);
+
+        &::after {
+          background-color: rgba(255, 255, 255, 0.8);
+        }
       }
 
       &:focus {
         padding: 10px;
         color: rgba(255, 255, 255, 1);
         border: 1px solid rgba(255, 255, 255, 1);
+
+        &::after {
+          background-color: rgba(255, 255, 255, 0);
+        }
       }
 
       &:active {
         padding: 10px 10px 5px 10px;
         color: rgba(255, 255, 255, 1);
-        border-bottom: 1px solid rgba(255, 255, 255, 1);
+        border: 1px solid rgba(255, 255, 255, 0);
+
+        &::after {
+          background-color: rgba(255, 255, 255, 1);
+        }
       }
 
       &:disabled {
         padding: 10px 10px 5px 10px;
         color: rgba(255, 255, 255, 0.5);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0);
+
+        &::after {
+          background-color: rgba(255, 255, 255, 0.5);
+        }
       }
     }
 
@@ -161,6 +188,7 @@
 }
 
 .discounts-button {
+  position: relative;
   display: block;
   padding: 10px 10px 5px 10px;
   margin: 0;
@@ -171,30 +199,56 @@
   font-weight: 700;
   line-height: 14px;
   letter-spacing: 0.7px;
-  border-bottom: 1px solid rgba(16, 38, 84, 1);
+  border-bottom: 1px solid rgba(16, 38, 84, 0);
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 79px;
+    height: 1px;
+    top: 29px;
+    background-color: rgba(28, 51, 116, 1);
+  }
 
   &:hover {
     padding: 10px 10px 5px 10px;
     color: rgba(28, 51, 116, 0.8);
-    border-bottom: 1px solid rgba(28, 51, 116, 1);
+    border-bottom: 1px solid rgba(28, 51, 116, 0);
+
+    &::after {
+      background-color: rgba(28, 51, 116, 0.8);
+    }
   }
 
   &:focus {
     padding: 10px;
     color: rgba(28, 51, 116, 1);
     border: 1px solid rgba(28, 51, 116, 1);
+
+    &::after {
+      background-color: rgba(28, 51, 116, 0);
+    }
   }
 
   &:active {
     padding: 10px 10px 5px 10px;
     color: rgba(28, 51, 116, 1);
-    border-bottom: 1px solid rgba(28, 51, 116, 1);
+    border-bottom: 1px solid rgba(28, 51, 116, 0);
+
+    &::after {
+      background-color: rgba(28, 51, 116, 1);
+    }
   }
 
   &:disabled {
     padding: 10px 10px 5px 10px;
     color: rgba(28, 51, 116, 0.5);
     border-bottom: 1px solid rgba(28, 51, 116, 0.5);
+
+    &::after {
+      background-color: rgba(28, 51, 116, 0.5);
+    }
   }
 }
 
