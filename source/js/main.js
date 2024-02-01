@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initTabs} from './modules/tabs/init-tabs';
 import {initAccordions} from './modules/accordion/init-accordion';
+import Swiper from 'swiper';
 
 // ---------------------------------
 
@@ -14,6 +15,27 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
 
   // Modules
+  const swiper = new Swiper('.judges-list', {
+    direction: 'vertical',
+    loop: true,
+
+    navigation: {
+
+      nextEl: '.button-next',
+      prevEl: '.button-prev',
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1366: {
+        slidesPerView: 4,
+      },
+    },
+  });
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
@@ -37,6 +59,13 @@ window.addEventListener('DOMContentLoaded', () => {
     initAccordions();
   });
 });
+
+window.addEventListener('DOMContentLoaded', () => {
+  window.addEventListener('load', () => {
+    swiper();
+  });
+});
+
 // ---------------------------------
 
 // ❗❗❗ обязательно установите плагины eslint, stylelint, editorconfig в редактор кода.
