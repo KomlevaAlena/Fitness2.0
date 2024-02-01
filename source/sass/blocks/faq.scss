@@ -168,13 +168,12 @@
 }
 
 .accordion__button {
-  position: absolute;
-  content: "";
+  position: relative;
   display: block;
   border-radius: 50%;
   padding: 20px;
-  right: 0;
-  top: 33px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   width: 20px;
   height: 20px;
   background-color: rgba(28, 51, 116, 1);
@@ -190,7 +189,13 @@
   }
 
   &::after {
-    display: none;
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 1);
+    right: 10px;
+    transform: rotate(90deg);
   }
 
   &:hover {
@@ -244,9 +249,7 @@
   }
 }
 
-.accordion__element.is-active > .accordion__button {
-  position: absolute;
-  content: "";
+.accordion__element.is-active .accordion__button {
   display: block;
   width: 18px;
   height: 18px;
@@ -254,8 +257,6 @@
   border: 1px solid rgba(28, 51, 116, 1);
   padding: 20px;
   background-color: rgba(255, 255, 255, 1);
-  right: 0;
-  top: 33px;
 
   &::before {
     position: absolute;
@@ -279,25 +280,11 @@
   &:hover {
     border: 1px solid rgba(16, 38, 84, 1);
 
-    &::before {
-      background-color: rgba(255, 255, 255, 1);
-    }
-
-    &::after {
-      background-color: rgba(255, 255, 255, 1);
-    }
   }
 
   &:focus {
     border: 1px solid rgba(16, 38, 84, 1);
 
-    &::before {
-      background-color: rgba(255, 255, 255, 1);
-    }
-
-    &::after {
-      background-color: rgba(255, 255, 255, 1);
-    }
   }
 
   &:active {
