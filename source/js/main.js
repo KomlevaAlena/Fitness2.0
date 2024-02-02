@@ -18,6 +18,10 @@ window.addEventListener('DOMContentLoaded', () => {
   const slider = new Swiper('.judges', {
     direction: 'horizontal',
     loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
     breakpoints: {
       767: {
         slidesPerView: 1,
@@ -31,6 +35,27 @@ window.addEventListener('DOMContentLoaded', () => {
     },
   });
   slider.init();
+
+  const sliderReviews = new Swiper('.rewiews', {
+    direction: 'horizontal',
+    loop: false,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      767: {
+        slidesPerView: 1,
+      },
+      1365: {
+        slidesPerView: 1,
+      },
+      1366: {
+        slidesPerView: 1,
+      },
+    },
+  });
+  sliderReviews.init();
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
