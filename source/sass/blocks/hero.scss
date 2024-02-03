@@ -4,7 +4,7 @@
   justify-content: space-between;
   background-image: linear-gradient(0.25turn, rgba(0, 62, 183, 1), rgba(237, 2, 51, 1));
   width: 1366px;
-  padding-bottom: 120px;
+  padding-bottom: 114px;
   margin: 0 auto;
 }
 
@@ -34,13 +34,13 @@
 
   &:nth-of-type(1) {
     grid-column-start: 1;
-    margin-top: 198px;
+    margin-top: 224px;
   }
 
   &:nth-of-type(2) {
     grid-column-start: 2;
     grid-row-start: 1;
-    margin-top: 62px;
+    margin-top: 56px;
     margin-right: 70px;
   }
 }
@@ -73,6 +73,7 @@
     font-weight: 800;
     line-height: 110px;
     letter-spacing: 4.6px;
+    margin-top: 13px;
   }
 
   &:nth-child(3) {
@@ -83,8 +84,10 @@
 
 .hero-button {
   width: 231px;
-  margin-left: auto;
-  margin-top: 50px;
+  margin: 0 auto;
+  margin-bottom: 72px;
+  margin-top: 49px;
+  margin-right: 67px;
   color: rgba(255, 255, 255, 1);
   border: 1px solid rgba(255, 255, 255, 1);
   font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
@@ -92,6 +95,10 @@
   letter-spacing: 0.6px;
   line-height: 12px;
   font-weight: 700;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
 
   &:hover {
     color: rgba(16, 58, 174, 1);
