@@ -664,12 +664,18 @@
               <h2 class="free-title">Бесплатное занятие</h2>
               <form class="free-form form" action="https://echo.htmlacademy.ru/" method="post">
                 <span class="form-area__name">
-                  <input class="form-area__field" type="text" id="form-area__name" name="form-name" placeholder="Имя" minlength="2" required>
-                  <span class="form-area__field--error">Чтото пошло не так!</span>
+                  <div class="custom-input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required="">
+                    <label>
+                      <input type="text" name="user-name-1" class="form-area__field" id="form-area__name" placeholder="Имя" minlength="2" required>
+                    </label>
+                  </div>
                 </span>
                 <span class="form-area__phone">
-                  <input class="form-area__field" type="text" id="form-phone" name="form-phone" placeholder="Телефон" minlength="11" required>
-                  <span class="form-area__field--error">Чтото пошло не так!</span>
+                  <div class="custom-input" data-validate-type="phone" data-on-input-validate="" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required="" data-phone-length="18">
+                    <label>
+                      <input type="tel" name="user-phone" class="form-area__field" id="form-phone" placeholder="Телефон" minlength="11" required>
+                    </label>
+                  </div>
                 </span>
                 <button class="button free-form__button" type="submit">Отправить</button>
               </form>

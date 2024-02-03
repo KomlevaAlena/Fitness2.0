@@ -36,7 +36,7 @@ window.addEventListener('DOMContentLoaded', () => {
   });
   slider.init();
 
-  const slider2 = new Swiper('.rewiews', {
+  const slider2 = new Swiper('.reviews', {
     direction: 'horizontal',
     loop: false,
     navigation: {
@@ -79,6 +79,8 @@ window.addEventListener('DOMContentLoaded', () => {
     initAccordions();
   });
 });
+
+
 
 // ---------------------------------
 
