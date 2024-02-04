@@ -7,7 +7,7 @@
   width: 1360px;
   color: rgba(16, 38, 84, 1);
   background-color: rgba(248, 249, 252, 1);
-  padding-bottom: 120px;
+  padding-bottom: 153px;
   background-image: url("/img/weight-plates.png");
   background-size: 321px 532px;
   background-position: 100% 36%;
@@ -106,6 +106,13 @@
   }
 }
 
+.subscription-card__wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 1160px;
+}
+
 .subscription-card__list {
   display: flex;
   flex-wrap: wrap;
@@ -120,19 +127,27 @@
 .subscription-card__item {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: start;
   flex-direction: column;
   text-align: center;
   margin: 0 auto;
-  padding: 77px 65px;
+  padding: 67px 65px;
   width: 335px;
   background-color: rgba(255, 255, 255, 1);
 
   &--active {
-    padding: 70px 58px;
+    padding: 60px 72px;
     border: 7px solid;
     border-image: linear-gradient(97deg, rgba(237, 2, 51, 1) 17.6%, rgba(0, 62, 183, 1) 95.31%);
     border-image-slice: 1;
+
+    .subscription-card__title {
+      margin-left: 40px;
+    }
+
+    .subscription-card__description {
+      margin-left: 40px;
+    }
 
     .subscription-card__button {
       border: 1px solid rgba(16, 38, 84, 0);
@@ -174,23 +189,39 @@
 
   &:first-of-type {
     background-image: url("/img/5000.png");
-    background-size: 203px 80px;
-    background-position: 50% 43%;
+    background-size: 197px 81px;
+    background-position: 37% 47%;
     background-repeat: no-repeat;
   }
 
   &:nth-of-type(2) {
     background-image: url("/img/1700.png");
     background-size: 203px 80px;
-    background-position: 50% 43%;
+    background-position: 50% 47%;
     background-repeat: no-repeat;
   }
 
   &:nth-of-type(3) {
     background-image: url("/img/2700.png");
     background-size: 203px 80px;
-    background-position: 50% 43%;
+    background-position: 50% 47%;
     background-repeat: no-repeat;
+
+    .subscription-card__title {
+      margin-left: 41px;
+    }
+
+    .subscription-card__description {
+      margin-left: 68px;
+    }
+
+    .subscription-card__price {
+      margin-left: 31px;
+    }
+
+    .subscription-card__button {
+      margin-left: 13px;
+    }
   }
 }
 
@@ -200,7 +231,9 @@
   font-weight: 700;
   line-height: 26px;
   margin: 0 auto;
+  margin-left: 26px;
   padding: 0;
+  text-align: center;
 }
 
 .subscription-card__description {
@@ -209,7 +242,8 @@
   font-weight: 300;
   line-height: 24px;
   margin: 0 auto;
-  padding-top: 11px;
+  margin-left: 52px;
+  padding-top: 6px;
 }
 
 .subscription-card__price {
@@ -220,7 +254,8 @@
   font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
   color: rgba(16, 58, 174, 1);
   margin: 0 auto;
-  padding-top: 66px;
+  margin-left: 5px;
+  padding-top: 69px;
 
   span {
     color: rgba(16, 38, 84, 1);
@@ -230,9 +265,10 @@
 .subscription-card__button {
   display: block;
   margin: 0 auto;
-  margin-top: 35px;
+  margin-top: 33px;
+  margin-left: -14px;
   width: 208px;
-  padding: 27px 44px;
+  padding: 26px 44px;
 
   &:hover {
     color: rgba(255, 255, 255, 1);
