@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
 
   // Modules
-  const slider = new Swiper('.judges', {
+  const slider = new Swiper('.judges-wrapper', {
     direction: 'horizontal',
     loop: true,
     navigation: {
