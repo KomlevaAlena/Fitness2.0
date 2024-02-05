@@ -36,7 +36,7 @@ window.addEventListener('DOMContentLoaded', () => {
   });
   slider.init();
 
-  const slider2 = new Swiper('.reviews', {
+  const slider2 = new Swiper('.reviews-wrapper', {
     direction: 'horizontal',
     loop: false,
     navigation: {

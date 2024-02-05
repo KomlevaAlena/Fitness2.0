@@ -10,10 +10,10 @@
   .button-prev {
     position: absolute;
     content: "";
-    top: 365px;
-    left: -56px;
+    top: 348px;
+    left: 26px;
 
-    .button-prev__icon {
+    &::after {
       display: block;
       margin: 0 auto;
       mask-image: url("/img/stack.svg#sprite_prev-arrow");
@@ -42,39 +42,38 @@
   }
 
   .button-next {
+    display: block;
     position: absolute;
     content: "";
-    display: block;
-    top: 365px;
-    right: -56px;
-  }
+    top: 348px;
+    right: 26px;
 
-  .button-next__icon {
-    display: block;
-    margin: 0 auto;
-    mask-image: url("/img/stack.svg#sprite_next-arrow");
-    width: 18px;
-    height: 34px;
-    mask-repeat: no-repeat;
-    mask-size: 18px 34px;
-    background-color: rgba(16, 38, 84, 1);
-
-    &:hover {
+    &::after {
+      display: block;
+      margin: 0 auto;
+      mask-image: url("/img/stack.svg#sprite_next-arrow");
+      width: 18px;
+      height: 34px;
+      mask-repeat: no-repeat;
+      mask-size: 18px 34px;
       background-color: rgba(16, 38, 84, 1);
-    }
 
-    &:focus {
-      background-color: rgba(16, 38, 84, 1);
-    }
+      &:hover {
+        background-color: rgba(16, 38, 84, 1);
+      }
 
-    &:active {
-      background-color: rgba(255, 255, 255, 1);
-    }
+      &:focus {
+        background-color: rgba(16, 38, 84, 1);
+      }
 
-    &:disabled {
-      background-color: rgba(16, 38, 84, 0.3);
+      &:active {
+        background-color: rgba(255, 255, 255, 1);
+      }
+
+      &:disabled {
+        background-color: rgba(16, 38, 84, 0.3);
+      }
     }
-  }
 }
 
 .reviews-title {
@@ -123,6 +122,12 @@
   &:active {
     border: 1px solid rgba(16, 38, 84, 1);
     background-color: rgba(16, 38, 84, 1);
+  }
+
+  &:disabled {
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0);
+    opacity: 0.4;
   }
 }
 
