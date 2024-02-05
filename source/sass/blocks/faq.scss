@@ -29,6 +29,8 @@
   flex-direction: column;
   width: 260px;
   margin: 0 auto;
+  margin-left: 103px;
+  margin-right: 0;
   padding: 0;
   list-style-type: none;
 }
@@ -54,6 +56,7 @@
   justify-content: space-between;
   width: 860px;
   margin: 0 auto;
+  margin-left: 40px;
 }
 
 .faq-item__list {
@@ -70,14 +73,14 @@
 .faq-button {
   display: block;
   align-self: start;
-  width: 240px;
+  width: 260px;
   font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
   text-align: center;
-  padding: 18px 48px;
+  padding: 17px 48px;
   text-transform: none;
   border: 1px solid rgba(16, 38, 84, 0.2);
   background-color: transparent;
@@ -133,6 +136,19 @@
   margin: 0;
   padding: 0;
   border-bottom: 1px solid rgba(28, 51, 116, 0.2);
+
+  &:not(:first-of-type) {
+    margin-top: 6px;
+    padding-bottom: 10px;
+  }
+
+  &:nth-of-type(3) {
+    margin-top: 0;
+  }
+
+  &:nth-of-type(4) {
+    margin-top: 0;
+  }
 }
 
 .accordion {
@@ -168,7 +184,15 @@
   line-height: 24px;
   margin: 0;
   padding: 0;
-  padding-top: 34px;
+  padding-top: 33px;
+}
+
+.accordion__description {
+  margin-top: -10px;
+  font-size: 16px;
+  line-height: 24px;
+  width: 663px;
+  letter-spacing: 0.75px;
 }
 
 .accordion__button {
@@ -176,8 +200,8 @@
   display: block;
   border-radius: 50%;
   padding: 20px;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 23px;
+  margin-bottom: 15px;
   width: 20px;
   height: 20px;
   background-color: rgba(28, 51, 116, 1);
