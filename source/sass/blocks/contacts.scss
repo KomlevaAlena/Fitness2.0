@@ -13,9 +13,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
-  flex-direction: column;;
+  flex-direction: column;
   margin: 0;
-  padding: 60px 170px 60px 103px;
+  padding: 61px 147px 60px 103px;
   color: rgba(16, 38, 84, 1);
   border-top: 1px solid rgba(116, 129, 156, 1);
 }
@@ -37,7 +37,7 @@
   display: grid;
   grid-template-columns: repeat(2, 220px);
   grid-template-rows: repeat(2, auto);
-  column-gap: 120px;
+  column-gap: 71px;
   width: 400px;
   margin: 0;
   padding: 0;
@@ -47,10 +47,10 @@
     position: absolute;
     content: "";
     width: 1px;
-    height: 176px;
+    height: 117px;
     background-color: rgba(116, 129, 156, 1);
-    top: 40px;
-    left: 50%;
+    top: 38px;
+    left: 211px;
   }
 }
 
@@ -65,7 +65,7 @@
   border: 1px solid rgba(255, 255, 255, 0);
 
   &:first-of-type {
-    margin-top: 40px;
+    margin-top: 37px;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -73,7 +73,7 @@
   }
 
   &:nth-of-type(2) {
-    margin-top: 15px;
+    margin-top: 9px;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
@@ -81,7 +81,7 @@
   }
 
   &:nth-of-type(3) {
-    margin-top: 40px;
+    margin-top: 37px;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -89,7 +89,7 @@
   }
 
   &:nth-of-type(4) {
-    margin-top: 15px;
+    margin-top: 9px;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -100,20 +100,25 @@
 .contacts-item__title {
   display: block;
   width: 220px;
-  font-size: 24px;
+  font-family: "AlumniSans-Regular", "Arial", sans-serif;
+  font-size: 26px;
   font-weight: 400;
   line-height: 24px;
   margin: 0;
   padding: 0;
+  letter-spacing: 1.75px;
 }
 
 .contacts-item__description {
   display: block;
   margin: 0;
+  margin-left: -1px;
   padding: 0;
-  padding-top: 5px;
+  padding-top: 4px;
   width: 220px;
   border: 1px solid rgba(255, 255, 255, 0);
+  font-family: "AlumniSans-Regular", "Arial", sans-serif;
+  font-size: 18px;
 
   &:hover {
     color: rgba(28, 51, 116, 0.8);
