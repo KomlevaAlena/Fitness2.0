@@ -210,14 +210,17 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
-    margin-top: 20px;
+    margin-top: 19px;
+    letter-spacing: -0.1px;
+    margin-left: -5px;
   }
 
   .gym-description {
-    width: 502px;
-    margin-top: 36px;
+    width: 507px;
+    margin-top: 35px;
     font-size: 16px;
     line-height: 24px;
+    letter-spacing: -0.15px;
 
     &:nth-of-type(3) {
       display: none;
@@ -232,21 +235,33 @@
 
   .gym-image {
     display: block;
+    width: 678px;
     margin: 0 auto;
   }
 
   .gym-video {
+    width: 270px;
     top: 261px;
-    left: 206px;
+    left: 248px;
   }
 
   .gym-video__play {
-    top: -38%;
-    left: 43%;
+    width: 72px;
+    height: 72px;
+    top: -36px;
+    left: 45%;
+
+    &::before {
+      width: 52px;
+      height: 52px;
+      margin-top: 8px;
+      margin-left: 8px;
+    }
 
     &::after {
-      top: -45px;
+      top: -38px;
       left: 4px;
+      border-width: 6px 0 6px 12px;
     }
   }
 }
