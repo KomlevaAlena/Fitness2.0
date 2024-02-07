@@ -207,7 +207,7 @@
   }
 
   .games-wrapper {
-    width: 290px;
+    width: 293px;
     margin: 0;
     padding: 40px 45px 45px 45px;
   }
@@ -224,19 +224,23 @@
   .games-list {
     padding: 0;
     margin: 0;
-    margin-left: 37px;
+    margin-left: 39px;
     width: 56px;
+  }
+
+  .games-item__title {
+    font-weight: 300;
   }
 
   .games-image {
     display: block;
-    width: 368px;
+    width: 387px;
   }
 
   .games-description {
     width: 202px;
     margin-left: 0;
-    margin-top: 3px;
+    margin-top: 6px;
     margin-bottom: 21px;
   }
 
@@ -245,59 +249,57 @@
 
     &:first-of-type {
       margin-top: 0;
-    }
-
-    &:nth-of-type(2) {
-      margin-top: 10px;
-    }
-  }
-
-  .games-item__number {
-    font-size: 24px;
-    line-height: 24px;
-    margin-top: 0;
-    padding: 2px;
-
-  .games-item {
-    display: block;
-    font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
-    margin-right: 80px;
-
-    &:first-of-type {
 
       .games-item__number {
+        margin-left: 2px;
 
         &::before {
+          top: -2px;
+          left: -2px;
           width: 43px;
         }
       }
     }
 
     &:nth-of-type(2) {
-      margin-top: 5px;
+      margin-top: 10px;
 
       .games-item__number {
-        margin-left: -1px;
-        padding-top: 2px;
+        margin-left: 2px;
+        padding: 0;
 
         &::before {
-          width: 58px;
+          top: -3px;
+          width: 55px;
         }
       }
     }
-  }
 
-  .games-item__date {
-    font-size: 10px;
-    line-height: 10px;
-    margin-top: 0;
-    padding: 2px;
+    .games-item__number {
+      font-size: 24px;
+      line-height: 24px;
+      margin-top: 0;
+      padding: 0;
+    }
+
+    .games-item__date {
+      font-size: 10px;
+      line-height: 10px;
+      margin-top: 0;
+      padding: 2px;
+    }
+
+    .games-button {
+      width: 201px;
+      margin: 0;
+      padding: 20px 28px;
+    }
   }
 
   .games-button {
-    width: 201px;
     margin: 0;
-    padding: 20px 28px;
+    width: 201px;
+    padding: 20px 22px;
   }
 }
 
@@ -322,7 +324,7 @@
     padding: 22px 45px;
   }
 
-  .games-description  {
+  .games-description {
     width: 173px;
     font-size: 16px;
     line-height: 20px;
