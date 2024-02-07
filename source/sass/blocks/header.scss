@@ -107,17 +107,24 @@
     width: 768px;
   }
 
+  .main-nav__list {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
   .main-nav__logo-link {
     width: 111px;
     font-size: 24px;
     line-height: 24px;
+    margin-left: 41px;
   }
 
   .main-nav__tel {
     padding-left: 45px;
     width: 169px;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 24px;
+    margin-right: 43px;
   }
 }
 
