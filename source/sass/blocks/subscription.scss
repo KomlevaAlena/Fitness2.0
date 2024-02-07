@@ -318,7 +318,7 @@
   }
 
   .subscription-title {
-    padding-top: 100px;
+    padding-top: 98px;
     margin: 0 auto;
     font-size: 42px;
     font-weight: 600;
@@ -327,20 +327,31 @@
     text-align: center;
   }
 
-  .subscription-filter__radio {
-    flex-direction: column;
-    margin: 0 auto;
-    width: 768px;
-    padding: 0;
-    border: none;
-  }
-
   .subscription-filter__list {
     flex-direction: row;
+    justify-content: space-between;
     margin: 0 auto;
-    width: 768px;
+    width: 332px;
     padding: 0;
-    margin-top: 38px;
+    margin-top: 36px;
+
+    &::before {
+      width: 332px;
+      left: 0;
+    }
+  }
+
+  .subscription-filter__link {
+    font-size: 18px;
+    padding-bottom: 10px;
+
+    &:nth-of-type(1) {
+      margin: 0;
+    }
+  }
+
+  .subscription-card__wrapper {
+    width: 768px;
   }
 
   .subscription-card__list {
@@ -363,33 +374,77 @@
     }
 
     &--active {
-      padding: 110px 58px;
+      padding: 59px 58px;
+
+      .subscription-card__title {
+        font-size: 24px;
+        margin-left: 110px;
+        margin-top: 0;
+      }
+
+      .subscription-card__description {
+        margin-left: 104px;
+      }
+
+      .subscription-card__price {
+        margin-left: 71px;
+      }
+
+      .subscription-card__button {
+        margin-left: 51px;
+      }
     }
 
     &:first-of-type {
-      background-position: 50% 48%;
+      background-position: 50% 50%;
     }
 
     &:nth-of-type(2) {
-      background-position: 50% 48%;
+      background-position: 50% 50%;
     }
 
     &:nth-of-type(3) {
-      background-position: 50% 48%;
+      background-position: 50% 50%;
+
+      .subscription-card__title {
+        margin-left: 36px;
+      }
+
+      .subscription-card__description {
+        padding-top: 14px;
+        margin-left: 53px;
+      }
+
+      .subscription-card__price {
+        margin-left: 21px;
+      }
+
+      .subscription-card__button {
+        margin-left: -2px;
+        }
+      }
     }
   }
 
+  .subscription-card__title {
+    font-size: 24px;
+    margin-left: 44px;
+  }
+
   .subscription-card__description {
-    padding-top: 18px;
+    padding-top: 13px;
+    margin-left: 66px;
   }
 
   .subscription-card__price {
-    padding-top: 72px;
+    padding-top: 74px;
+    margin-left: 19px;
   }
 
   .subscription-card__button {
-    margin-top: 24px;
-    padding: 22px 44px;
+    margin-top: 23px;
+    padding: 21px 44px;
+    margin-left: -2px;
   }
 }
 
