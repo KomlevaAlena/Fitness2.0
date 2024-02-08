@@ -230,11 +230,15 @@
 @include vp-1365 {
   .judges {
     width: 768px;
-    padding-bottom: 100px;
+    padding-bottom: 91px;
+  }
+
+  .judges-wrapper {
+    width: 768px;
   }
 
   .judges-title {
-    padding-top: 100px;
+    padding-top: 101px;
     margin: 0 auto;
     font-size: 42px;
     font-weight: 600;
@@ -249,7 +253,11 @@
   }
 
   .judges-card {
-    width: 268px;
+    width: 300px;
+  }
+
+  .swiper-slide {
+    width: 300px;
   }
 
   .judges-card__wrapper {
@@ -260,14 +268,14 @@
     width: 268px;
   }
 
-  .button-prev {
-    left: -15px;
-    top: 326px;
+  .swiper-button-prev {
+    left: 25px;
+    top: 311px;
   }
 
-  .button-next {
-    right: -15px;
-    top: 326px;
+  .swiper-button-next {
+    right: 25px;
+    top: 311px;
   }
 }
 
@@ -312,8 +320,4 @@
     right: 0;
     top: 254px;
   }
-
-  //.judges-card__title {
-  //  display: none;
-  //}
 }
