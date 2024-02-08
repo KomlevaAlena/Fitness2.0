@@ -263,7 +263,7 @@
   .discounts-title {
     margin: 0 auto;
     margin-top: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 39px;
     font-size: 42px;
     font-weight: 600;
     line-height: 42px;
@@ -294,21 +294,28 @@
       }
 
       .discounts-description {
-        width: 177px;
-        margin-top: 15px;
+        width: 191px;
+        margin-top: 20px;
         margin-left: 45px;
+        font-size: 18px;
+        letter-spacing: -0.15px;
       }
 
       .discounts-button {
-        margin-left: 45px;
-        margin-top: 186px;
-        margin-bottom: 45px;
+        margin-left: 34px;
+        margin-top: 177px;
+        margin-bottom: 42px;
+
+        &::after {
+          top: 27px;
+        }
       }
 
       .discounts-image {
         position: absolute;
         content: "";
-        left: 50%;
+        left: 41%;
+        width: 400px;
       }
     }
 
@@ -317,6 +324,28 @@
       grid-column-end: 2;
       grid-row-start: 2;
       grid-row-end: 3;
+
+      .discounts-item__title {
+        margin-left: 28px;
+        margin-top: 23px;
+      }
+
+      .discounts-description {
+        width: 233px;
+        margin-top: 10px;
+        margin-left: 28px;
+        letter-spacing: -0.15px;
+      }
+
+      .discounts-button {
+        margin-left: 18px;
+        margin-top: 36px;
+        margin-bottom: 26px;
+
+        &::after {
+          top: 27px;
+        }
+      }
     }
 
     &:nth-of-type(3) {
@@ -324,6 +353,28 @@
       grid-column-end: 3;
       grid-row-start: 2;
       grid-row-end: 3;
+
+      .discounts-item__title {
+        margin-left: 28px;
+        margin-top: 23px;
+      }
+
+      .discounts-description {
+        width: 237px;
+        margin-top: 10px;
+        margin-left: 28px;
+        letter-spacing: -0.15px;
+      }
+
+      .discounts-button {
+        margin-left: 18px;
+        margin-top: 60px;
+        margin-bottom: 0;
+
+        &::after {
+          top: 27px;
+        }
+      }
     }
   }
 
@@ -336,17 +387,13 @@
     margin-top: 5px;
   }
 
-  .discounts-image {
-    width: 399px;
-  }
-
   .discounts-description {
     width: 239px;
     text-align: left;
   }
 
   .discounts-button {
-    margin-bottom: 35px;
+    margin-bottom: 26px;
   }
 }
 
