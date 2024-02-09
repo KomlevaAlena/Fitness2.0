@@ -16,7 +16,6 @@
   margin: 0 auto;
   flex-direction: column;
   width: 1160px;
-  margin: 0 auto;
 }
 
 .judges-title {
@@ -282,12 +281,16 @@
 @include vp-767 {
   .judges {
     width: 320px;
-    padding-bottom: 70px;
+    padding-bottom: 71px;
+  }
+
+  .judges-wrapper {
+    width: 320px;
   }
 
   .judges-title {
     width: 66px;
-    padding-top: 70px;
+    padding-top: 71px;
     font-size: 32px;
     line-height: 32px;
     letter-spacing: 0.96px;
@@ -296,7 +299,7 @@
   .judges-list {
     width: 226px;
     margin: 0 auto;
-    margin-top: 42px;
+    margin-top: 41px;
   }
 
   .judges-card {
@@ -311,13 +314,34 @@
     width: 226px;
   }
 
-  .button-prev {
-    left: 0;
-    top: 254px;
+  .judges-button {
+    width: 20px;
+    height: 20px;
   }
 
-  .button-next {
-    right: 0;
-    top: 254px;
+  .swiper-button-prev {
+    top: 271px;
+    left: 12px;
+
+    &::after {
+      mask-image: url("/img/stack.svg#sprite_prev-arrow");
+      width: 10px;
+      height: 19px;
+      mask-repeat: no-repeat;
+      mask-size: 10px 19px;
+    }
+  }
+
+  .swiper-button-next {
+    top: 271px;
+    right: 12px;
+
+    &::after {
+      mask-image: url("/img/stack.svg#sprite_next-arrow");
+      width: 10px;
+      height: 19px;
+      mask-repeat: no-repeat;
+      mask-size: 10px 19px;
+    }
   }
 }

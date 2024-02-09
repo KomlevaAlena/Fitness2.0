@@ -273,12 +273,13 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding-bottom: 208px;
   }
 
   .gym-wrapper__description {
     width: 290px;
     margin: 0 auto;
-    margin-top: 70px;
+    margin-top: 71px;
     align-items: start;
     text-align: start;
   }
@@ -296,12 +297,13 @@
     margin: 0;
     font-size: 18px;
     line-height: 20px;
-    margin-top: 13px;
+    margin-top: 12px;
+    letter-spacing: 0;
   }
 
   .gym-description {
     width: 279px;
-    margin-top: 40px;
+    margin-top: 38px;
     font-size: 14px;
     line-height: 22px;
 
@@ -313,7 +315,7 @@
   .gym-wrapper__media {
     width: 320px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 52px;
   }
 
   .gym-image {
@@ -332,8 +334,8 @@
     display: block;
     width: 72px;
     height: 72px;
-    top: 92px;
-    left: 120px;
+    top: 87px;
+    left: 124px;
 
     &::before {
       width: 52px;

@@ -272,7 +272,7 @@
 
   &:hover {
     color: rgba(255, 255, 255, 1);
-    background-image: linear-gradient(0.25turn, rgba(237, 2, 51, 1),  rgba(0, 62, 183, 1));
+    background-image: linear-gradient(0.25turn, rgba(237, 2, 51, 1), rgba(0, 62, 183, 1));
     outline: none;
     border: 1px solid rgba(16, 38, 84, 0);
     border-left: 1px solid rgba(237, 2, 51, 1);
@@ -281,7 +281,7 @@
 
   &:focus {
     color: rgba(255, 255, 255, 1);
-    background-image: linear-gradient(0.25turn, rgba(237, 2, 51, 1),  rgba(0, 62, 183, 1));
+    background-image: linear-gradient(0.25turn, rgba(237, 2, 51, 1), rgba(0, 62, 183, 1));
     outline: none;
     border: 1px solid rgba(16, 38, 84, 0);
     border-left: 1px solid rgba(237, 2, 51, 1);
@@ -290,7 +290,7 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.7);
-    background-image: linear-gradient(0.25turn, rgba(237, 2, 51, 1),  rgba(0, 62, 183, 1));
+    background-image: linear-gradient(0.25turn, rgba(237, 2, 51, 1), rgba(0, 62, 183, 1));
     outline: none;
     border: 1px solid rgba(16, 38, 84, 0);
     border-left: 1px solid rgba(237, 2, 51, 1);
@@ -421,7 +421,7 @@
 
       .subscription-card__button {
         margin-left: -2px;
-        }
+      }
     }
   }
 
@@ -452,12 +452,12 @@
     margin: 0 auto;
     flex-direction: column;
     width: 320px;
-    padding-bottom: 70px;
+    padding-bottom: 104px;
     background-image: none;
   }
 
   .subscription-title {
-    padding-top: 70px;
+    padding-top: 71px;
     width: 320px;
     font-size: 32px;
     line-height: 32px;
@@ -469,8 +469,17 @@
   }
 
   .subscription-filter__list {
+    width: 290px;
+    margin-top: 20px;
+
+    &::before {
+      width: 290px;
+      top: 33px;
+    }
+  }
+
+  .subscription-card__wrapper {
     width: 320px;
-    margin-top: 24px;
   }
 
   .subscription-filter__control {
@@ -484,24 +493,48 @@
     text-align: center;
   }
 
+  .subscription-filter__link {
+    font-size: 16px;
+    padding-bottom: 13px;
+  }
+
   .subscription-card__list {
     width: 320px;
-    margin-top: 35px;
+    margin-top: 34px;
   }
 
   .subscription-card__item {
     flex-direction: column;
     text-align: center;
     margin: 0 auto;
-    padding: 50px 42px;
+    padding: 53px 42px 50px;
     width: 290px;
 
     &:not(:last-child) {
-      margin-bottom: 40px;
+      margin-bottom: 35px;
     }
 
     &--active {
-      padding: 43px 35px;
+      padding: 45px 35px 43px;
+
+      .subscription-card__title {
+        font-size: 22px;
+        margin-left: 49px;
+      }
+
+      .subscription-card__description {
+        margin-left: 49px;
+      }
+
+      .subscription-card__price {
+        margin-left: 21px;
+      }
+
+      .subscription-card__button {
+        margin-left: 0;
+        margin-top: 23px;
+        padding: 22px 40px 20px;
+      }
     }
 
     &:first-of-type {
@@ -517,6 +550,27 @@
     &:nth-of-type(3) {
       background-size: 162px 60px;
       background-position: 50% 48%;
+      padding: 51px 42px 50px;
+
+      .subscription-card__title {
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .subscription-card__description {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 18px;
+      }
+
+      .subscription-card__price {
+        padding-top: 61px;
+      }
+
+      .subscription-card__button {
+        margin: 0 auto;
+        margin-top: 22px;
+      }
     }
   }
 
@@ -524,26 +578,29 @@
     width: 107px;
     font-size: 22px;
     line-height: 22px;
+    margin: 0 auto;
   }
 
   .subscription-card__description {
     width: 107px;
-    padding-top: 18px;
+    padding-top: 14px;
     font-size: 14px;
     line-height: 22px;
+    margin: 0 auto;
   }
 
   .subscription-card__price {
     width: 170px;
-    padding-top: 62px;
+    padding-top: 63px;
     font-size: 48px;
     line-height: 72px;
   }
 
   .subscription-card__button {
-    width: 205px;
-    margin-top: 18px;
-    padding: 22px 42px;
+    width: 207px;
+    margin: 0 auto;
+    margin-top: 22px;
+    padding: 20px 40px;
     font-size: 12px;
     line-height: 12px;
     letter-spacing: 0.6px;
