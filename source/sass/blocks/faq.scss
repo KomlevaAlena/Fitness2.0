@@ -345,7 +345,7 @@
 @include vp-1365 {
   .faq {
     width: 768px;
-    padding-bottom: 100px;
+    padding-bottom: 138px;
   }
 
   .faq-title {
@@ -360,20 +360,54 @@
   }
 
   .faq-list {
+    margin: 0 auto;
     width: 678px;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .faq-item {
+    width: 162px;
+    margin: 0;
+  }
+
+  .faq-button {
+    padding: 15px 34px;
+    padding-top: 18px;
+  }
+
+  .faq-card__wrapper {
     width: 678px;
+    margin-left: 45px;
   }
 
   .faq-item__list {
     width: 678px;
-    margin-top: 40px;
+    margin-top: 39px;
   }
 
   .faq-item__list--accordion {
     width: 678px;
+
+    &:not(:first-of-type) {
+      margin-top: 0;
+      padding-bottom: 24px;
+    }
+
+    &:last-of-type {
+      margin-top: 0;
+      padding-bottom: 24px;
+
+      .accordion__title {
+        margin-top: 27px;
+        width: 438px;
+      }
+
+      .accordion__button {
+        margin: 0;
+        margin-top: 28px;
+      }
+    }
   }
 
   .accordion {
@@ -381,19 +415,31 @@
   }
 
   .accordion__title {
-    width: 638px;
+    width: 630px;
     font-size: 22px;
     line-height: 22px;
+    margin-top: 35px;
+    padding: 0;
+  }
+
+  .accordion__button {
+    margin: 0;
+    margin-top: 24px;
+  }
+
+  .accordion__content {
+    width: 630px;
   }
 
   .accordion__description {
     display: block;
-    width: 638px;
-    margin-top: 11px;
+    width: 560px;
+    margin-top: 1px;
     margin-bottom: 25px;
     font-size: 18px;
     font-weight: 300;
     line-height: 24px;
+    letter-spacing: -0.15px;
   }
 }
 
