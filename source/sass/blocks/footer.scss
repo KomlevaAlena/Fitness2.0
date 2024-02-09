@@ -257,23 +257,31 @@
 @include vp-1365 {
   .footer-wrapper {
     width: 768px;
+    padding: 41px 0 40px 0;
   }
 
   .footer-nav__logo-link {
     display: block;
     width: 100px;
-    font-size: 22px;
+    font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+    font-size: 20px;
     font-weight: 400;
     line-height: 22px;
-    margin-left: 45px;
+    margin-left: 34px;
+  }
+
+  .footer-nav__list {
+    width: 414px;
+    margin-left: 43px;
   }
 
   .footer-nav__item {
-    margin-right: 10px;
+    margin-right: 0;
   }
 
   .footer-nav__link {
-    font-size: 14px;
+    font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+    font-size: 12px;
     line-height: 22px;
   }
 
