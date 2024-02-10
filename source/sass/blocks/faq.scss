@@ -88,7 +88,7 @@
 
   &:hover {
     color: rgba(255, 255, 255, 1);
-    background-image: linear-gradient(0.25turn, rgba(237, 2, 51, 1),  rgba(0, 62, 183, 1));
+    background-image: linear-gradient(0.25turn, rgba(237, 2, 51, 1), rgba(0, 62, 183, 1));
     outline: none;
     border: 1px solid rgba(16, 38, 84, 0);
     border-left: 1px solid rgba(237, 2, 51, 1);
@@ -97,7 +97,7 @@
 
   &:focus {
     color: rgba(255, 255, 255, 1);
-    background-image: linear-gradient(0.25turn, rgba(237, 2, 51, 1),  rgba(0, 62, 183, 1));
+    background-image: linear-gradient(0.25turn, rgba(237, 2, 51, 1), rgba(0, 62, 183, 1));
     outline: none;
     border: 1px solid rgba(16, 38, 84, 0);
     border-left: 1px solid rgba(237, 2, 51, 1);
@@ -106,7 +106,7 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.7);
-    background-image: linear-gradient(0.25turn, rgba(237, 2, 51, 1),  rgba(0, 62, 183, 1));
+    background-image: linear-gradient(0.25turn, rgba(237, 2, 51, 1), rgba(0, 62, 183, 1));
     outline: none;
     border: 1px solid rgba(16, 38, 84, 0);
     border-left: 1px solid rgba(237, 2, 51, 1);
@@ -307,12 +307,10 @@
 
   &:hover {
     border: 1px solid rgba(16, 38, 84, 1);
-
   }
 
   &:focus {
     border: 1px solid rgba(16, 38, 84, 1);
-
   }
 
   &:active {
@@ -446,32 +444,46 @@
 @include vp-767 {
   .faq {
     width: 320px;
-    padding-bottom: 70px;
+    padding-bottom: 91px;
   }
 
   .faq-title {
     width: 202px;
     margin-top: 70px;
-    margin-bottom: 50px;
+    margin-bottom: 37px;
     font-size: 32px;
     line-height: 32px;
     letter-spacing: 0.96px;
   }
 
   .faq-list {
-    width: 320px;
+    width: 290px;
+    margin: 0 auto;
   }
 
   .faq-item {
+    width: 141px;
+    margin-bottom: 8px;
+  }
+
+  .faq-button {
+    width: 100%;
+    font-size: 16px;
+    letter-spacing: 0.25px;
+    padding: 15px 30px 9px;
+  }
+
+  .faq-card__wrapper {
     width: 290px;
+    margin: 0 auto;
   }
 
   .faq-item__list {
     width: 290px;
-    margin-top: 40px;
+    margin-top: 21px;
   }
 
-  .faq-item__list--accordion {
+  .accordion__element {
     width: 290px;
   }
 
@@ -483,15 +495,90 @@
     width: 216px;
     font-size: 20px;
     line-height: 20px;
+    margin-top: 22px;
+  }
+
+  .accordion__button {
+    margin-top: 27px;
+    width: 15px;
+    height: 15px;
+    padding: 15px;
+
+    &::before {
+      width: 14px;
+      height: 2px;
+      top: 13px;
+      right: 8px;
+    }
+
+    &::after {
+      width: 14px;
+      height: 2px;
+      top: 13px;
+      right: 8px;
+    }
+  }
+
+  .accordion__element.is-active .accordion__button {
+    margin-top: 27px;
+    width: 15px;
+    height: 15px;
+    padding: 15px;
+
+    &::before {
+      width: 14px;
+      height: 2px;
+      top: 13px;
+      right: 8px;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .accordion__content {
+    width: 290px;
   }
 
   .accordion__description {
     display: block;
-    width: 290px;
+    width: 279px;
     margin-top: 20px;
     margin-bottom: 22px;
     font-size: 16px;
     font-weight: 300;
     line-height: 20px;
+  }
+
+  .faq-item__list--accordion {
+    width: 290px;
+
+    &:not(:first-of-type) {
+      padding-bottom: 20px;
+    }
+
+    &:nth-of-type(3) {
+      padding-bottom: 21px;
+
+      .accordion__button {
+        margin-top: 37px;
+      }
+    }
+
+    &:last-of-type {
+      margin-top: 0;
+      padding-bottom: 21px;
+
+      .accordion__title {
+        margin-top: 22px;
+        width: 233px;
+      }
+
+      .accordion__button {
+        margin: 0;
+        margin-top: 37px;
+      }
+    }
   }
 }
