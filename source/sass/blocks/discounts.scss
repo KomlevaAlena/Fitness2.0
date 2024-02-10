@@ -405,7 +405,7 @@
 
   .discounts-title {
     margin-top: 70px;
-    margin-bottom: 35px;
+    margin-bottom: 42px;
     font-size: 32px;
     line-height: 32px;
     letter-spacing: 0.96px;
@@ -425,7 +425,7 @@
   .discounts-item {
     width: 290px;
     margin: 0 auto;
-    padding-top: 45px;
+    padding-top: 46px;
     padding-bottom: 46px;
     display: flex;
     flex-wrap: wrap;
@@ -445,21 +445,28 @@
       }
 
       .discounts-price {
-        margin: 0 auto;
-        margin-top: 9px;
+        margin: 5px auto 0;
+        font-size: 60px;
+        letter-spacing: 2.5px;
       }
 
       .discounts-description {
         width: 190px;
-        margin: 0 auto;
-        margin-top: 20px;
+        margin: 17px auto 0;
         text-align: center;
+        font-size: 16px;
+        line-height: 20px;
+
       }
 
       .discounts-button {
         margin: 0 auto;
-        margin-top: 35px;
-        margin-bottom: 46px;
+        margin-top: 26px;
+        margin-bottom: 43px;
+
+        &::after {
+          top: 26px;
+        }
       }
 
       .discounts-image {
