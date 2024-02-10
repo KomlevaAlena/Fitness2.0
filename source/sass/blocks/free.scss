@@ -263,13 +263,13 @@
   .free {
     width: 100%;
     margin: 0 auto;
-    padding: 70px 15px;
+    padding: 71px 15px 69px;
   }
 
   .free-title {
     width: 224px;
     margin-right: auto;
-    margin-bottom: 40px;
+    margin-bottom: 9px;
     font-size: 32px;
     line-height: 32px;
     letter-spacing: 0.96px;
@@ -290,10 +290,38 @@
     width: 290px;
   }
 
-  .form-area__field {
-    display: block;
+  .form-area__name--input {
     width: 290px;
-    margin-top: 35px;
+
+    &::before {
+      width: 290px;
+      height: 2px;
+      top: 55px;
+    }
+
+    .form-area__field {
+      display: block;
+      width: 290px;
+      padding: 4px 0;
+    }
+  }
+
+  .form-area__phone--input {
+    width: 290px;
+
+    &::before {
+      width: 290px;
+      height: 2px;
+      left: 0;
+      top: 49px;
+    }
+
+    .form-area__field {
+      display: block;
+      width: 290px;
+      margin-top: 7px;
+      padding: 4px 0;
+    }
   }
 
   .free-form__button {
