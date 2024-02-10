@@ -61,7 +61,7 @@
       margin-top: 42px;
     }
 
-    .discounts-description {
+    .discounts-item__description {
       width: 201px;
       margin-top: 24px;
       margin-left: 45px;
@@ -69,7 +69,7 @@
       letter-spacing: 1.1px;
     }
 
-    .discounts-button {
+    .discounts-item__button {
       position: relative;
       margin-left: 34px;
       margin-top: 165px;
@@ -167,7 +167,7 @@
   line-height: 26px;
 }
 
-.discounts-price {
+.discounts-item__price {
   display: block;
   padding: 0;
   margin: 0;
@@ -178,7 +178,7 @@
   line-height: 70px;
 }
 
-.discounts-description {
+.discounts-item__description {
   display: block;
   padding: 0;
   margin: 0;
@@ -190,7 +190,7 @@
   letter-spacing: -0.25px;
 }
 
-.discounts-button {
+.discounts-item__button {
   position: relative;
   display: block;
   padding: 10px 10px 5px 10px;
@@ -293,7 +293,7 @@
         margin-top: 45px;
       }
 
-      .discounts-description {
+      .discounts-item__description {
         width: 191px;
         margin-top: 20px;
         margin-left: 45px;
@@ -301,7 +301,7 @@
         letter-spacing: -0.15px;
       }
 
-      .discounts-button {
+      .discounts-item__button {
         margin-left: 34px;
         margin-top: 177px;
         margin-bottom: 42px;
@@ -330,14 +330,14 @@
         margin-top: 23px;
       }
 
-      .discounts-description {
+      .discounts-item__description {
         width: 233px;
         margin-top: 10px;
         margin-left: 28px;
         letter-spacing: -0.15px;
       }
 
-      .discounts-button {
+      .discounts-item__button {
         margin-left: 18px;
         margin-top: 36px;
         margin-bottom: 26px;
@@ -359,14 +359,14 @@
         margin-top: 23px;
       }
 
-      .discounts-description {
+      .discounts-item__description {
         width: 237px;
         margin-top: 10px;
         margin-left: 28px;
         letter-spacing: -0.15px;
       }
 
-      .discounts-button {
+      .discounts-item__button {
         margin-left: 18px;
         margin-top: 60px;
         margin-bottom: 0;
@@ -383,16 +383,16 @@
     line-height: 24px;
   }
 
-  .discounts-price {
+  .discounts-item__price {
     margin-top: 5px;
   }
 
-  .discounts-description {
+  .discounts-item__description {
     width: 239px;
     text-align: left;
   }
 
-  .discounts-button {
+  .discounts-item__button {
     margin-bottom: 26px;
   }
 }
@@ -444,22 +444,21 @@
         margin: 0 auto;
       }
 
-      .discounts-price {
+      .discounts-item__price {
         margin: 5px auto 0;
         font-size: 60px;
         letter-spacing: 2.5px;
       }
 
-      .discounts-description {
+      .discounts-item__description {
         width: 190px;
         margin: 17px auto 0;
         text-align: center;
         font-size: 16px;
         line-height: 20px;
-
       }
 
-      .discounts-button {
+      .discounts-item__button {
         margin: 0 auto;
         margin-top: 26px;
         margin-bottom: 43px;
@@ -476,6 +475,44 @@
         width: 290px;
       }
     }
+
+    &:nth-of-type(2) {
+      margin: 10px auto 0;
+      padding-top: 39px;
+      padding-bottom: 31px;
+
+      .discounts-item__title {
+        margin: 0 auto;
+      }
+
+      .discounts-item__description {
+        margin: 10px auto 0;
+        width: 194px;
+      }
+
+      .discounts-item__button {
+        margin: 21px auto 0;
+      }
+    }
+
+    &:nth-of-type(3) {
+      margin: 0 auto;
+      padding-top: 39px;
+      padding-bottom: 31px;
+
+      .discounts-item__title {
+        margin: 0 auto;
+      }
+
+      .discounts-item__description {
+        margin: 10px auto 0;
+        width: 194px;
+      }
+
+      .discounts-item__button {
+        margin: 21px auto 0;
+      }
+    }
   }
 
   .discounts-item__title {
@@ -484,12 +521,12 @@
     margin: 0 auto;
   }
 
-  .discounts-price {
+  .discounts-item__price {
     margin: 0 auto;
     margin-top: 5px;
   }
 
-  .discounts-description {
+  .discounts-item__description {
     width: 160px;
     margin: 0 auto;
     margin-top: 10px;
@@ -498,7 +535,7 @@
     text-align: center;
   }
 
-  .discounts-button {
+  .discounts-item__button {
     margin: 0 auto;
     margin-top: 31px;
   }
