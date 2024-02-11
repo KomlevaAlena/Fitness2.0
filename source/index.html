@@ -48,7 +48,7 @@
               <source media="(max-width: 1365px)" srcset="img/superman-tablet-1х.webp 1x, img/superman-tablet-2х.webp 2x" width="324" height="390">
               <img src="img/superman-1х.webp" srcset="img/superman-2х.webp"  width="500" height="524" alt="Спортивный мужчина в футболке с символом Супермена.">
             </picture>
-            <a class="hero-button button" href="#">Купить абонемент</a>
+            <a class="hero-button button" href="#subscription">Купить абонемент</a>
           </div>
         </section>
         <section class="gym">
@@ -76,7 +76,7 @@
             <div class="gym-video__play"><span class="visually-hidden">play</span></div>
           </div>
         </section>
-        <section class="subscription" data-tabs="parent">
+        <section class="subscription" name="subscription" data-tabs="parent">
           <h2 class="subscription-title">Абонементы</h2>
           <ul class="subscription-filter__list" data-tabs="controls">
             <li class="subscription-filter__item">
@@ -668,14 +668,14 @@
                 <span class="form-area__name">
                   <div class="form-area__name--input custom-input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required="">
                     <label>
-                      <input type="text" name="user-name-1" class="form-area__field" id="form-area__name" placeholder="Имя" minlength="2" required>
+                      <input type="text" name="user-name-1" class="form-area__field" id="form-area__name" placeholder="Имя" minlength="1" pattern="^[A-Za-zА-Яа-яЁё\s]{1,}" required>
                     </label>
                   </div>
                 </span>
                 <span class="form-area__phone">
                   <div class="form-area__phone--input custom-input" data-validate-type="phone" data-on-input-validate="" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required="" data-phone-length="18">
                     <label>
-                      <input type="tel" name="user-phone" class="form-area__field" id="form-phone" placeholder="Телефон" minlength="11" required>
+                      <input type="tel" name="user-phone" class="form-area__field" id="form-phone" placeholder="Телефон" minlength="11" pattern="^[0-9]+$" required>
                     </label>
                   </div>
                 </span>
@@ -708,7 +708,7 @@
       <footer>
         <div class="container footer-wrapper">
           <a class="footer-nav__logo-link" href="index.html">
-            Supergym
+            <span class="visually-hidden">Supergym</span>
           </a>
           <ul class="footer-nav__list">
             <li class="footer-nav__item">

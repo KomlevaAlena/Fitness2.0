@@ -142,6 +142,7 @@
 }
 
 .judges-card {
+  display: block;
   position: relative;
   overflow: hidden;
 
@@ -253,9 +254,20 @@
 
   .judges-card {
     width: 300px;
+
+    .judges-image {
+      display: block;
+      width: 268px;
+    }
   }
 
   .swiper-slide {
+    display: block;
+    width: 300px;
+  }
+
+  .swiper-slide-active {
+    display: block;
     width: 300px;
   }
 

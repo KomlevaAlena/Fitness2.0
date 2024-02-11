@@ -15,7 +15,6 @@
 
 .footer-nav__logo-link {
   display: block;
-  width: 130px;
   margin: 0;
   padding: 5px 10px;
   color: rgba(255, 255, 255, 1);
@@ -28,6 +27,13 @@
   text-transform: uppercase;
   border-bottom: 1px solid rgba(255, 255, 255, 0);
   margin-left: 92px;
+  mask-image: url("/img/stack.svg#sprite_SUPERGYM-footer-desk");
+  width: 109px;
+  height: 24px;
+  mask-repeat: no-repeat;
+  mask-size: 102px 22px;
+  background-color: rgba(255, 255, 255, 1);
+
 
   &:hover {
     outline: none;
@@ -262,12 +268,17 @@
 
   .footer-nav__logo-link {
     display: block;
-    width: 100px;
     font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 22px;
     margin-left: 34px;
+    mask-image: url("/img/stack.svg#sprite_SUPERGYM-footer-tablet");
+    width: 100px;
+    height: 22px;
+    mask-repeat: no-repeat;
+    mask-size: 100px 22px;
+    background-color: rgba(255, 255, 255, 1);
   }
 
   .footer-nav__list {
@@ -304,11 +315,16 @@
 
   .footer-nav__logo-link {
     display: block;
-    width: 100px;
     font-size: 20px;
     line-height: 20px;
     margin-left: 5px;
     letter-spacing: 0;
+    mask-image: url("/img/stack.svg#sprite_SUPERGYM-footer-mobile");
+    width: 100px;
+    height: 15px;
+    mask-repeat: no-repeat;
+    mask-size: 100px 15px;
+    background-color: rgba(255, 255, 255, 1);
   }
 
   .footer-nav__list {
