@@ -14,8 +14,9 @@
   flex-wrap: wrap;
   justify-content: start;
   flex-direction: column;
+  width: 683px;
   margin: 0;
-  padding: 61px 147px 60px 103px;
+  padding: 61px 147px 60px 120px;
   color: rgba(16, 38, 84, 1);
   border-top: 1px solid rgba(116, 129, 156, 1);
 }
@@ -47,10 +48,10 @@
     position: absolute;
     content: "";
     width: 1px;
-    height: 117px;
+    height: 115px;
     background-color: rgba(116, 129, 156, 1);
-    top: 38px;
-    left: 211px;
+    top: 40px;
+    left: 220px;
   }
 }
 
