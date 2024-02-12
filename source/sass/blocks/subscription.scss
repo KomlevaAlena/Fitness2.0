@@ -126,13 +126,13 @@
   justify-content: start;
   flex-direction: column;
   text-align: center;
-  padding: 67px 20px 64px;
+  padding: 69px 20px 64px;
   margin: 0;
   width: 360px;
   background-color: rgba(255, 255, 255, 1);
 
   &--active {
-    padding: 59px 20px;
+    padding: 61px 20px;
     border: 7px solid;
     border-image: linear-gradient(97deg, rgba(237, 2, 51, 1) 17.6%, rgba(0, 62, 183, 1) 95.31%);
     border-image-slice: 1;
@@ -278,7 +278,7 @@
     margin: 0 auto;
     flex-direction: column;
     width: 768px;
-    padding-bottom: 100px;
+    padding-bottom: 102px;
   }
 
   .subscription-title {

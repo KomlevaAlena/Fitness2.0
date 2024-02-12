@@ -64,23 +64,31 @@
             </p>
           </div>
           <div class="gym-wrapper__media">
-            <!--тут будут изображения в вебпи <img class="gym-image" src="img/gym-view.jpg" width="660" height="401" alt="Оющий вид спортзала, белый с контрастными тренаженами.">-->
             <picture class="gym-image">
               <source media="(max-width: 767px)" srcset="img/gym-view-mobile-1x.webp 1x, img/gym-view-mobile-2x.webp 2x" width="320" height="313">
               <source media="(max-width: 1365px)" srcset="img/gym-view-tablet-1x.webp 1x, img/gym-view-tablet-2x.webp 2x" width="678" height="345">
               <img src="img/gym-view-1x.webp" srcset="img/gym-view-2x.webp"  width="660" height="401" alt="Общий вид спортзала, белый с контрастными тренаженами.">
             </picture>
-            <video class="gym-video" src="https://www.youtube.com/watch?v=9TZXsZItgdw" width="364" height="228" poster="img/gym-video.jpg">
-              <code>Обзор зала</code>
-            </video> <!--нужен source?-->
-            <div class="gym-video__play"><span class="visually-hidden">play</span></div>
+            <div class="gym-video">
+              <template>
+                <iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw?si=qZlEn9cz4O1Q1WWy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </template>
+              <picture class="gym-video__image">
+                <source media="(max-width: 767px)" srcset="img/gym-video-mobile-1x.webp 1x, img/gym-video-mobile-2x.webp 2x" width="320" height="167">
+                <source media="(max-width: 1365px)" srcset="img/gym-video-tablet-1x.webp 1x, img/gym-video-tablet-2x.webp 2x" width="266" height="167">
+                <img src="img/gym-video-1x.webp" srcset="img/gym-video-2x.webp"  width="364" height="228" alt="Общий вид спортзала.">
+              </picture>
+              <div class="gym-video__play">
+                <span class="visually-hidden">play</span>
+              </div>
+            </div>
           </div>
         </section>
         <section class="subscription" id="subscription" data-tabs="parent">
           <h2 class="subscription-title">Абонементы</h2>
           <ul class="subscription-filter__list" data-tabs="controls">
             <li class="subscription-filter__item">
-              <a class="subscription-filter__link subscription-filter__link--active" href="#" data-tabs="control">1 месяц</a>
+              <a class="subscription-filter__link subscription-filter__link--active is-active" href="#" data-tabs="control">1 месяц</a>
             </li>
             <li class="subscription-filter__item">
               <a class="subscription-filter__link" href="#" data-tabs="control">6 месяцев</a>
@@ -97,7 +105,7 @@
                 <span class="subscription-card__price">5000 <span>₽</span></span>
                 <a class="subscription-card__button button" href="#">Купить абонемент</a>
               </li>
-              <li class="subscription-card__item subscription-card__item--active">
+              <li class="subscription-card__item subscription-card__item--active is-active">
                 <h3 class="subscription-card__title">Дневной</h3>
                 <p class="subscription-card__description">с 8:00 до 17:00 </p>
                 <span class="subscription-card__price">1700 <span>₽</span></span>

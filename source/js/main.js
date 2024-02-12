@@ -23,14 +23,17 @@ window.addEventListener('DOMContentLoaded', () => {
       prevEl: '.swiper-button-prev',
     },
     breakpoints: {
-      767: {
+      320: {
         slidesPerView: 1,
+        spaceBetween: 0,
       },
-      769: {
+      768: {
         slidesPerView: 2,
+        spaceBetween: 32,
       },
       1366: {
         slidesPerView: 4,
+        spaceBetween: 40,
       },
     },
   });
@@ -44,10 +47,10 @@ window.addEventListener('DOMContentLoaded', () => {
       prevEl: '.button-prev',
     },
     breakpoints: {
-      767: {
+      320: {
         slidesPerView: 1,
       },
-      1365: {
+      768: {
         slidesPerView: 1,
       },
       1366: {
@@ -80,6 +83,11 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
+document.querySelector('.gym-video').addEventListener('click', (event) => {
+  const template = event.currentTarget.querySelector('template');
+  event.currentTarget.replaceChildren(template.content);
+});
 
 // ---------------------------------
 

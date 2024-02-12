@@ -77,54 +77,28 @@
     background-color: rgba(16, 38, 84, 1);
     color: rgba(255, 255, 255, 1);
     border: 1px solid rgba(255, 255, 255, 0);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 0;
-
-    &::before {
-      display: block;
-      position: absolute;
-      content: "";
-      width: 190px;
-      height: 1px;
-      background-color: rgba(255, 255, 255, 0.5);
-      top: 58px;
-      left: 0;
-      z-index: 5;
-    }
 
     &:hover {
       border: 1px solid rgba(255, 255, 255, 0);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
       outline: none;
-
-      &::before {
-        background-color: rgba(255, 255, 255, 1);
-      }
     }
 
     &:focus {
       border: 1px solid rgba(255, 255, 255, 1);
       outline: none;
-
-      &::before {
-        background-color: rgba(255, 255, 255, 0);
-      }
     }
 
     &:active {
       border: 1px solid rgba(255, 255, 255, 1);
       outline: none;
-
-      &::before {
-        background-color: rgba(255, 255, 255, 0);
-      }
     }
 
     &:disabled {
-      border: 1px solid rgba(255, 255, 255, 0);
+      border: 1px solid rgba(255, 255, 255, 0.3);
       outline: none;
-
-      &::before {
-        background-color: rgba(255, 255, 255, 0.3);
-      }
     }
 
     &:valid:not(:placeholder-shown) {
@@ -157,54 +131,28 @@
     background-color: rgba(16, 38, 84, 1);
     color: rgba(255, 255, 255, 1);
     border: 1px solid rgba(255, 255, 255, 0);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 0;
-
-    &::before {
-      display: block;
-      position: absolute;
-      content: "";
-      width: 190px;
-      height: 1px;
-      background-color: rgba(255, 255, 255, 0.5);
-      top: 58px;
-      left: 3px;
-      z-index: 5;
-    }
 
     &:hover {
       border: 1px solid rgba(255, 255, 255, 0);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
       outline: none;
-
-      &::before {
-        background-color: rgba(255, 255, 255, 1);
-      }
     }
 
     &:focus {
       border: 1px solid rgba(255, 255, 255, 1);
       outline: none;
-
-      &::before {
-        background-color: rgba(255, 255, 255, 0);
-      }
     }
 
     &:active {
       border: 1px solid rgba(255, 255, 255, 1);
       outline: none;
-
-      &::before {
-        background-color: rgba(255, 255, 255, 0);
-      }
     }
 
     &:disabled {
-      border: 1px solid rgba(255, 255, 255, 0);
+      border: 1px solid rgba(255, 255, 255, 0.3);
       outline: none;
-
-      &::before {
-        background-color: rgba(255, 255, 255, 0.3);
-      }
     }
 
     &:valid:not(:placeholder-shown) {
@@ -212,9 +160,7 @@
     }
 
     &:invalid:not(:placeholder-shown) {
-      &::before {
-        background-color: rgba(255, 18, 31, 1);
-      }
+      border-bottom: 1px solid rgba(255, 18, 31, 1);
     }
 
     &::placeholder {
