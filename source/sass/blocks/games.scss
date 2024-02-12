@@ -23,7 +23,7 @@
   width: 180px;
   grid-column-start: 1;
   margin-left: 80px;
-  padding-top: 13px;
+  padding-top: 12px;
   font-family: "AlumniSans-SemiBold", "Arial", sans-serif;
   font-size: 82px;
   font-weight: 600;
@@ -123,7 +123,7 @@
     line-height: 40px;
     width: 37px;
     margin: 0;
-    margin-top: 6px;
+    margin-top: 5px;
     padding: 0;
     padding-top: 7px;
     border-top: 1px solid rgba(255, 255, 255, 0);
@@ -154,10 +154,10 @@
   display: block;
   text-align: center;
   color: rgba(255, 255, 255, 1);
-  border-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(255, 255, 255, 1);
   width: 340px;
   margin: 40px 0 75px 80px;
-  padding: 27px 56px;
+  padding: 24px 52px 27px;
   grid-column-start: 1;
   grid-row-start: 3;
   grid-column-end: 3;
@@ -169,6 +169,7 @@
     border: 1px solid rgba(16, 38, 84, 0);
     border-left: 1px solid rgba(237, 2, 51, 1);
     border-right: 1px solid rgba(0, 62, 183, 1);
+    padding: 24px 52px 27px;
   }
 
   &:focus {
@@ -178,6 +179,7 @@
     border: 1px solid rgba(16, 38, 84, 0);
     border-left: 1px solid rgba(237, 2, 51, 1);
     border-right: 1px solid rgba(0, 62, 183, 1);
+    padding: 24px 52px 27px;
   }
 
   &:active {
@@ -187,6 +189,7 @@
     border: 1px solid rgba(16, 38, 84, 0);
     border-left: 1px solid rgba(237, 2, 51, 1);
     border-right: 1px solid rgba(0, 62, 183, 1);
+    padding: 24px 52px 27px;
   }
 
   &:disabled {
@@ -194,6 +197,7 @@
     background-color: transparent;
     outline: none;
     border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 24px 52px 27px;
   }
 }
 

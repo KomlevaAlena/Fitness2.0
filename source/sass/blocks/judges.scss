@@ -66,11 +66,15 @@
 .swiper-button-prev {
   position: absolute;
   content: "";
-  top: 348px;
-  left: 26px;
+  top: 338px;
+  left: 29px;
 
   &::after {
     display: block;
+    position: absolute;
+    content: "";
+    top: 18%;
+    left: 27%;
     margin: 0 auto;
     mask-image: url("/img/stack.svg#sprite_prev-arrow");
     width: 18px;
@@ -101,11 +105,15 @@
   display: block;
   position: absolute;
   content: "";
-  top: 348px;
-  right: 26px;
+  top: 338px;
+  right: 30px;
 
   &::after {
     display: block;
+    position: absolute;
+    content: "";
+    top: 18%;
+    right: 27%;
     margin: 0 auto;
     mask-image: url("/img/stack.svg#sprite_next-arrow");
     width: 18px;
@@ -145,6 +153,7 @@
   display: block;
   position: relative;
   overflow: hidden;
+  width: 260px;
 
   &:hover {
     & .judges-card__wrapper {
