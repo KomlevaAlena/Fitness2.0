@@ -34,13 +34,13 @@
 
   &:nth-of-type(1) {
     grid-column-start: 1;
-    margin-top: 224px;
+    margin-top: 230px;
   }
 
   &:nth-of-type(2) {
     grid-column-start: 2;
     grid-row-start: 1;
-    margin-top: 56px;
+    margin-top: 61px;
     margin-right: 70px;
   }
 }
@@ -86,8 +86,10 @@
   width: 231px;
   margin: 0 auto;
   margin-bottom: 72px;
-  margin-top: 49px;
-  margin-right: 67px;
+  margin-top: 47px;
+  margin-right: 68px;
+  padding: 26px 52px 24px;
+  text-align: center;
   color: rgba(255, 255, 255, 1);
   border: 1px solid rgba(255, 255, 255, 1);
   font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
@@ -103,7 +105,7 @@
   &:hover {
     color: rgba(16, 58, 174, 1);
     background-color: rgba(255, 255, 255, 1);
-    padding: 23px 52px;
+    padding: 26px 52px 24px;
     outline: none;
     border: 1px solid rgba(255, 255, 255, 0);
   }
@@ -111,7 +113,7 @@
   &:focus {
     color: rgba(16, 58, 174, 1);
     background-color: rgba(255, 255, 255, 1);
-    padding: 23px 52px;
+    padding: 26px 52px 24px;
     outline: none;
     border: 1px solid rgba(255, 255, 255, 0);
   }
@@ -119,13 +121,13 @@
   &:active {
     color: rgba(16, 38, 84, 1);
     background-color: rgba(255, 255, 255, 1);
-    padding: 23px 52px;
+    padding: 26px 52px 24px;
     outline: none;
     border: 1px solid rgba(255, 255, 255, 0);
   }
 
   &:disabled {
-    padding: 23px 52px;
+    padding: 26px 52px 24px;
     color: rgba(255, 255, 255, 0.5);
     background-color: transparent;
     outline: none;
@@ -138,6 +140,8 @@
   grid-column-start: 3;
   grid-row-start: 1;
   grid-row-end: 3;
+  width: 500px;
+  margin-left: 3px;
 }
 
 @include vp-1365 {
