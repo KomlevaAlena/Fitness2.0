@@ -147,7 +147,7 @@
 @include vp-1365 {
   .hero {
     width: 768px;
-    padding-bottom: 92px;
+    padding-bottom: 90px;
   }
 
   .hero-wrapper {
@@ -200,19 +200,19 @@
     grid-row-start: 2;
 
     &:hover {
-      padding: 22px;
+      padding: 21px;
     }
 
     &:focus {
-      padding: 22px;
+      padding: 21px;
     }
 
     &:active {
-      padding: 22px;
+      padding: 21px;
     }
 
     &:disabled {
-      padding: 22px;
+      padding: 21px;
     }
   }
 

@@ -279,10 +279,6 @@
     flex-direction: column;
     width: 768px;
     padding-bottom: 100px;
-    background-image: url("/img/weight-plates-tablet.png");
-    background-size: 323px 407px;
-    background-position: 100% 36%;
-    background-repeat: no-repeat;
   }
 
   .subscription-title {
@@ -334,7 +330,7 @@
     flex-direction: column;
     text-align: center;
     margin: 0 auto;
-    padding: 65px 117px;
+    padding: 66px 20px 64px;
     width: 440px;
 
     &:not(:last-child) {
@@ -364,54 +360,33 @@
     }
 
     &:first-of-type {
-      background-position: 50% 50%;
+      background-position: 50% 51%;
     }
 
     &:nth-of-type(2) {
-      background-position: 50% 50%;
+      background-position: 50% 51%;
     }
 
     &:nth-of-type(3) {
-      background-position: 50% 50%;
-
-      .subscription-card__title {
-        margin-left: 36px;
-      }
-
-      .subscription-card__description {
-        padding-top: 14px;
-        margin-left: 53px;
-      }
-
-      .subscription-card__price {
-        margin-left: 21px;
-      }
-
-      .subscription-card__button {
-        margin-left: -2px;
-      }
+      background-position: 50% 51%;
     }
   }
 
   .subscription-card__title {
     font-size: 24px;
-    margin-left: 44px;
   }
 
   .subscription-card__description {
-    padding-top: 13px;
-    margin-left: 66px;
+    padding-top: 15px;
   }
 
   .subscription-card__price {
-    padding-top: 74px;
-    margin-left: 19px;
+    padding-top: 78px;
   }
 
   .subscription-card__button {
     margin-top: 23px;
     padding: 21px 44px;
-    margin-left: -2px;
   }
 }
 
