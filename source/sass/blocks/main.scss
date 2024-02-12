@@ -8,11 +8,24 @@
 }
 
 .main-container {
+  position: relative;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: column;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 470px;
+    height: 494px;
+    background-image: url("/img/weight-plates-desk.png");
+    background-size: 470px 494px;
+    background-repeat: no-repeat;
+    top: 1908px;
+    right: -186px;
+  }
 }
 
 .button {
@@ -33,5 +46,27 @@
     border: none;
     padding: 27px 44px;
     background-image: linear-gradient(0.25turn, rgba(237, 2, 51, 1),  rgba(0, 62, 183, 1));
+  }
+}
+
+@include vp-1365 {
+  .main-container {
+    &::before {
+      width: 403px;
+      height: 422px;
+      background-image: url("/img/weight-plates-tablet.png");
+      background-size: 403px 422px;
+      background-repeat: no-repeat;
+      top: 1907px;
+      right: -166px;
+    }
+  }
+}
+
+@include vp-767 {
+  .main-container {
+    &::before {
+      display: none;
+    }
   }
 }

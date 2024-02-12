@@ -8,10 +8,6 @@
   color: rgba(16, 38, 84, 1);
   background-color: rgba(248, 249, 252, 1);
   padding-bottom: 153px;
-  background-image: url("/img/weight-plates-desk.png");
-  background-size: 470px 494px;
-  background-position: 121% 142%;
-  background-repeat: no-repeat;
 }
 
 .subscription-title {
@@ -36,7 +32,7 @@
   margin: 0 auto;
   width: 1160px;
   padding: 0;
-  margin-top: 34px;
+  margin-top: 33px;
   list-style-type: none;
 
   &::before {
@@ -116,11 +112,11 @@
 .subscription-card__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   margin: 0 auto;
-  width: 1160px;
+  width: 100%;
   padding: 0;
-  margin-top: 37px;
+  margin-top: 35px;
   list-style-type: none;
 }
 
@@ -130,24 +126,16 @@
   justify-content: start;
   flex-direction: column;
   text-align: center;
-  margin: 0 auto;
-  padding: 67px 65px;
-  width: 335px;
+  padding: 67px 20px 64px;
+  margin: 0;
+  width: 360px;
   background-color: rgba(255, 255, 255, 1);
 
   &--active {
-    padding: 60px 72px;
+    padding: 59px 20px;
     border: 7px solid;
     border-image: linear-gradient(97deg, rgba(237, 2, 51, 1) 17.6%, rgba(0, 62, 183, 1) 95.31%);
     border-image-slice: 1;
-
-    .subscription-card__title {
-      margin-left: 40px;
-    }
-
-    .subscription-card__description {
-      margin-left: 40px;
-    }
 
     .subscription-card__button {
       border: 1px solid rgba(16, 38, 84, 0);
@@ -189,39 +177,23 @@
 
   &:first-of-type {
     background-image: url("/img/5000.png");
-    background-size: 197px 81px;
-    background-position: 37% 47%;
+    background-size: 197px 73px;
+    background-position: 49% 46%;
     background-repeat: no-repeat;
   }
 
   &:nth-of-type(2) {
     background-image: url("/img/1700.png");
-    background-size: 203px 80px;
-    background-position: 50% 47%;
+    background-size: 194px 73px;
+    background-position: 51% 46%;
     background-repeat: no-repeat;
   }
 
   &:nth-of-type(3) {
     background-image: url("/img/2700.png");
-    background-size: 203px 80px;
-    background-position: 50% 47%;
+    background-size: 194px 73px;
+    background-position: 49% 46%;
     background-repeat: no-repeat;
-
-    .subscription-card__title {
-      margin-left: 41px;
-    }
-
-    .subscription-card__description {
-      margin-left: 68px;
-    }
-
-    .subscription-card__price {
-      margin-left: 31px;
-    }
-
-    .subscription-card__button {
-      margin-left: 13px;
-    }
   }
 }
 
@@ -231,7 +203,6 @@
   font-weight: 700;
   line-height: 26px;
   margin: 0 auto;
-  margin-left: 26px;
   padding: 0;
   text-align: center;
 }
@@ -240,10 +211,9 @@
   display: block;
   font-size: 16px;
   font-weight: 300;
-  line-height: 24px;
+  line-height: 18px;
   margin: 0 auto;
-  margin-left: 52px;
-  padding-top: 6px;
+  padding-top: 9px;
 }
 
 .subscription-card__price {
@@ -254,8 +224,7 @@
   font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
   color: rgba(16, 58, 174, 1);
   margin: 0 auto;
-  margin-left: 5px;
-  padding-top: 69px;
+  padding-top: 72px;
 
   span {
     color: rgba(16, 38, 84, 1);
@@ -265,8 +234,7 @@
 .subscription-card__button {
   display: block;
   margin: 0 auto;
-  margin-top: 33px;
-  margin-left: -14px;
+  margin-top: 34px;
   width: 208px;
   padding: 26px 44px;
 
