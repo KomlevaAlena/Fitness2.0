@@ -670,20 +670,20 @@
           </div>
         </section>
           <div class="contacts-wrapper">
-            <section class="free">
+            <section class="free" data-form-validate>
               <h2 class="free-title">Бесплатное занятие</h2>
               <form class="free-form form" action="https://echo.htmlacademy.ru/" method="post">
                 <span class="form-area__name">
-                  <div class="form-area__name--input custom-input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required="">
-                    <label>
-                      <input type="text" name="user-name-1" class="form-area__field" id="form-area__name" placeholder="Имя" minlength="1" pattern="^[A-Za-zА-Яа-яЁё\s]{1,}" data-required data-validate-type="text">
+                  <div class="form-area__name--input custom-input" data-validate-type="text" data-on-input-validate="" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
+                    <label class="form-area__name--label">
+                      <input type="text" name="user-name-1" class="form-area__field" id="form-area__name" placeholder="Имя">
                     </label>
                   </div>
                 </span>
                 <span class="form-area__phone">
-                  <div class="form-area__phone--input custom-input" data-validate-type="phone" data-on-input-validate="" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required="" data-phone-length="18">
-                    <label>
-                      <input type="tel" name="user-phone" class="form-area__field" id="form-phone" placeholder="Телефон" minlength="11" pattern="^[0-9]+$" data-required data-validate-type="phone">
+                  <div class="form-area__phone--input custom-input" data-validate-type="phone" data-on-input-validate="" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required data-phone-length="18">
+                    <label class="form-area__phone--label">
+                      <input type="text" name="user-phone" class="form-area__field" id="form-phone" placeholder="Телефон">
                     </label>
                   </div>
                 </span>
