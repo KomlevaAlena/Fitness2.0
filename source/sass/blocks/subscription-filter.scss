@@ -6,7 +6,7 @@
   margin: 0 auto;
   width: 1160px;
   padding: 0;
-  margin-top: 33px;
+  margin-top: 34px;
   list-style-type: none;
 
   &::before {
@@ -62,17 +62,17 @@
     border-bottom: 2px solid rgba(209, 10, 66, 1);
   }
 
-  .is-active {
-    color: rgba(16, 38, 84, 1);
-    border-bottom: 2px solid rgba(209, 10, 66, 1);
-  }
-
   &:disabled {
     color: rgba(16, 38, 84, 0.3);
     outline: none;
     border: none;
     border-bottom: 2px solid rgba(16, 38, 84, 0.3);
   }
+}
+
+.filter-link.is-active {
+  color: rgba(16, 38, 84, 1);
+  border-bottom: 2px solid rgba(209, 10, 66, 1);
 }
 
 @include vp-1365 {
@@ -94,7 +94,7 @@
     font-size: 18px;
     padding-bottom: 10px;
 
-    &:nth-of-type(1) {
+    &:first-of-type {
       margin: 0;
     }
   }

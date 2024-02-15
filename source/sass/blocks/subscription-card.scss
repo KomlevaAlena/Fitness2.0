@@ -10,18 +10,20 @@
 }
 
 .card-item {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
   flex-direction: column;
   text-align: center;
-  padding: 69px 20px 64px;
+  padding: 61px 20px 58px;
   margin: 0;
   width: 360px;
   background-color: rgba(255, 255, 255, 1);
+  border: 7px solid rgba(232, 232, 232, 0);
 
-  .is-active {
-    padding: 61px 20px;
+  &:hover {
+    padding: 61px 20px 58px;
     border: 7px solid;
     border-image: linear-gradient(97deg, rgba(237, 2, 51, 1) 17.6%, rgba(0, 62, 183, 1) 95.31%);
     border-image-slice: 1;
@@ -30,59 +32,98 @@
       border: 1px solid rgba(16, 38, 84, 0);
       border-left: 1px solid rgba(237, 2, 51, 1);
       border-right: 1px solid rgba(0, 62, 183, 1);
-
-      &:hover {
-        color: rgba(16, 58, 174, 1);
-        background-color: rgba(255, 255, 255, 1);
-        background-image: none;
-        outline: none;
-        border: 1px solid rgba(16, 38, 84, 1);
-      }
-
-      &:focus {
-        color: rgba(16, 58, 174, 1);
-        background-color: rgba(255, 255, 255, 1);
-        background-image: none;
-        outline: none;
-        border: 1px solid rgba(16, 38, 84, 1);
-      }
-
-      &:active {
-        color: rgba(16, 38, 84, 1);
-        background-color: rgba(255, 255, 255, 1);
-        background-image: none;
-        outline: none;
-        border: 1px solid rgba(16, 38, 84, 0);
-      }
-
-      &:disabled {
-        color: rgba(255, 255, 255, 0.5);
-        background-color: transparent;
-        outline: none;
-        border: 1px solid rgba(255, 255, 255, 0.5);
-      }
+      background-image: linear-gradient(0.25turn, rgba(237, 2, 51, 1), rgba(0, 62, 183, 1));
+      color: rgba(255, 255, 255, 1);
     }
   }
 
-  &:first-of-type {
-    background-image: url("/img/5000.png");
-    background-size: 197px 73px;
-    background-position: 49% 46%;
-    background-repeat: no-repeat;
+  &:focus {
+    padding: 61px 20px 58px;
+    border: 7px solid;
+    border-image: linear-gradient(97deg, rgba(237, 2, 51, 1) 17.6%, rgba(0, 62, 183, 1) 95.31%);
+    border-image-slice: 1;
+
+    .card-button {
+      border: 1px solid rgba(16, 38, 84, 0);
+      border-left: 1px solid rgba(237, 2, 51, 1);
+      border-right: 1px solid rgba(0, 62, 183, 1);
+      background-image: linear-gradient(0.25turn, rgba(237, 2, 51, 1), rgba(0, 62, 183, 1));
+      color: rgba(255, 255, 255, 1);
+    }
   }
 
-  &:nth-of-type(2) {
-    background-image: url("/img/1700.png");
-    background-size: 194px 73px;
-    background-position: 51% 46%;
-    background-repeat: no-repeat;
+  &:active {
+    padding: 61px 20px 58px;
+    border: 7px solid;
+    border-image: linear-gradient(97deg, rgba(237, 2, 51, 1) 17.6%, rgba(0, 62, 183, 1) 95.31%);
+    border-image-slice: 1;
+
+    .card-button {
+      border: 1px solid rgba(16, 38, 84, 0);
+      border-left: 1px solid rgba(237, 2, 51, 1);
+      border-right: 1px solid rgba(0, 62, 183, 1);
+      background-image: linear-gradient(0.25turn, rgba(237, 2, 51, 1), rgba(0, 62, 183, 1));
+      color: rgba(255, 255, 255, 1);
+    }
   }
 
-  &:nth-of-type(3) {
-    background-image: url("/img/2700.png");
-    background-size: 194px 73px;
-    background-position: 49% 46%;
-    background-repeat: no-repeat;
+  &:disabled {
+    padding: 61px 20px 58px;
+    border: 7px solid rgba(232, 232, 232, 1);
+    border-image: none;
+
+    .card-button {
+      color: rgba(255, 255, 255, 0.5);
+      background-color: transparent;
+      outline: none;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
+.card-item.is-active {
+  padding: 61px 20px 58px;
+  border: 7px solid;
+  border-image: linear-gradient(97deg, rgba(237, 2, 51, 1) 17.6%, rgba(0, 62, 183, 1) 95.31%);
+  border-image-slice: 1;
+
+  .card-button {
+    border: 1px solid rgba(16, 38, 84, 0);
+    border-left: 1px solid rgba(237, 2, 51, 1);
+    border-right: 1px solid rgba(0, 62, 183, 1);
+    background-image: linear-gradient(0.25turn, rgba(237, 2, 51, 1), rgba(0, 62, 183, 1));
+    color: rgba(255, 255, 255, 1);
+
+    &:hover {
+      color: rgba(16, 58, 174, 1);
+      background-color: rgba(255, 255, 255, 1);
+      background-image: none;
+      outline: none;
+      border: 1px solid rgba(16, 38, 84, 1);
+    }
+
+    &:focus {
+      color: rgba(16, 58, 174, 1);
+      background-color: rgba(255, 255, 255, 1);
+      background-image: none;
+      outline: none;
+      border: 1px solid rgba(16, 38, 84, 1);
+    }
+
+    &:active {
+      color: rgba(16, 38, 84, 1);
+      background-color: rgba(255, 255, 255, 1);
+      background-image: none;
+      outline: none;
+      border: 1px solid rgba(16, 38, 84, 0);
+    }
+
+    &:disabled {
+      color: rgba(255, 255, 255, 0.5);
+      background-color: transparent;
+      outline: none;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+    }
   }
 }
 
@@ -114,10 +155,24 @@
   color: rgba(16, 58, 174, 1);
   margin: 0 auto;
   padding-top: 72px;
+  z-index: 2;
 
   span {
     color: rgba(16, 38, 84, 1);
   }
+}
+
+.card-shadow {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 203px;
+  left: 78px;
+  color: rgba(232, 232, 232, 1);
+  font-size: 96px;
+  font-weight: 700;
+  letter-spacing: 3.55px;
+  z-index: 1;
 }
 
 .card-button {

@@ -1,11 +1,11 @@
 .main-header {
-  width: 1366px;
+  width: 100%;
   margin: 0 auto;
   background-image: linear-gradient(0.25turn, rgba(0, 62, 183, 1), rgba(237, 2, 51, 1));
 }
 
 .main-nav {
-  width: 100%;
+  width: 1160px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -18,7 +18,7 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  width: 1366px;
+  width: 1160px;
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 31px;
@@ -35,14 +35,13 @@
   display: block;
   padding: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0);
-  margin-left: 62px;
   color: rgba(255, 255, 255, 1);
   font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
   font-size: 26px;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
-  mask-image: url("/img/stack.svg#sprite_SUPERGYM-desk");
+  mask-image: url("/img/stack.svg#sprite_supergym-desk");
   width: 120px;
   height: 26px;
   mask-repeat: no-repeat;
@@ -78,7 +77,6 @@
 .main-nav__tel {
   color: rgba(255, 255, 255, 1);
   border-bottom: 1px solid rgba(255, 255, 255, 0);
-  margin-right: 62px;
   font-size: 24px;
   line-height: 24px;
   letter-spacing: 2px;
@@ -131,7 +129,7 @@
     font-size: 24px;
     line-height: 24px;
     margin-left: 44px;
-    mask-image: url("/img/stack.svg#sprite_SUPERGYM-tablet");
+    mask-image: url("/img/stack.svg#sprite_supergym-tablet");
     width: 111px;
     height: 24px;
     mask-repeat: no-repeat;
@@ -171,7 +169,7 @@
     font-size: 20px;
     line-height: 22px;
     letter-spacing: 1.25px;
-    mask-image: url("/img/stack.svg#sprite_SUPERGYM-mobile");
+    mask-image: url("/img/stack.svg#sprite_supergym-mobile");
     width: 102px;
     height: 22px;
     mask-repeat: no-repeat;

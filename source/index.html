@@ -40,10 +40,12 @@
                 <li class="hero-list__item hero-place__item">ОМСК</li>
                 <li class="hero-list__item hero-place__item">ФИТНЕС ЦЕНТР</li>
               </ul>
-              <picture class="hero-image">
+              <div class="hero-image">
+                <picture>
                 <source media="(max-width: 1365px)" srcset="img/superman-tablet-1х.webp 1x, img/superman-tablet-2х.webp 2x" width="324" height="390">
                 <img src="img/superman-1х.webp" srcset="img/superman-2х.webp"  width="500" height="524" alt="Спортивный мужчина в футболке с символом Супермена.">
-              </picture>
+                </picture>
+              </div>
               <a class="hero-button button" href="#subscription">Купить абонемент</a>
             </div>
           </section>
@@ -59,11 +61,13 @@
             <p class="gym-text">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами.Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
           </div>
           <div class="gym-wrapper gym-media">
-            <picture class="gym-image">
+            <div class="gym-image">
+              <picture class="gym-image">
               <source media="(max-width: 767px)" srcset="img/gym-view-mobile-1x.webp 1x, img/gym-view-mobile-2x.webp 2x" width="320" height="313">
               <source media="(max-width: 1365px)" srcset="img/gym-view-tablet-1x.webp 1x, img/gym-view-tablet-2x.webp 2x" width="678" height="345">
               <img src="img/gym-view-1x.webp" srcset="img/gym-view-2x.webp"  width="660" height="401" alt="Общий вид спортзала, белый с контрастными тренаженами.">
-            </picture>
+              </picture>
+            </div>
             <div class="gym-video">
               <template>
                 <iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw?si=qZlEn9cz4O1Q1WWy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -101,15 +105,15 @@
                 <span class="card-shadow">5000</span>
                 <a class="card-button button" href="#">Купить абонемент</a>
               </li>
-              <li class="card-item is-active">
+              <li class="card-item">
                 <h3 class="card-title">Дневной</h3>
                 <p class="card-description">с 8:00 до 17:00 </p>
                 <span class="card-price">1700 <span>₽</span></span>
                 <span class="card-shadow">1700</span>
-                <a class="card-button button button-active" href="#">Купить абонемент</a>
+                <a class="card-button button" href="#">Купить абонемент</a>
               </li>
               <li class="card-item">
-                <h3 class="car-title">Полный день</h3>
+                <h3 class="card-title">Полный день</h3>
                 <p class="card-description">с 8:00 до 22:00 </p>
                 <span class="card-price">2700 <span>₽</span></span>
                 <span class="card-shadow">2700</span>
@@ -181,9 +185,9 @@
             <a class="games-button button" href="#">заполнить заявку</a>
           </div>
           <picture class="games-image">
-            <source media="(max-width: 767px)" srcset="img/Crossfit-games-mobile-1x.jpg 1x, img/Crossfit-games-mobile-2x.jpg 2x" width="290" height="292">
-            <source media="(max-width: 1365px)" srcset="img/Crossfit-games-tablet-1x.jpg 1x, img/Crossfit-games-tablet-2x.jpg 2x" width="386" height="324">
-            <img src="img/Crossfit-games-1x.jpg" srcset="img/Crossfit-games-2x.jpg"  width="660" height="401" alt="Мужчина выполняющий упражнение.">
+            <source media="(max-width: 767px)" srcset="img/crossfit-games-mobile-1x.jpg 1x, img/crossfit-games-mobile-2x.jpg 2x" width="290" height="292">
+            <source media="(max-width: 1365px)" srcset="img/crossfit-games-tablet-1x.jpg 1x, img/crossfit-games-tablet-2x.jpg 2x" width="386" height="324">
+            <img src="img/crossfit-games-1x.jpg" srcset="img/crossfit-games-2x.jpg"  width="660" height="401" alt="Мужчина выполняющий упражнение.">
           </picture>
         </section>
         <section class="judges">
@@ -386,16 +390,16 @@
           <h2 class="faq-title">Вопросы и ответы</h2>
           <ul class="faq-list" data-tabs="controls">
             <li class="faq-item">
-              <button class="faq-button button button-active" data-tabs="control">Центр</button>
+              <button class="faq-button button button-active" data-tabs="control" type="button">Центр</button>
             </li>
             <li class="faq-item">
-              <button class="faq-button button" data-tabs="control">Абонемент</button>
+              <button class="faq-button button" data-tabs="control" type="button">Абонемент</button>
             </li>
             <li class="faq-item">
-              <button class="faq-button button" data-tabs="control">Услуги</button>
+              <button class="faq-button button" data-tabs="control" type="button">Услуги</button>
             </li>
             <li class="faq-item">
-              <button class="faq-button button" data-tabs="control">Правила</button>
+              <button class="faq-button button" data-tabs="control" type="button">Правила</button>
             </li>
           </ul>
           <div class="faq-wrapper" data-tabs="content">
@@ -641,49 +645,49 @@
           </div>
           </div>
         </section>
-          <div class="contacts-wrapper">
-            <section class="free" data-form-validate>
-              <h2 class="free-title">Бесплатное занятие</h2>
-              <form class="free-form form" action="https://echo.htmlacademy.ru/" method="post">
-                <span class="form-area__name">
-                  <div class="form-area__name--input custom-input" data-validate-type="text" data-on-input-validate="" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
-                    <label class="form-area__name--label">
-                      <input type="text" name="user-name-1" class="form-area__field" id="form-area__name" placeholder="Имя">
-                    </label>
-                  </div>
-                </span>
-                <span class="form-area__phone">
-                  <div class="form-area__phone--input custom-input" data-validate-type="phone" data-on-input-validate="" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required data-phone-length="18">
-                    <label class="form-area__phone--label">
-                      <input type="text" name="user-phone" class="form-area__field" id="form-phone" placeholder="Телефон">
-                    </label>
-                  </div>
-                </span>
-                <button class="button free-form__button" type="submit">Отправить</button>
-              </form>
-              </section>
-              <section class="contacts">
-                <h2 class="contacts-title">Контакты</h2>
-                <ul class="contacts-list">
-                  <li class="contacts-item">
-                    <h3 class="contacts-item__title">Адрес:</h3>
-                    <p class="contacts-item__description">г. Омск, ул. 60 лет Октября, 7</p>
-                  </li>
-                  <li class="contacts-item">
-                    <h3 class="contacts-item__title">График работы:</h3>
-                    <p class="contacts-item__description">Пн-Вс: с 8:00 до 22:00</p>
-                  </li>
-                  <li class="contacts-item">
-                    <h3 class="contacts-item__title">Телефон:</h3>
-                    <a class="contacts-item__description contacts-item__tel" href="tel:8-800-555-55-55">8-800-555-55-55</a>
-                  </li>
-                  <li class="contacts-item">
-                    <h3 class="contacts-item__title">Email:</h3>
-                    <a class="contacts-item__description contacts-item__email" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
-                  </li>
-                </ul>
-              </section>
-          </div>
+        <div class="contacts-wrapper">
+          <section class="free" data-form-validate>
+            <h2 class="free-title">Бесплатное занятие</h2>
+            <form class="free-form form" action="https://echo.htmlacademy.ru/" method="post">
+              <span class="form-area__name">
+                <div class="form-area__name--input custom-input" data-validate-type="text" data-on-input-validate="" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
+                  <label class="form-area__name--label">
+                    <input type="text" name="user-name-1" class="form-area__field" id="form-area__name" placeholder="Имя">
+                  </label>
+                </div>
+              </span>
+              <span class="form-area__phone">
+                <div class="form-area__phone--input custom-input" data-validate-type="phone" data-on-input-validate="" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required data-phone-length="18">
+                  <label class="form-area__phone--label">
+                    <input type="text" name="user-phone" class="form-area__field" id="form-phone" placeholder="Телефон">
+                  </label>
+                </div>
+              </span>
+              <button class="button free-form__button" type="submit">Отправить</button>
+            </form>
+            </section>
+            <section class="contacts">
+              <h2 class="contacts-title">Контакты</h2>
+              <ul class="contacts-list">
+                <li class="contacts-item">
+                  <h3 class="contacts-item__title">Адрес:</h3>
+                  <p class="contacts-item__description">г. Омск, ул. 60 лет Октября, 7</p>
+                </li>
+                <li class="contacts-item">
+                  <h3 class="contacts-item__title">График работы:</h3>
+                  <p class="contacts-item__description">Пн-Вс: с 8:00 до 22:00</p>
+                </li>
+                <li class="contacts-item">
+                  <h3 class="contacts-item__title">Телефон:</h3>
+                  <a class="contacts-item__description contacts-item__tel" href="tel:8-800-555-55-55">8-800-555-55-55</a>
+                </li>
+                <li class="contacts-item">
+                  <h3 class="contacts-item__title">Email:</h3>
+                  <a class="contacts-item__description contacts-item__email" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                </li>
+              </ul>
+            </section>
+        </div>
       </main>
       <footer>
         <div class="container footer-wrapper">
