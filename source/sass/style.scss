@@ -4,6 +4,10 @@
 @import "vendor/normalize";
 // Swiper 8.4.7
 @import "vendor/swiper";
+@import "vendor/data-tabs";
+@import "vendor/tabs";
+@import "vendor/data-accordion";
+@import "vendor/accordion";
 
 // Global
 // ---------------------------------
@@ -17,10 +21,6 @@
 
 // Blocks
 // ---------------------------------
-@import "vendor/data-tabs";
-@import "vendor/tabs";
-@import "vendor/data-accordion";
-@import "vendor/accordion";
 
 @import "blocks/btn";
 @import "blocks/modal";
@@ -32,17 +32,20 @@
 @import "blocks/hero";
 @import "blocks/gym";
 @import "blocks/subscription";
+@import "blocks/subscription-filter";
+@import "blocks/subscription-card";
 @import "blocks/games";
 @import "blocks/judges";
 @import "blocks/advantages";
 @import "blocks/discounts";
-@import "blocks/accordion";
 @import "blocks/data-accordion";
 @import "blocks/faq";
 @import "blocks/reviews";
 @import "blocks/free";
 @import "blocks/contacts";
 @import "blocks/footer";
+@import "blocks/footer-nav";
+@import "blocks/footer-social";
 // ---------------------------------
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg
