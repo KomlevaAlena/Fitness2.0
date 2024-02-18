@@ -230,11 +230,11 @@
     flex-direction: column;
     text-align: center;
     margin: 0 auto;
-    padding: 66px 20px 64px;
+    padding: 61px 20px 56px;
     width: 440px;
 
     &:not(:last-child) {
-      margin-bottom: 40px;
+      margin-bottom: 37px;
     }
 
     .is-active {
@@ -258,18 +258,6 @@
         margin-left: 51px;
       }
     }
-
-    &:first-of-type {
-      background-position: 50% 51%;
-    }
-
-    &:nth-of-type(2) {
-      background-position: 50% 51%;
-    }
-
-    &:nth-of-type(3) {
-      background-position: 50% 51%;
-    }
   }
 
   .card-title {
@@ -287,6 +275,11 @@
   .card-button {
     margin-top: 23px;
     padding: 21px 44px;
+  }
+
+  .card-shadow {
+    top: 207px;
+    left: 113px;
   }
 }
 
@@ -330,19 +323,7 @@
       }
     }
 
-    &:first-of-type {
-      background-size: 162px 60px;
-      background-position: 50% 48%;
-    }
-
-    &:nth-of-type(2) {
-      background-size: 162px 60px;
-      background-position: 50% 48%;
-    }
-
-    &:nth-of-type(3) {
-      background-size: 162px 60px;
-      background-position: 50% 48%;
+    &:last-of-type {
       padding: 51px 42px 50px;
 
       .card-title {
