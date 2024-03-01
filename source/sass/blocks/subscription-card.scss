@@ -293,15 +293,15 @@
     flex-direction: column;
     text-align: center;
     margin: 0 auto;
-    padding: 53px 42px 50px;
-    width: 290px;
+    padding: 45px 42px 44px;
+    width: 300px;
 
     &:not(:last-child) {
       margin-bottom: 35px;
     }
 
     .is-active {
-      padding: 45px 35px 43px;
+      padding: 45px 35px 37px;
 
       .card-title {
         font-size: 22px;
@@ -324,7 +324,7 @@
     }
 
     &:last-of-type {
-      padding: 51px 42px 50px;
+      padding: 45px 42px 44px;
 
       .card-title {
         width: 100%;
@@ -378,5 +378,12 @@
     font-size: 12px;
     line-height: 12px;
     letter-spacing: 0.6px;
+  }
+
+  .card-shadow {
+    font-size: 76px;
+    line-height: 76px;
+    top: 144px;
+    left: 62px;
   }
 }
