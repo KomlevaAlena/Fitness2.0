@@ -138,7 +138,7 @@
   padding-bottom: 24px;
   border-bottom: 1px solid rgba(28, 51, 116, 0.2);
 
-  &:nth-of-type(3) {
+  &:nth-of-type(3n) {
     padding-bottom: 26px;
   }
 }
@@ -560,7 +560,7 @@
       padding-bottom: 20px;
     }
 
-    &:nth-of-type(3) {
+    &:nth-of-type(3n) {
       padding-bottom: 21px;
 
       .accordion__button {

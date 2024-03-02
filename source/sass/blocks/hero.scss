@@ -31,12 +31,12 @@
   font-weight: 400;
   line-height: 22px;
 
-  &:nth-of-type(1) {
+  &:first-of-type {
     grid-column-start: 1;
     margin-top: 230px;
   }
 
-  &:nth-of-type(2) {
+  &:nth-of-type(2n) {
     grid-column-start: 2;
     grid-row-start: 1;
     margin-top: 61px;
@@ -59,7 +59,7 @@
   font-family: "AlumniSans-ExtraBold", "Arial", sans-serif;
   text-transform: uppercase;
 
-  &:nth-child(1) {
+  &:first-child {
     font-family: "AlumniSans-Regular", "Arial", sans-serif;
     font-size: 54px;
     font-weight: 600;
@@ -67,7 +67,7 @@
     letter-spacing: 1.62px;
   }
 
-  &:nth-child(2) {
+  &:nth-child(2n) {
     font-size: 92px;
     font-weight: 800;
     line-height: 110px;
@@ -75,7 +75,7 @@
     margin-top: 13px;
   }
 
-  &:nth-child(3) {
+  &:nth-child(3n) {
     display: block;
     width: 270px;
   }
@@ -163,7 +163,7 @@
   .hero-place__item {
     width: 214px;
 
-    &:nth-child(1) {
+    &:first-child {
       font-size: 42px;
       font-weight: 600;
       line-height: 42px;
@@ -172,7 +172,7 @@
       margin-left: -12px;
     }
 
-    &:nth-child(2) {
+    &:nth-child(2n) {
       font-size: 72px;
       font-weight: 800;
       line-height: 85px;
@@ -182,7 +182,7 @@
       letter-spacing: 0.75px;
     }
 
-    &:nth-child(3) {
+    &:nth-child(3n) {
       display: block;
       width: 214px;
     }
@@ -219,20 +219,20 @@
   .hero-list {
     margin: 0 auto;
 
-    &:nth-of-type(1) {
+    &:first-of-type {
       grid-column-start: 1;
       margin-top: 164px;
       letter-spacing: -0.25px;
     }
 
-    &:nth-of-type(2) {
+    &:nth-of-type(2n) {
       grid-column-start: 2;
       grid-row-start: 1;
       margin-top: 33px;
       margin-right: 57px;
     }
 
-    &:nth-of-type(3) {
+    &:nth-of-type(3n) {
       display: block;
       margin-left: 30px;
     }
@@ -267,7 +267,7 @@
   .hero-list {
     margin: 0 auto;
 
-    &:nth-of-type(1) {
+    &:first-of-type {
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 1;
@@ -280,17 +280,17 @@
         width: 115px;
         letter-spacing: 0.15px;
 
-        &:nth-of-type(2) {
+        &:nth-of-type(2n) {
           margin-top: -3px;
         }
 
-        &:nth-of-type(3) {
+        &:nth-of-type(3n) {
           margin-top: -2px;
         }
       }
     }
 
-    &:nth-of-type(2) {
+    &:nth-of-type(2n) {
       margin: 0;
       grid-column-start: 2;
       grid-column-end: 3;
@@ -318,14 +318,14 @@
     width: 162px;
     margin: 0;
 
-    &:nth-child(1) {
+    &:first-child {
       font-size: 32px;
       line-height: 32px;
       letter-spacing: 0.96px;
       margin-left: -3px;
     }
 
-    &:nth-child(2) {
+    &:nth-child(2n) {
       font-size: 62px;
       line-height: 70px;
       letter-spacing: 1.86px;
@@ -333,7 +333,7 @@
       margin-top: 14px;
     }
 
-    &:nth-child(3) {
+    &:nth-child(3n) {
       display: block;
       width: 214px;
     }
