@@ -166,6 +166,18 @@
       transition: 1s;
     }
   }
+
+  &:focus {
+    & .judges-card__wrapper {
+      transform: translateX(0);
+      transition: 1s;
+    }
+
+    & .judges-card__title {
+      top: 25px;
+      transition: 1s;
+    }
+  }
 }
 
 .judges-card__list {
