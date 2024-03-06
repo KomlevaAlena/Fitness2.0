@@ -1,0 +1,28 @@
+.feedback {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(683px, 683px);
+  grid-template-rows: repeat(3, auto);
+  width: 1366px;
+  align-items: stretch;
+}
+
+@include vp-1365 {
+  .feedback {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    flex-direction: column;
+    width: 768px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@include vp-767 {
+  .feedback {
+    width: 320px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}

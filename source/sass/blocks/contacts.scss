@@ -1,12 +1,3 @@
-.contacts__wrapper {
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(683px, 683px);
-  grid-template-rows: repeat(3, auto);
-  width: 1366px;
-  align-items: stretch;
-}
-
 .contacts {
   grid-column-start: 2;
   grid-column-end: 3;
@@ -57,16 +48,6 @@
 
 
 @include vp-1365 {
-  .contacts__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    flex-direction: column;
-    width: 768px;
-    margin: 0 auto;
-    padding: 0;
-  }
-
   .contacts {
     width: 768px;
     margin: 0 auto;
@@ -97,12 +78,6 @@
 }
 
 @include vp-767 {
-  .contacts__wrapper {
-    width: 320px;
-    margin: 0 auto;
-    padding: 0;
-  }
-
   .contacts {
     width: 100%;
     margin: 0 auto;

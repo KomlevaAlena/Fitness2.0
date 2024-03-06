@@ -2,7 +2,7 @@ footer {
   background-color: rgba(3, 10, 26, 1);
 }
 
-.footer__wrapper {
+.footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -66,7 +66,7 @@ footer {
 }
 
 @include vp-1365 {
-  .footer__wrapper {
+  .footer {
     width: 768px;
     padding: 41px 0 40px 0;
   }
@@ -88,7 +88,7 @@ footer {
 }
 
 @include vp-767 {
-  .footer__wrapper {
+  .footer {
     width: 320px;
     padding-top: 29px;
     padding-bottom: 45px;
