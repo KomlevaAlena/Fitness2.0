@@ -3,7 +3,9 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initTabs} from './modules/tabs/init-tabs';
 import {initAccordions} from './modules/accordion/init-accordion';
-import Swiper from './vendor/swiper';
+import {slider} from './modules/slider';
+import {slider2} from './modules/slider';
+import {video} from './modules/video';
 
 // ---------------------------------
 
@@ -15,49 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
 
   // Modules
-  const slider = new Swiper('.judges__wrapper', {
-    direction: 'horizontal',
-    loop: true,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 0,
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 32,
-      },
-      1366: {
-        slidesPerView: 4,
-        spaceBetween: 40,
-      },
-    },
-  });
   slider.init();
-
-  const slider2 = new Swiper('.reviews__wrapper', {
-    direction: 'horizontal',
-    loop: false,
-    navigation: {
-      nextEl: '.button-next',
-      prevEl: '.button-prev',
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 1,
-      },
-      1366: {
-        slidesPerView: 1,
-      },
-    },
-  });
   slider2.init();
   // ---------------------------------
 
@@ -83,11 +43,11 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-
-document.querySelector('.gym-video').addEventListener('click', (event) => {
-  const template = event.currentTarget.querySelector('template');
-  event.currentTarget.replaceChildren(template.content);
-});
+video.init();
+//document.querySelector('.gym__video').addEventListener('click', (event) => {
+//  const template = event.currentTarget.querySelector('template');
+//  event.currentTarget.replaceChildren(template.content);
+//});
 
 // ---------------------------------
 
