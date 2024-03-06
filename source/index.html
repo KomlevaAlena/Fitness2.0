@@ -54,137 +54,137 @@
       <main class="main-container">
         <h1 class="visually-hidden">Фитнес-центр «Supergym».</h1>
         <section class="gym">
-          <div class="gym-wrapper gym-description">
-            <h2 class="gym-title">Тренажерный зал</h2>
-            <p class="gym-subtitle">Просторный зал площадью 900 кв/м</p>
-            <p class="gym-text">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
-            <p class="gym-text">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами.Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+          <div class="gym__description">
+            <h2 class="gym__title">Тренажерный зал</h2>
+            <p class="gym__subtitle">Просторный зал площадью 900 кв/м</p>
+            <p class="gym__text">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+            <p class="gym__text">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами.Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
           </div>
-          <div class="gym-wrapper gym-media">
-            <div class="gym-image">
-              <picture class="gym-image">
+          <div class="gym__media">
+            <div class="gym__image">
+              <picture>
               <source media="(max-width: 767px)" srcset="img/gym-view-mobile-1x.webp 1x, img/gym-view-mobile-2x.webp 2x" width="320" height="313">
               <source media="(max-width: 1365px)" srcset="img/gym-view-tablet-1x.webp 1x, img/gym-view-tablet-2x.webp 2x" width="678" height="345">
               <img src="img/gym-view-1x.webp" srcset="img/gym-view-2x.webp"  width="660" height="401" alt="Общий вид спортзала, белый с контрастными тренаженами.">
               </picture>
             </div>
-            <div class="gym-video">
+            <div class="gym__video">
               <template>
                 <iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw?si=qZlEn9cz4O1Q1WWy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               </template>
-              <picture class="gym-video__image">
+              <picture>
                 <source media="(max-width: 767px)" srcset="img/gym-video-mobile-1x.webp 1x, img/gym-video-mobile-2x.webp 2x" width="320" height="167">
                 <source media="(max-width: 1365px)" srcset="img/gym-video-tablet-1x.webp 1x, img/gym-video-tablet-2x.webp 2x" width="266" height="167">
                 <img src="img/gym-video-1x.webp" srcset="img/gym-video-2x.webp"  width="364" height="228" alt="Общий вид спортзала.">
               </picture>
-              <a class="gym-video__play">
+              <a class="gym__video-button">
                 <span class="visually-hidden">play</span>
               </a>
             </div>
           </div>
         </section>
         <section class="subscription" id="subscription" data-tabs="parent">
-          <h2 class="subscription-title">Абонементы</h2>
-          <ul class="subscription-list filter-list" data-tabs="controls">
-            <li class="filter-item">
-              <a class="filter-link is-active" href="#" data-tabs="control">1 месяц</a>
+          <h2 class="subscription__title">Абонементы</h2>
+          <ul class="subscription__list filter-list" data-tabs="controls">
+            <li class="filter-list__item">
+              <a class="filter-list__link is-active" href="#" data-tabs="control">1 месяц</a>
             </li>
-            <li class="filter-item">
-              <a class="filter-link" href="#" data-tabs="control">6 месяцев</a>
+            <li class="filter-list__item">
+              <a class="filter-list__link" href="#" data-tabs="control">6 месяцев</a>
             </li>
-            <li class="filter-item">
-              <a class="filter-link" href="#" data-tabs="control">12 месяцев</a>
+            <li class="filter-list__item">
+              <a class="filter-list__link" href="#" data-tabs="control">12 месяцев</a>
             </li>
           </ul>
-          <div class="subscription-wrapper" data-tabs="content">
+          <div class="subscription__wrapper" data-tabs="content">
               <ul class="card-list" data-tabs="element">
-              <li class="card-item">
-                <h3 class="card-title">С тренером</h3>
-                <p class="card-description">12 занятий</p>
-                <span class="card-price">5000 <span>₽</span></span>
-                <span class="card-shadow">5000</span>
-                <a class="card-button button" href="#">Купить абонемент</a>
+              <li class="card-list__item card">
+                <h3 class="card__title">С тренером</h3>
+                <p class="card__description">12 занятий</p>
+                <span class="card__price">5000 <span>₽</span></span>
+                <span class="card__shadow">5000</span>
+                <a class="card__button button" href="#">Купить абонемент</a>
               </li>
-              <li class="card-item">
-                <h3 class="card-title">Дневной</h3>
-                <p class="card-description">с 8:00 до 17:00 </p>
-                <span class="card-price">1700 <span>₽</span></span>
-                <span class="card-shadow">1700</span>
-                <a class="card-button button" href="#">Купить абонемент</a>
+              <li class="card-list__item card">
+                <h3 class="card__title">Дневной</h3>
+                <p class="card__description">с 8:00 до 17:00 </p>
+                <span class="card__price">1700 <span>₽</span></span>
+                <span class="card__shadow">1700</span>
+                <a class="card__button button" href="#">Купить абонемент</a>
               </li>
-              <li class="card-item">
-                <h3 class="card-title">Полный день</h3>
-                <p class="card-description">с 8:00 до 22:00 </p>
-                <span class="card-price">2700 <span>₽</span></span>
-                <span class="card-shadow">2700</span>
-                <a class="card-button button" href="#">Купить абонемент</a>
-              </li>
-            </ul>
-            <ul class="card-list" data-tabs="element">
-              <li class="card-item" >
-                <h3 class="card-title">С тренером</h3>
-                <p class="card-description">72 занятия</p>
-                <span class="card-price">30000 <span>₽</span></span>
-                <span class="card-shadow">30000</span>
-                <a class="card-button button" href="#">Купить абонемент</a>
-              </li>
-              <li class="card-item">
-                <h3 class="card-title">Дневной</h3>
-                <p class="card-description">с 8:00 до 17:00 </p>
-                <span class="card-price">10200 <span>₽</span></span>
-                <span class="card-shadow">10200</span>
-                <a class="card-button button" href="#">Купить абонемент</a>
-              </li>
-              <li class="card-item">
-                <h3 class="card-title">Полный день</h3>
-                <p class="card-description">с 8:00 до 22:00 </p>
-                <span class="card-price">16200 <span>₽</span></span>
-                <span class="card-shadow">16200</span>
-                <a class="card-button button" href="#">Купить абонемент</a>
+              <li class="card-list__item card">
+                <h3 class="card__title">Полный день</h3>
+                <p class="card__description">с 8:00 до 22:00 </p>
+                <span class="card__price">2700 <span>₽</span></span>
+                <span class="card__shadow">2700</span>
+                <a class="card__button button" href="#">Купить абонемент</a>
               </li>
             </ul>
             <ul class="card-list" data-tabs="element">
-              <li class="card-item" >
-                <h3 class="card-title">С тренером</h3>
-                <p class="card-description">144 занятия</p>
-                <span class="card-price">60000 <span>₽</span></span>
-                <span class="card-shadow">60000</span>
-                <a class="card-button button" href="#">Купить абонемент</a>
+              <li class="card-list__item card">
+                <h3 class="card__title">С тренером</h3>
+                <p class="card__description">72 занятия</p>
+                <span class="card__price">30000 <span>₽</span></span>
+                <span class="card__shadow">30000</span>
+                <a class="card__button button" href="#">Купить абонемент</a>
               </li>
-              <li class="card-item">
-                <h3 class="card-title">Дневной</h3>
-                <p class="card-description">с 8:00 до 17:00 </p>
-                <span class="card-price">20400 <span>₽</span></span>
-                <span class="card-shadow">20400</span>
-                <a class="card-button button" href="#">Купить абонемент</a>
+              <li class="card-list__item card">
+                <h3 class="card__title">Дневной</h3>
+                <p class="card__description">с 8:00 до 17:00 </p>
+                <span class="card__price">10200 <span>₽</span></span>
+                <span class="card__shadow">10200</span>
+                <a class="card__button button" href="#">Купить абонемент</a>
               </li>
-              <li class="card-item">
-                <h3 class="card-title">Полный день</h3>
-                <p class="card-description">с 8:00 до 22:00 </p>
-                <span class="card-price">32400 <span>₽</span></span>
-                <span class="card-shadow">32400</span>
-                <a class="card-button button" href="#">Купить абонемент</a>
+              <li class="card-list__item card">
+                <h3 class="card__title">Полный день</h3>
+                <p class="card__description">с 8:00 до 22:00 </p>
+                <span class="card__price">16200 <span>₽</span></span>
+                <span class="card__shadow">16200</span>
+                <a class="card__button button" href="#">Купить абонемент</a>
+              </li>
+            </ul>
+            <ul class="card-list" data-tabs="element">
+              <li class="card-list__item card">
+                <h3 class="card__title">С тренером</h3>
+                <p class="card__description">144 занятия</p>
+                <span class="card__price">60000 <span>₽</span></span>
+                <span class="card__shadow">60000</span>
+                <a class="card__button button" href="#">Купить абонемент</a>
+              </li>
+              <li class="card-list__item card">
+                <h3 class="card__title">Дневной</h3>
+                <p class="card__description">с 8:00 до 17:00 </p>
+                <span class="card__price">20400 <span>₽</span></span>
+                <span class="card__shadow">20400</span>
+                <a class="card__button button" href="#">Купить абонемент</a>
+              </li>
+              <li class="card-list__item card">
+                <h3 class="card__title">Полный день</h3>
+                <p class="card__description">с 8:00 до 22:00 </p>
+                <span class="card__price">32400 <span>₽</span></span>
+                <span class="card__shadow">32400</span>
+                <a class="card__button button" href="#">Купить абонемент</a>
               </li>
             </ul>
           </div>
         </section>
         <section class="games">
-          <div class="games-wrapper">
-            <h2 class="games-title">SUPER GAMES</h2>
-            <p class="games-description">Ежегодные соревнования по CrossFit</p>
-            <ul class="games-list">
-              <li class="games-item">
-                <h3 class="games-item__title">Дата</h3>
-                <span class="games-item__number">7<span class="games-item__date">Марта 2019</span></span>
+          <div class="games__wrapper">
+            <h2 class="games__title">SUPER GAMES</h2>
+            <p class="games__description">Ежегодные соревнования по CrossFit</p>
+            <ul class="games__list">
+              <li class="games__item">
+                <h3 class="games__item_title">Дата</h3>
+                <span class="games__item_number">7<span class="games__item_date">Марта 2019</span></span>
               </li>
-              <li class="games-item">
-                <h3 class="games-item__title">Время</h3>
-                <span class="games-item__number">12:00</span>
+              <li class="games__item">
+                <h3 class="games__item_title">Время</h3>
+                <span class="games__item_number">12:00</span>
               </li>
             </ul>
-            <a class="games-button button" href="#">заполнить заявку</a>
+            <a class="games__button button" href="#">заполнить заявку</a>
           </div>
-          <div class="games-image">
+          <div class="games__image">
             <picture>
             <source media="(max-width: 767px)" srcset="img/crossfit-games-mobile-1x.jpg 1x, img/crossfit-games-mobile-2x.jpg 2x" width="290" height="292">
             <source media="(max-width: 1365px)" srcset="img/crossfit-games-tablet-1x.jpg 1x, img/crossfit-games-tablet-2x.jpg 2x" width="386" height="324">
@@ -336,7 +336,7 @@
                 <span class="advantages__unit">Тренажеров</span>
               </div>
               <div class="advantages-content">
-                <h3 class="advantages__title--card visually-hidden">Тренажеры</h3>
+                <h3 class="advantages__title-card visually-hidden">Тренажеры</h3>
                 <p class="advantages__description">Современные тренажеры на все группы мышц</p>
               </div>
             </li>
@@ -346,7 +346,7 @@
                 <span class="advantages__unit">кв/м</span>
               </div>
               <div class="advantages-content">
-                <h3 class="advantages__title--card">Площадь</h3>
+                <h3 class="advantages__title-card">Площадь</h3>
                 <p class="advantages__description">Занимайтесь без очередей и толкучки</p>
               </div>
             </li>
@@ -356,7 +356,7 @@
                 <span class="advantages__unit">машин</span>
               </div>
               <div class="advantages-content">
-                <h3 class="advantages__title--card">Собственная парковка</h3>
+                <h3 class="advantages__title-card">Собственная парковка</h3>
                 <p class="advantages__description">Вы всегда найдете место для своей машины на нашей парковке</p>
               </div>
             <li class="advantages__card">
@@ -365,7 +365,7 @@
                 <span class="advantages__unit">мест</span>
               </div>
               <div class="advantages-content">
-                <h3 class="advantages__title--card">Комфорт</h3>
+                <h3 class="advantages__title-card">Комфорт</h3>
                 <p class="advantages__description">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
               </div>
             </li>
@@ -375,7 +375,7 @@
                 <span class="advantages__unit">лет</span>
               </div>
               <div class="advantages-content">
-                <h3 class="advantages__title--card">Тренерский опыт</h3>
+                <h3 class="advantages__title-card">Тренерский опыт</h3>
                 <p class="advantages__description">Добивайтесь своих целей быстрее с профессиональным тренером</p>
               </div>
             </li>
@@ -409,7 +409,7 @@
         </section>
         <section class="faq"  >
           <h2 class="faq-title">Вопросы и ответы</h2>
-          <div class="faq-wrapper__content" data-tabs="parent">
+          <div class="faq__wrapper-content" data-tabs="parent">
             <ul class="faq-list" data-tabs="controls">
               <li class="faq-item">
                 <button class="faq-button button" data-tabs="control" type="button">Центр</button>

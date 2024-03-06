@@ -8,7 +8,7 @@
   color: rgba(16, 38, 84, 1);
 }
 
-.gym-description {
+.gym__description {
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
@@ -18,7 +18,7 @@
   margin-right: 145px;
 }
 
-.gym-media {
+.gym__media {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -28,7 +28,7 @@
   margin-top: 120px;
 }
 
-.gym-title {
+.gym__title {
   display: block;
   width: 335px;
   margin: 0;
@@ -40,7 +40,7 @@
   letter-spacing: 1.62px;
 }
 
-.gym-subtitle {
+.gym__subtitle {
   display: block;
   width: 350px;
   margin: 0;
@@ -52,7 +52,7 @@
   line-height: 22px;
 }
 
-.gym-text {
+.gym__text {
   display: block;
   width: 359px;
   margin: 0;
@@ -68,13 +68,13 @@
   }
 }
 
-.gym-image {
+.gym__image {
   display: block;
   width: 660px;
   margin-bottom: 118px;
 }
 
-.gym-video {
+.gym__video {
   position: absolute;
   content: "";
   display: block;
@@ -94,7 +94,7 @@
   }
 }
 
-.gym-video__play {
+.gym__video-button {
   position: absolute;
   content: "";
   cursor: pointer;
@@ -202,7 +202,7 @@
     text-align: center;
   }
 
-  .gym-description {
+  .gym__description {
     width: 768px;
     margin: 0 auto;
     margin-top: 100px;
@@ -211,7 +211,7 @@
     text-align: center;
   }
 
-  .gym-title {
+  .gym__title {
     margin: 0 auto;
     font-size: 42px;
     font-weight: 600;
@@ -219,7 +219,7 @@
     letter-spacing: 1.26px;
   }
 
-  .gym-subtitle {
+  .gym__subtitle {
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
@@ -228,7 +228,7 @@
     margin-left: -5px;
   }
 
-  .gym-text {
+  .gym__text {
     width: 507px;
     margin-top: 35px;
     font-size: 16px;
@@ -240,26 +240,26 @@
     }
   }
 
-  .gym-media {
+  .gym__media {
     width: 768px;
     margin: 0 auto;
     margin-top: 38px;
   }
 
-  .gym-image {
+  .gym__image {
     display: block;
     width: 678px;
     margin: 0 auto;
     margin-bottom: 70px;
   }
 
-  .gym-video {
+  .gym__video {
     width: 266px;
     top: 261px;
     left: 251px;
   }
 
-  .gym-video__play {
+  .gym__video-button {
     width: 72px;
     height: 72px;
     top: 46px;
@@ -290,7 +290,7 @@
     padding-bottom: 140px;
   }
 
-  .gym-description {
+  .gym__description {
     width: 290px;
     margin: 0 auto;
     margin-top: 71px;
@@ -298,7 +298,7 @@
     text-align: start;
   }
 
-  .gym-title {
+  .gym__title {
     width: 290px;
     margin: 0;
     font-size: 32px;
@@ -306,7 +306,7 @@
     letter-spacing: 0.96px;
   }
 
-  .gym-subtitle {
+  .gym__subtitle {
     width: 290px;
     margin: 0;
     font-size: 18px;
@@ -315,7 +315,7 @@
     letter-spacing: 0;
   }
 
-  .gym-text {
+  .gym__text {
     width: 279px;
     margin-top: 38px;
     font-size: 14px;
@@ -326,25 +326,25 @@
     }
   }
 
-  .gym-media {
+  .gym__media {
     width: 320px;
     margin: 0 auto;
     margin-top: 52px;
   }
 
-  .gym-image {
+  .gym__image {
     display: block;
     width: 320px;
   }
 
-  .gym-video {
+  .gym__video {
     display: block;
     width: 320px;
     top: 353px;
     left: 0;
   }
 
-  .gym-video__play {
+  .gym__video-button {
     display: block;
     width: 72px;
     height: 72px;

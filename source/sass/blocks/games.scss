@@ -8,7 +8,7 @@
   width: 1160px;
 }
 
-.games-wrapper {
+.games__wrapper {
   background-color: rgba(237, 2, 51, 1);
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -18,7 +18,7 @@
   width: 500px;
 }
 
-.games-title {
+.games__title {
   display: block;
   width: 180px;
   grid-column-start: 1;
@@ -31,7 +31,7 @@
   letter-spacing: 2.46px;
 }
 
-.games-description {
+.games__description {
   display: block;
   width: 281px;
   margin-left: 80px;
@@ -45,7 +45,7 @@
   letter-spacing: -0.25px;
 }
 
-.games-list {
+.games__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
@@ -58,7 +58,7 @@
   grid-row-start: 1;
 }
 
-.games-item {
+.games__item {
   display: block;
   font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
   margin-right: 80px;
@@ -66,7 +66,7 @@
   &:first-of-type {
     margin-top: 80px;
 
-    .games-item__number {
+    .games__item_number {
       position: relative;
 
       &::before {
@@ -85,7 +85,7 @@
   &:nth-of-type(2n) {
     margin-top: 20px;
 
-    .games-item__number {
+    .games__item_number {
       position: relative;
       width: 92px;
       margin-left: 2px;
@@ -150,7 +150,7 @@
   }
 }
 
-.games-button {
+.games__button {
   display: block;
   text-align: center;
   color: rgba(255, 255, 255, 1);
@@ -210,13 +210,13 @@
     justify-content: center;
   }
 
-  .games-wrapper {
+  .games__wrapper {
     width: 293px;
     margin: 0;
     padding: 40px 45px 45px 45px;
   }
 
-  .games-title {
+  .games__title {
     padding: 0;
     margin: 0;
     width: 106px;
@@ -225,36 +225,36 @@
     letter-spacing: 1.44px;
   }
 
-  .games-list {
+  .games__list {
     padding: 0;
     margin: 0;
     margin-left: 39px;
     width: 56px;
   }
 
-  .games-item__title {
+  .games__item_title {
     font-weight: 300;
   }
 
-  .games-image {
+  .games__image {
     display: block;
     width: 387px;
   }
 
-  .games-description {
+  .games__description {
     width: 202px;
     margin-left: 0;
     margin-top: 6px;
     margin-bottom: 21px;
   }
 
-  .games-item {
+  .games__item {
     margin-right: 0;
 
     &:first-of-type {
       margin-top: 0;
 
-      .games-item__number {
+      .games__item_number {
         margin-left: 2px;
 
         &::before {
@@ -268,7 +268,7 @@
     &:nth-of-type(2n) {
       margin-top: 10px;
 
-      .games-item__number {
+      .games__item_number {
         margin-left: 2px;
         padding: 0;
 
@@ -279,28 +279,28 @@
       }
     }
 
-    .games-item__number {
+    .games__item_number {
       font-size: 24px;
       line-height: 24px;
       margin-top: 0;
       padding: 0;
     }
 
-    .games-item__date {
+    .games__item_date {
       font-size: 10px;
       line-height: 10px;
       margin-top: 0;
       padding: 2px;
     }
 
-    .games-button {
+    .games__button {
       width: 201px;
       margin: 0;
       padding: 20px 28px;
     }
   }
 
-  .games-button {
+  .games__button {
     margin: 0;
     width: 201px;
     padding: 20px 22px;
@@ -313,23 +313,23 @@
     margin-top: 70px;
   }
 
-  .games-wrapper {
+  .games__wrapper {
     width: 290px;
     margin: 0 auto;
     padding: 40px 40px 42px;
   }
 
-  .games-list {
+  .games__list {
     margin: -2px 0 0 48px;
   }
 
-  .games-item__title {
+  .games__item_title {
     font-size: 16px;
   }
 
-  .games-item {
+  .games__item {
     &:first-of-type {
-      .games-item__number {
+      .games__item_number {
         margin-left: 0;
 
         &::before {
@@ -339,7 +339,7 @@
         }
       }
 
-      .games-item__date {
+      .games__item_date {
         padding: 2px 4px;
       }
     }
@@ -347,7 +347,7 @@
     &:nth-of-type(2n) {
       margin-top: 4px;
 
-      .games-item__number {
+      .games__item_number {
         margin-left: 0;
         padding: 0;
 
@@ -359,16 +359,16 @@
     }
   }
 
-  .games-image {
+  .games__image {
     width: 290px;
   }
 
-  .games-button {
+  .games__button {
     width: 210px;
     padding: 21px 45px 20px;
   }
 
-  .games-description {
+  .games__description {
     width: 173px;
     font-size: 16px;
     line-height: 20px;

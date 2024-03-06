@@ -21,7 +21,7 @@
   }
 }
 
-.filter-link {
+.filter-list__link {
   display: block;
   padding: 0;
   margin: 0;
@@ -70,7 +70,7 @@
   }
 }
 
-.filter-link.is-active {
+.filter-list__link.is-active {
   color: rgba(16, 38, 84, 1);
   border-bottom: 2px solid rgba(209, 10, 66, 1);
 }
@@ -90,7 +90,7 @@
     }
   }
 
-  .filter-link {
+  .filter-list__link {
     font-size: 18px;
     padding-bottom: 10px;
 
@@ -111,7 +111,7 @@
     }
   }
 
-  .filter-link {
+  .filter-list__link {
     font-size: 16px;
     padding-bottom: 13px;
   }
