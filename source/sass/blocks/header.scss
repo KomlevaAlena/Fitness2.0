@@ -47,6 +47,7 @@
   mask-repeat: no-repeat;
   mask-size: 120px 26px;
   background-color: rgba(255, 255, 255, 1);
+  user-select: none;
 
   &:hover {
     outline: none;
@@ -80,6 +81,7 @@
   font-size: 24px;
   line-height: 24px;
   letter-spacing: 2px;
+  user-select: none;
 
   &:hover {
     color: rgba(28, 51, 116, 1);
