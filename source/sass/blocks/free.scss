@@ -15,7 +15,7 @@
   letter-spacing: 0.6px;
 }
 
-.free-title {
+.free__title {
   display: block;
   width: 410px;
   margin: 0;
@@ -26,7 +26,7 @@
   letter-spacing: 1.62px;
 }
 
-.free-form {
+.free__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
@@ -34,9 +34,16 @@
   width: 410px;
   margin: 0;
   padding: 0;
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    flex-direction: row;
+  }
 }
 
-.free-form__button {
+.free__button {
   display: block;
   margin: 0;
   margin-top: 39px;
@@ -51,24 +58,24 @@
   letter-spacing: 0.6px;
 }
 
-.form-area__name {
+.free__area-name {
   display: block;
   width: 190px;
   margin-right: 27px;
 }
 
-.form-area__phone {
+.free__area-phone {
   display: block;
   width: 190px;
 }
 
-.form-area__name--input {
+.free__area-name_input {
   display: block;
   width: 192px;
   padding: 0;
   padding-top: 4px;
 
-  .form-area__field {
+  input {
     position: relative;
     display: block;
     width: 192px;
@@ -116,13 +123,13 @@
   }
 }
 
-.form-area__phone--input {
+.free__area-phone_input {
   display: block;
   width: 192px;
   padding: 0;
   padding-top: 4px;
 
-  .form-area__field {
+  input {
     position: relative;
     display: block;
     width: 192px;
@@ -178,7 +185,7 @@
     padding-bottom: 98px;
   }
 
-  .free-title {
+  .free__title {
     margin-right: auto;
     margin-bottom: 5px;
     font-size: 42px;
@@ -188,20 +195,27 @@
     text-align: left;
   }
 
-  .free-form {
+  .free__wrapper {
     width: 504px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: row;
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: start;
+      flex-direction: row;
+    }
   }
 
-  .form-area__name {
+  .free__area-name {
     margin: 0;
     width: 225px;
   }
 
-  .form-area__phone {
+  .free__area-phone {
     margin: 0;
     margin-left: auto;
     width: 225px;
@@ -215,25 +229,25 @@
     letter-spacing: 0.75px;
   }
 
-  .free-form__button {
+  .free__button {
     width: 558px;
     margin-top: 29px;
     padding: 21px 56px;
   }
 
-  .form-area__name--input {
+  .free__area-name_input {
     width: 225px;
 
     &::before {
       width: 225px;
     }
 
-    .form-area__field {
+    input {
       padding: 6px 2px;
     }
   }
 
-  .form-area__phone--input {
+  .free__area-phone_input {
     width: 225px;
 
     &::before {
@@ -253,7 +267,7 @@
     padding: 71px 15px 69px;
   }
 
-  .free-title {
+  .free__title {
     width: 224px;
     margin-right: auto;
     margin-bottom: 9px;
@@ -262,23 +276,27 @@
     letter-spacing: 0.96px;
   }
 
-  .free-form {
+  .free__wrapper {
     width: 290px;
     flex-direction: column;
+
+    form {
+      flex-direction: column;
+    }
   }
 
-  .form-area__name {
+  .free__area-name {
     margin: 0 auto;
     width: 290px;
   }
 
-  .form-area__phone {
+  .free__area-phone {
     margin: 0  auto;
     width: 290px;
     margin-top: 25px;
   }
 
-  .form-area__name--input {
+  .free__area-name_input {
     width: 290px;
 
     &::before {
@@ -287,14 +305,14 @@
       top: 55px;
     }
 
-    .form-area__field {
+    input {
       display: block;
       width: 290px;
       padding: 6px 0;
     }
   }
 
-  .form-area__phone--input {
+  .free__area-phone_input {
     width: 290px;
 
     &::before {
@@ -304,7 +322,7 @@
       top: 49px;
     }
 
-    .form-area__field {
+    input {
       display: block;
       width: 290px;
       margin-top: 7px;
@@ -312,7 +330,7 @@
     }
   }
 
-  .free-form__button {
+  .free__button {
     width: 290px;
     margin-top: 40px;
   }

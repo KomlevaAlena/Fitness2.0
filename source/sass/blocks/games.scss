@@ -104,7 +104,7 @@
     }
   }
 
-  &__title {
+  .games__item_title {
     display: block;
     font-size: 18px;
     font-weight: 300;
@@ -113,7 +113,7 @@
     padding: 0;
   }
 
-  &__number {
+  .games__item_number {
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
@@ -137,7 +137,7 @@
     }
   }
 
-  &__date {
+  .games__item_date {
     display: block;
     width: 37px;
     font-size: 14px;

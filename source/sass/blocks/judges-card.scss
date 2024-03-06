@@ -1,0 +1,182 @@
+.judges-card {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 260px;
+
+  &:hover {
+    & .judges-card__wrapper {
+      transform: translateX(0);
+      transition: 1s;
+    }
+
+    & .judges-card__title {
+      top: 25px;
+      transition: 1s;
+    }
+  }
+
+  &:focus {
+    & .judges-card__wrapper {
+      transform: translateX(0);
+      transition: 1s;
+    }
+
+    & .judges-card__title {
+      top: 25px;
+      transition: 1s;
+    }
+  }
+
+  .judges-card__image {
+    display: block;
+    width: 260px;
+  }
+}
+
+.judges-card__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 144px;
+  padding: 0;
+  list-style-type: disc;
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+
+  &-item {
+    padding-bottom: 12px;
+  }
+
+  &:last-child {
+    padding-bottom: 40px;
+  }
+}
+
+.judges-card__title {
+  position: absolute;
+  content: "";
+  text-align: center;
+  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 1);
+  width: 177px;
+  top: 223px;
+  left: 16%;
+  z-index: 3;
+  transition: 1s;
+}
+
+.judges-card__wrapper {
+  position: absolute;
+  content: "";
+  display: flex;
+  transform: translateX(-100%);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 260px;
+  padding: 0;
+  background-color: rgba(16, 38, 84, 0.89);
+  top: 0;
+  z-index: 2;
+  transition: 1s;
+}
+
+.judges-card__description {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 75px;
+  padding-bottom: 33px;
+  color: rgba(182, 189, 204, 1);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+@include vp-1365 {
+  .judges-card {
+    width: 300px;
+
+    .judges-card__image {
+      display: block;
+      width: 268px;
+    }
+  }
+
+  .swiper-slide {
+    display: block;
+    width: 300px;
+  }
+
+  .swiper-slide-active {
+    display: block;
+    width: 300px;
+  }
+
+  .judges-card__wrapper {
+    width: 268px;
+  }
+
+  .judges-card__image {
+    width: 268px;
+  }
+
+  .swiper-button-prev {
+    left: 28px;
+    top: 301px;
+  }
+
+  .swiper-button-next {
+    right: 28px;
+    top: 301px;
+  }
+}
+
+@include vp-767 {
+  .judges-card {
+    width: 226px;
+  }
+
+  .judges-card__wrapper {
+    width: 226px;
+  }
+
+  .judges-card__image {
+    width: 226px;
+  }
+
+  .swiper-button-prev {
+    top: 269px;
+    left: 12px;
+
+    &::after {
+      mask-image: url("/img/stack.svg#sprite_prev-arrow");
+      width: 10px;
+      height: 19px;
+      mask-repeat: no-repeat;
+      mask-size: 10px 19px;
+    }
+  }
+
+  .swiper-button-next {
+    top: 269px;
+    right: 12px;
+
+    &::after {
+      mask-image: url("/img/stack.svg#sprite_next-arrow");
+      width: 10px;
+      height: 19px;
+      mask-repeat: no-repeat;
+      mask-size: 10px 19px;
+    }
+  }
+}

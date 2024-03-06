@@ -1,4 +1,4 @@
-.contacts-wrapper {
+.contacts__wrapper {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(683px, 683px);
@@ -21,7 +21,7 @@
   border-top: 1px solid rgba(116, 129, 156, 1);
 }
 
-.contacts-title {
+.contacts__title {
   display: block;
   width: 400px;
   margin: 0;
@@ -33,7 +33,7 @@
   color: rgba(16, 38, 84, 1);
 }
 
-.contacts-list {
+.contacts__list {
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 220px);
@@ -55,97 +55,9 @@
   }
 }
 
-.contacts-item {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: start;
-  flex-direction: column;
-  width: 220px;
-  margin: 0;
-  padding: 0;
-  border: 1px solid rgba(255, 255, 255, 0);
-
-  &:first-of-type {
-    margin-top: 37px;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-
-  &:nth-of-type(2n) {
-    margin-top: 9px;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-
-  &:nth-of-type(3n) {
-    margin-top: 37px;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-
-  &:nth-of-type(4n) {
-    margin-top: 9px;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-}
-
-.contacts-item__title {
-  display: block;
-  width: 220px;
-  font-family: "AlumniSans-Regular", "Arial", sans-serif;
-  font-size: 26px;
-  font-weight: 400;
-  line-height: 24px;
-  margin: 0;
-  padding: 0;
-  letter-spacing: 1.75px;
-}
-
-.contacts-item__description {
-  display: block;
-  margin: 0;
-  margin-left: -1px;
-  padding: 0;
-  padding-top: 4px;
-  width: 220px;
-  border: 1px solid rgba(255, 255, 255, 0);
-  font-family: "AlumniSans-Regular", "Arial", sans-serif;
-  font-size: 18px;
-
-  &:hover {
-    color: rgba(28, 51, 116, 0.8);
-    border: 1px solid rgba(255, 255, 255, 0);
-    outline: none;
-  }
-
-  &:focus {
-    border: 1px solid rgba(28, 51, 116, 1);
-    outline: none;
-  }
-
-  &:active {
-    border: 1px solid rgba(255, 255, 255, 0);
-    outline: none;
-  }
-
-  &:disabled {
-    color: rgba(28, 51, 116, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0);
-    outline: none;
-  }
-}
 
 @include vp-1365 {
-  .contacts-wrapper {
+  .contacts__wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
@@ -162,7 +74,7 @@
     padding-bottom: 96px;
   }
 
-  .contacts-title {
+  .contacts__title {
     margin-right: auto;
     margin-bottom: 36px;
     font-size: 42px;
@@ -172,7 +84,7 @@
     text-align: left;
   }
 
-  .contacts-list {
+  .contacts__list {
     width: 562px;
     column-gap: 90px;
 
@@ -182,42 +94,10 @@
       left: 251px;
     }
   }
-
-  .contacts-item {
-    &:first-of-type {
-      margin-top: 0;
-    }
-
-    &:nth-of-type(2n) {
-      margin-top: 19px;
-    }
-
-    &:nth-of-type(3n) {
-      margin-top: 0;
-    }
-
-    &:nth-of-type(4n) {
-      margin-top: 19px;
-    }
-  }
-
-  .contacts-item__title {
-    font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
-    font-size: 22px;
-    line-height: 22px;
-    letter-spacing: -0.15px;
-    margin-top: 4px;
-  }
-
-  .contacts-item__description {
-    font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
-    font-size: 14px;
-    padding-top: 9px;
-  }
 }
 
 @include vp-767 {
-  .contacts-wrapper {
+  .contacts__wrapper {
     width: 320px;
     margin: 0 auto;
     padding: 0;
@@ -229,7 +109,7 @@
     padding: 65px 15px 67px;
   }
 
-  .contacts-title {
+  .contacts__title {
     width: 100%;
     margin-right: 0;
     margin-bottom: 30px;
@@ -238,7 +118,7 @@
     letter-spacing: 0.96px;
   }
 
-  .contacts-list {
+  .contacts__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -249,39 +129,5 @@
     &::before {
       display: none;
     }
-  }
-
-  .contacts-item {
-    width: 290px;
-
-    &:first-of-type {
-      margin-top: 0;
-      margin-bottom: 20px;
-    }
-
-    &:nth-of-type(2n) {
-      margin-top: 0;
-      margin-bottom: 20px;
-    }
-
-    &:nth-of-type(3n) {
-      margin-top: 0;
-      margin-bottom: 20px;
-    }
-
-    &:nth-of-type(4n) {
-      margin-top: 0;
-    }
-  }
-
-  .contacts-item__title {
-    font-size: 20px;
-    line-height: 20px;
-    margin-bottom: 3px;
-  }
-
-  .contacts-item__description {
-    font-size: 14px;
-    line-height: 20px;
   }
 }

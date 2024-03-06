@@ -10,7 +10,7 @@
   list-style-type: none;
 }
 
-.social-item {
+.social-list__item {
   display: block;
   margin: 0;
   padding: 0;
@@ -21,7 +21,7 @@
   }
 }
 
-.social-link {
+.social-list__link {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -59,7 +59,7 @@
   }
 }
 
-.link-vk__icon {
+.social-list__icon_vk {
   display: block;
   margin: 0 auto;
   mask-image: url("/img/stack.svg#sprite_vk");
@@ -86,7 +86,7 @@
   }
 }
 
-.link-ok__icon {
+.social-list__icon_ok {
   display: block;
   margin: 0 auto;
   mask-image: url("/img/stack.svg#sprite_ok");
@@ -113,7 +113,7 @@
   }
 }
 
-.link-reddit__icon {
+.social-list__icon_reddit {
   display: block;
   margin: 0 auto;
   mask-image: url("/img/stack.svg#sprite_reddit");

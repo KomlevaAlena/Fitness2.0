@@ -12,7 +12,7 @@
   list-style-type: none;
 }
 
-.nav-item {
+.nav-list__item {
   display: block;
   margin: 0;
   padding: 0;
@@ -22,7 +22,7 @@
   }
 }
 
-.nav-link {
+.nav-list__link {
   display: block;
   text-align: center;
   font-family: "AlumniSans-Regular", "Arial", sans-serif;
@@ -61,11 +61,11 @@
     margin-left: 34px;
   }
 
-  .nav-item {
+  .nav-list__item {
     margin-right: 0;
   }
 
-  .nav-link {
+  .nav-list__link {
     font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
     font-size: 12px;
     line-height: 22px;
@@ -79,12 +79,12 @@
     margin: 25px 0 0 4px;
   }
 
-  .nav-item {
+  .nav-list__item {
     margin-right: 14px;
     margin-bottom: 6px;
   }
 
-  .nav-link {
+  .nav-list__link {
     font-size: 14px;
     line-height: 22px;
     letter-spacing: 0;
