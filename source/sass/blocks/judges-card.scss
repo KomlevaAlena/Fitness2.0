@@ -31,6 +31,7 @@
   .judges-card__image {
     display: block;
     width: 260px;
+    background-color: rgba(16, 38, 84, 1);
   }
 }
 
@@ -144,6 +145,11 @@
 @include vp-767 {
   .judges-card {
     width: 226px;
+
+    .judges-card__image {
+      display: block;
+      width: 226px;
+    }
   }
 
   .judges-card__wrapper {
