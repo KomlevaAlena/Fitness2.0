@@ -18,7 +18,7 @@
   line-height: 54px;
   letter-spacing: 1.62px;
   text-align: center;
-  margin-top: 120px;
+  margin-top: 118px;
 }
 
 .advantages__list {
@@ -47,9 +47,19 @@
   }
 
   &:nth-last-child(-n + 2) {
-    padding-top: 51px;
+    padding-top: 50px;
     padding-bottom: 0;
     border-bottom: 2px solid transparent;
+
+    .advantages__description {
+      width: 234px;
+    }
+  }
+
+  &:last-child {
+    .advantages__number span {
+      padding-right: 25px;
+    }
   }
 }
 
