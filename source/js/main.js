@@ -19,6 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   slider.init();
   slider2.init();
+  video.init();
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
@@ -42,12 +43,6 @@ window.addEventListener('DOMContentLoaded', () => {
     initAccordions();
   });
 });
-
-video.init();
-//document.querySelector('.gym__video').addEventListener('click', (event) => {
-//  const template = event.currentTarget.querySelector('template');
-//  event.currentTarget.replaceChildren(template.content);
-//});
 
 // ---------------------------------
 
