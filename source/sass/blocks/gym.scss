@@ -90,6 +90,24 @@
     background-color: rgba(20, 54, 122, 0.5);
     z-index: 4;
   }
+
+  &:hover {
+    &::before {
+      display: none;
+    }
+  }
+
+  &:focus {
+    &::before {
+      display: none;
+    }
+  }
+
+  &:active {
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .gym__video-button {
