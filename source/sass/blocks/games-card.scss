@@ -7,40 +7,24 @@
     margin-top: 80px;
 
     .games-card__number {
-      position: relative;
-
-      &::before {
-        position: absolute;
-        content: "";
-        display: block;
-        width: 64px;
-        height: 1px;
-        left: 0;
-        top: 1px;
-        background-color: rgba(255, 255, 255, 1);
-      }
+      width: 64px;
+      border-top: 1px solid rgba(255, 255, 255, 1);
     }
   }
 
-  &:nth-of-type(2n) {
+  &:nth-child(2n) {
     margin-top: 20px;
 
+    .games-card__number {
+      width: 87px;
+      border-top: 1px solid rgba(255, 255, 255, 1);
+    }
+
     .games__item_number {
-      position: relative;
       width: 92px;
       margin-left: 2px;
       padding-top: 4px;
-
-      &::before {
-        position: absolute;
-        content: "";
-        display: block;
-        width: 92px;
-        height: 1px;
-        left: 0;
-        top: 0;
-        background-color: rgba(255, 255, 255, 1);
-      }
+      border-top: 1px solid rgba(255, 255, 255, 1);
     }
   }
 
@@ -67,14 +51,6 @@
     padding: 0;
     padding-top: 7px;
     border-top: 1px solid rgba(255, 255, 255, 0);
-
-    &:first-of-type {
-      width: 64px;
-    }
-
-    &:nth-of-type(2n) {
-      width: 92px;
-    }
   }
 
   .games-card__date {
@@ -103,6 +79,7 @@
 
       .games-card__number {
         margin-left: 2px;
+        width: 42px;
 
         &::before {
           top: -2px;
@@ -116,6 +93,7 @@
       margin-top: 10px;
 
       .games-card__number {
+        width: 55px;
         margin-left: 2px;
         padding: 0;
 
@@ -136,6 +114,7 @@
     .games-card__date {
       font-size: 10px;
       line-height: 10px;
+      width: 25px;
       margin-top: 0;
       padding: 2px;
     }

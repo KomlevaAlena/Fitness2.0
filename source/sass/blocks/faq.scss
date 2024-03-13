@@ -131,7 +131,8 @@
   }
 
   .faq__title {
-    margin: 0 auto;
+    width: 768px;
+    margin: 0;
     margin-top: 100px;
     margin-bottom: 50px;
     font-size: 42px;
@@ -142,7 +143,9 @@
   }
 
   .faq__wrapper-content {
+    margin: 0;
     padding-bottom: 35px;
+    width: 768px;
   }
 
   .faq__list {

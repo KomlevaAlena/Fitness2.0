@@ -232,9 +232,10 @@
   }
 
   .free__button {
-    width: 558px;
-    margin-top: 29px;
+    width: 504px;
+    margin-top: 28px;
     padding: 21px 56px;
+    letter-spacing: 1.25px;
   }
 
   .free__area-name-input {
@@ -246,18 +247,32 @@
 
     input {
       padding: 6px 2px;
+      width: 222px;
+
+      &::placeholder {
+        font-size: 16px;
+      }
     }
   }
 
-  .free__area-phone_- {
-    width: 225px;
+  .free__area-phone-input {
+    width: 222px;
 
     &::before {
-      width: 225px;
+      width: 222px;
     }
 
     .form-area__field {
       padding: 6px 2px;
+    }
+
+    input {
+      padding: 6px 2px;
+      width: 222px;
+
+      &::placeholder {
+        font-size: 16px;
+      }
     }
   }
 }
