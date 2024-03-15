@@ -172,7 +172,7 @@
     left: 12px;
 
     &::after {
-      mask-image: url("/img/stack.svg#sprite_prev-arrow");
+      mask-image: url("../img/stack.svg#sprite_prev-arrow");
       width: 10px;
       height: 19px;
       mask-repeat: no-repeat;
@@ -185,7 +185,7 @@
     right: 12px;
 
     &::after {
-      mask-image: url("/img/stack.svg#sprite_next-arrow");
+      mask-image: url("../img/stack.svg#sprite_next-arrow");
       width: 10px;
       height: 19px;
       mask-repeat: no-repeat;
