@@ -5,7 +5,7 @@ import {initTabs} from './modules/tabs/init-tabs';
 import {initAccordions} from './modules/accordion/init-accordion';
 import {slider} from './modules/slider';
 import {slider2} from './modules/slider';
-import {video} from './modules/video';
+import {initVideo} from './modules/video';
 
 // ---------------------------------
 
@@ -19,7 +19,6 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   slider.init();
   slider2.init();
-  video.init();
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
@@ -41,6 +40,12 @@ window.addEventListener('DOMContentLoaded', () => {
 window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initAccordions();
+  });
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  window.addEventListener('load', () => {
+    initVideo();
   });
 });
 
