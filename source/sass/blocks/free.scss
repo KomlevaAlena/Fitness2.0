@@ -85,28 +85,28 @@
     padding: 5px 2px;
     background-color: rgba(16, 38, 84, 1);
     color: rgba(255, 255, 255, 1);
-    border: 1px solid rgba(255, 255, 255, 0);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 0;
 
     &:hover {
-      border: 1px solid rgba(255, 255, 255, 0);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      border: 2px solid rgba(255, 255, 255, 0);
+      border-bottom: 2px solid rgba(255, 255, 255, 0.5);
       outline: none;
     }
 
     &:focus {
-      border: 1px solid rgba(255, 255, 255, 1);
+      border: 2px solid rgba(255, 255, 255, 1);
       outline: none;
     }
 
     &:active {
-      border: 1px solid rgba(255, 255, 255, 1);
+      border: 2px solid rgba(255, 255, 255, 1);
       outline: none;
     }
 
     &:disabled {
-      border: 1px solid rgba(255, 255, 255, 0.3);
+      border: 2px solid rgba(255, 255, 255, 0.3);
       outline: none;
     }
 
@@ -139,7 +139,7 @@
     padding: 5px 2px;
     background-color: rgba(16, 38, 84, 1);
     color: rgba(255, 255, 255, 1);
-    border: 1px solid rgba(255, 255, 255, 0);
+    border: 2px solid rgba(255, 255, 255, 0);
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 0;
 
@@ -155,21 +155,21 @@
     }
 
     &:active {
-      border: 1px solid rgba(255, 255, 255, 1);
+      border: 2px solid rgba(255, 255, 255, 1);
       outline: none;
     }
 
     &:disabled {
-      border: 1px solid rgba(255, 255, 255, 0.3);
+      border: 2px solid rgba(255, 255, 255, 0.3);
       outline: none;
     }
 
     &:valid:not(:placeholder-shown) {
-      border-bottom: 1px solid rgba(116, 129, 156, 1);
+      border-bottom: 2px solid rgba(116, 129, 156, 1);
     }
 
     &:invalid:not(:placeholder-shown) {
-      border-bottom: 1px solid rgba(255, 18, 31, 1);
+      border-bottom: 2px solid rgba(255, 18, 31, 1);
     }
 
     &::placeholder {
