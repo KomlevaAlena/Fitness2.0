@@ -17,8 +17,8 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
 
   // Modules
-  slider.init();
-  slider2.init();
+  // slider.init();
+  // slider2.init();
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
@@ -28,26 +28,31 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
-  });
-});
-
-window.addEventListener('DOMContentLoaded', () => {
-  window.addEventListener('load', () => {
+    slider.init();
+    slider2.init();
     initTabs();
-  });
-});
-
-window.addEventListener('DOMContentLoaded', () => {
-  window.addEventListener('load', () => {
     initAccordions();
-  });
-});
-
-window.addEventListener('DOMContentLoaded', () => {
-  window.addEventListener('load', () => {
     initVideo();
   });
 });
+
+// window.addEventListener('DOMContentLoaded', () => {
+//   window.addEventListener('load', () => {
+//     initTabs();
+//   });
+// });
+
+// window.addEventListener('DOMContentLoaded', () => {
+//   window.addEventListener('load', () => {
+//     initAccordions();
+//   });
+// });
+
+// window.addEventListener('DOMContentLoaded', () => {
+//   window.addEventListener('load', () => {
+//     initVideo();
+//   });
+// });
 
 // ---------------------------------
 

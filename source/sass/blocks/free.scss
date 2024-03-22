@@ -50,7 +50,7 @@
   margin-top: 38px;
   width: 410px;
   padding: 28px 56px 24px;
-  border: 2px solid rgba(255, 255, 255, 1);
+  border: 2px solid rgba(255, 255, 255, 0.5);
   background-color: rgba(16, 38, 84, 1);
   color: rgba(255, 255, 255, 1);
   font-size: 10px;
@@ -58,6 +58,36 @@
   line-height: 10px;
   letter-spacing: 1.25px;
   user-select: none;
+
+  &:hover {
+    color: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(255, 255, 255, 1);
+    background-color: rgba(16, 38, 84, 1);
+    outline: none;
+  }
+
+  &:focus {
+    color: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(255, 255, 255, 1);
+    background-color: rgba(16, 38, 84, 1);
+    outline: none;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.7);
+    background-image: linear-gradient(0.25turn, rgba(237, 2, 51, 1), rgba(0, 62, 183, 1));
+    outline: none;
+    border: 2px solid rgba(16, 38, 84, 0);
+    border-left: 2px solid rgba(237, 2, 51, 1);
+    border-right: 2px solid rgba(0, 62, 183, 1);
+  }
+
+  &:disabled {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+  }
 }
 
 .free__area-name {
@@ -151,6 +181,17 @@
 
     &:focus {
       border: 1px solid rgba(255, 255, 255, 1);
+      outline: none;
+    }
+
+    &:hover {
+      border: 2px solid rgba(255, 255, 255, 0);
+      border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+      outline: none;
+    }
+
+    &:focus {
+      border: 2px solid rgba(255, 255, 255, 1);
       outline: none;
     }
 

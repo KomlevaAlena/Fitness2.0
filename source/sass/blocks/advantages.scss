@@ -4,8 +4,8 @@
   justify-content: space-between;
   flex-direction: column;
   margin: 0 auto;
-  padding-bottom: 122px;
   width: 100%;
+  padding-bottom: 122px;
   color: rgba(16, 38, 84, 1);
   background-color: rgba(248, 249, 252, 1);
 }
@@ -168,8 +168,8 @@
 
 @include vp-1365 {
   .advantages {
-    width: 768px;
     margin: 0 auto;
+    width: 100%;
     padding-bottom: 19px;
   }
 
@@ -335,8 +335,8 @@
 
 @include vp-767 {
   .advantages {
-    width: 320px;
     margin: 0 auto;
+    width: 100%;
     padding-bottom: 3px;
   }
 
