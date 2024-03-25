@@ -17,6 +17,14 @@
   padding-top: 9px;
 }
 
+.card__price-wrapper {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
 .card__price {
   display: block;
   font-size: 60px;
@@ -26,7 +34,7 @@
   color: rgba(16, 58, 174, 1);
   margin: 0 auto;
   padding-top: 72px;
-  z-index: 2;
+  z-index: 1;
 
   span {
     color: rgba(16, 38, 84, 1);
@@ -37,13 +45,14 @@
   position: absolute;
   content: "";
   display: block;
-  top: 203px;
-  left: 78px;
+  top: 92px;
+  left: 50%;
+  transform: translateX(-50%);
   color: rgba(232, 232, 232, 1);
   font-size: 96px;
   font-weight: 700;
   letter-spacing: 3.55px;
-  z-index: 1;
+  overflow: hidden;
 }
 
 .card__button {
@@ -108,8 +117,9 @@
   }
 
   .card__shadow {
-    top: 207px;
-    left: 113px;
+    top: 98px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -149,7 +159,8 @@
   .card__shadow {
     font-size: 76px;
     line-height: 76px;
-    top: 144px;
-    left: 62px;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

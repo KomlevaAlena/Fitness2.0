@@ -153,5 +153,21 @@
     grid-row-end: 3;
     width: 100%;
     padding: 20px;
+
+    &:hover {
+      padding: 20px;
+    }
+
+    &:focus {
+      padding: 20px;
+    }
+
+    &:active {
+      padding: 20px;
+    }
+
+    &:disabled {
+      padding: 20px;
+    }
   }
 }

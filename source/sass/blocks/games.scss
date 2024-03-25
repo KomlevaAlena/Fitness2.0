@@ -161,6 +161,22 @@
     margin: 0;
     width: 201px;
     padding: 20px 22px;
+
+    &:hover {
+      padding: 20px 22px;
+    }
+
+    &:focus {
+      padding: 20px 22px;
+    }
+
+    &:active {
+      padding: 20px 22px;
+    }
+
+    &:disabled {
+      padding: 20px 22px;
+    }
   }
 }
 
@@ -187,6 +203,22 @@
   .games__button {
     width: 210px;
     padding: 21px 30px 20px;
+
+    &:hover {
+      padding: 21px 30px 20px;
+    }
+
+    &:focus {
+      padding: 21px 30px 20px;
+    }
+
+    &:active {
+      padding: 21px 30px 20px;
+    }
+
+    &:disabled {
+      padding: 21px 30px 20px;
+    }
   }
 
   .games__description {
