@@ -23,11 +23,11 @@
 }
 
 .discounts__list {
-  margin: 0 auto;
+  //margin: 0 auto;
   padding: 0;
   padding-bottom: 120px;
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: repeat(2, 1fr);
   //grid-template-rows: repeat(2, auto);
   gap: 40px;
   list-style-type: none;
