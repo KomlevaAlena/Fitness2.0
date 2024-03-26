@@ -460,6 +460,11 @@
     }
   }
 
+  .advantages__card:nth-last-child(-n+2) .advantages__description {
+    width: 205px;
+    margin: 0 auto;
+  }
+
   .advantages__card--center {
     width: 320px;
     margin: 0 auto;

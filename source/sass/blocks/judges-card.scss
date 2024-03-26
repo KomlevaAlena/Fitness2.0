@@ -159,6 +159,10 @@
     }
   }
 
+  .judges-card__title {
+    left: 7%;
+  }
+
   .judges-card__wrapper {
     width: 226px;
   }
@@ -168,8 +172,8 @@
   }
 
   .swiper-button-prev {
-    bottom: 200px;
-    left: 12px;
+    bottom: 195px;
+    left: 10px;
 
     &::after {
       mask-image: url("../img/stack.svg#sprite_prev-arrow");
@@ -181,8 +185,8 @@
   }
 
   .swiper-button-next {
-    bottom: 200px;
-    right: 12px;
+    bottom: 195px;
+    right: 10px;
 
     &::after {
       mask-image: url("../img/stack.svg#sprite_next-arrow");
