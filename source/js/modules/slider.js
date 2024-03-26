@@ -4,8 +4,8 @@ export const slider = new Swiper('.judges__wrapper', {
   direction: 'horizontal',
   loop: true,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-prev',
+    prevEl: '.swiper-button-next',
   },
   breakpoints: {
     320: {

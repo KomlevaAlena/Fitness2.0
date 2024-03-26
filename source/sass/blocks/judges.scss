@@ -83,7 +83,7 @@
 .swiper-button-prev {
   position: absolute;
   content: "";
-  top: 338px;
+  bottom: 240px;
   left: 29px;
 
   &::after {
@@ -122,7 +122,7 @@
   display: block;
   position: absolute;
   content: "";
-  top: 338px;
+  bottom: 240px;
   right: 30px;
 
   &::after {

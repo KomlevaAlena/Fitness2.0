@@ -140,12 +140,12 @@
 
   .swiper-button-prev {
     left: 28px;
-    top: 301px;
+    bottom: 200px;
   }
 
   .swiper-button-next {
     right: 28px;
-    top: 301px;
+    bottom: 200px;
   }
 }
 
@@ -168,7 +168,7 @@
   }
 
   .swiper-button-prev {
-    top: 269px;
+    bottom: 200px;
     left: 12px;
 
     &::after {
@@ -181,7 +181,7 @@
   }
 
   .swiper-button-next {
-    top: 269px;
+    bottom: 200px;
     right: 12px;
 
     &::after {
