@@ -9,7 +9,7 @@
   border: 1px solid rgba(255, 255, 255, 0);
 
   &:first-of-type {
-    margin-top: 37px;
+    margin-top: 40px;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -25,7 +25,7 @@
   }
 
   &:nth-of-type(3n) {
-    margin-top: 37px;
+    margin-top: 40px;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
