@@ -15,8 +15,7 @@
   &:first-of-type {
     position: relative;
     grid-column-start: 1;
-    grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row: auto / span 2;
     background-color: rgba(237, 2, 51, 1);
     color: rgba(255, 255, 255, 1);
     border: none;
@@ -86,18 +85,6 @@
       background-color: rgba(237, 2, 51, 1);
     }
   }
-
-  &:nth-of-type(2n) {
-    grid-column-start: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-
-  &:nth-of-type(3n) {
-    grid-column-start: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
 }
 
 .discounts-card__image {
@@ -148,9 +135,7 @@
   position: relative;
   display: block;
   padding: 10px 0 5px;
-  margin: 0;
-  margin-top: 56px;
-  margin-left: 28px;
+  margin: 56px 0 30px 28px;
   user-select: none;
   text-transform: uppercase;
   font-size: 14px;
@@ -200,8 +185,7 @@
       width: 678px;
       grid-column-start: 1;
       grid-column-end: 3;
-      grid-row-start: 1;
-      grid-row-end: 2;
+      grid-row: auto / span 2;
       border: none;
 
       .discounts-card__title {
@@ -255,8 +239,6 @@
     &:nth-of-type(2n) {
       grid-column-start: 1;
       grid-column-end: 2;
-      grid-row-start: 2;
-      grid-row-end: 3;
 
       .discounts-card__title {
         margin-left: 28px;
@@ -301,8 +283,6 @@
     &:nth-of-type(3n) {
       grid-column-start: 2;
       grid-column-end: 3;
-      grid-row-start: 2;
-      grid-row-end: 3;
 
       .discounts-card__title {
         margin-left: 28px;
