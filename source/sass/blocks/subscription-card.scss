@@ -45,14 +45,14 @@
   position: absolute;
   content: "";
   display: block;
-  top: 92px;
+  bottom: 13%;
   left: 50%;
   transform: translateX(-50%);
   color: rgba(232, 232, 232, 1);
   font-size: 96px;
+  line-height: 96px;
   font-weight: 700;
   letter-spacing: 3.55px;
-  overflow: hidden;
 }
 
 .card__button {
