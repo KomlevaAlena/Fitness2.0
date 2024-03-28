@@ -11,7 +11,8 @@
     }
 
     & .judges-card__title {
-      top: 25px;
+      transform: translateX(200%);
+      top: 226px;
       transition: 1s;
     }
   }
@@ -23,7 +24,8 @@
     }
 
     & .judges-card__title {
-      top: 25px;
+      transform: translateX(200%);
+      top: 226px;
       transition: 1s;
     }
   }
@@ -48,7 +50,7 @@
   font-weight: 400;
   line-height: 22px;
 
-  &-item {
+  .judges-card__list-item {
     padding-bottom: 12px;
   }
 
@@ -91,11 +93,22 @@
   transition: 1s;
 }
 
+.judges-card__name {
+  margin: 0  auto;
+  margin-top: 54px;
+  text-align: center;
+  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 1);
+  width: 177px;
+}
+
 .judges-card__description {
   display: block;
   margin: 0 auto;
   padding: 0;
-  padding-top: 75px;
   padding-bottom: 33px;
   color: rgba(182, 189, 204, 1);
   text-align: center;
