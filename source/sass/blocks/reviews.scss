@@ -11,7 +11,7 @@
   .button-prev {
     position: absolute;
     content: "";
-    bottom: 222px;
+    top: 54%;
     left: 330px;
 
     &::after {
@@ -65,7 +65,7 @@
     display: block;
     position: absolute;
     content: "";
-    bottom: 222px;
+    top: 54%;
     right: 330px;
 
     &::after {
@@ -195,12 +195,12 @@
 
     .button-prev {
       left: 28px;
-      bottom: 198px;
+      top: 54%;
     }
 
     .button-next {
       right: 28px;
-      bottom: 198px;
+      top: 54%;
     }
   }
 
@@ -227,7 +227,7 @@
     padding-bottom: 70px;
 
     .button-prev {
-      bottom: 221px;
+      top: 54%;
       left: 9px;
 
       &::after {
@@ -240,7 +240,7 @@
     }
 
     .button-next {
-      bottom: 221px;
+      top: 54%;
       right: 9px;
 
       &::after {
