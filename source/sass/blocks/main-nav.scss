@@ -1,0 +1,75 @@
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 32px 0 25px;
+
+  @include vp-767 {
+    padding: 15px 0 10px;
+  }
+}
+
+.main-nav__logo-link {
+  display: block;
+  width: 120px;
+  height: 26px;
+  padding: 0;
+  user-select: none;
+
+  @include vp-1365 {
+    width: 111px;
+    height: 24px;
+  }
+  @include vp-767 {
+    width: 102px;
+    height: 22px;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus,
+  &:focus-visible {
+    opacity: 0.7;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.main-nav__tel {
+  padding-bottom: 2px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26px;
+  color: $color-default-white;
+  border-bottom: 1px solid transparent;
+  user-select: none;
+
+  @include vp-1365 {
+    font-size: 22px;
+  }
+  @include vp-767 {
+    font-size: 20px;
+    line-height: 22px;
+
+  &:hover {
+    color: $color-main-light2;
+  }
+
+  &:focus,
+  &:focus-visible {
+    color: $color-main-light2;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-main;
+    border-bottom-color: currentColor;
+    }
+  }
+}
