@@ -255,6 +255,10 @@
     &:nth-of-type(2n) {
       margin-bottom: 1px;
     }
+
+    &:nth-of-type(3n) {
+      margin-bottom: 1px;
+    }
   }
 
   .accordion {
