@@ -251,6 +251,10 @@
         margin-top: 25px;
       }
     }
+
+    &:nth-of-type(2n) {
+      margin-bottom: 1px;
+    }
   }
 
   .accordion {
