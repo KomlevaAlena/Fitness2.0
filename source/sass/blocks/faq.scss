@@ -54,7 +54,11 @@
 
   &:first-of-type {
     margin-top: 0;
-    margin-bottom: 6px;
+    margin-bottom: 1px;
+  }
+
+  &:nth-of-type(2n) {
+    margin-bottom: 1px;
   }
 }
 
