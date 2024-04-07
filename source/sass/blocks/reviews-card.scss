@@ -59,6 +59,7 @@
 
 @include vp-1365 {
   .reviews-card {
+    display: grid;
     padding: 60px 65px 45px;
     column-gap: 20px;
   }
