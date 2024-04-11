@@ -35,19 +35,14 @@
   display: block;
   padding: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0);
-  color: rgba(255, 255, 255, 1);
-  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 26px;
-  text-transform: uppercase;
-  mask-image: url("../img/stack.svg#sprite_supergym-desk");
   width: 120px;
   height: 26px;
-  mask-repeat: no-repeat;
-  mask-size: 120px 26px;
-  background-color: rgba(255, 255, 255, 1);
-  user-select: none;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
 
   &:hover {
     outline: none;
@@ -130,15 +125,8 @@
   }
 
   .main-nav__logo-link {
-    font-size: 24px;
-    line-height: 24px;
-    margin-left: 44px;
-    mask-image: url("../img/stack.svg#sprite_supergym-tablet");
     width: 111px;
     height: 24px;
-    mask-repeat: no-repeat;
-    mask-size: 111px 24px;
-    background-color: rgba(255, 255, 255, 1);
   }
 
   .main-nav__tel {
@@ -172,9 +160,6 @@
     padding: 0;
     margin: 0;
     margin-left: 15px;
-    font-size: 20px;
-    line-height: 22px;
-    letter-spacing: 1.25px;
     width: 102px;
     height: 22px;
   }
