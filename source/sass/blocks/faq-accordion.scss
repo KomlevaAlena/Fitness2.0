@@ -42,11 +42,24 @@
 }
 
 .accordion__button-wrapper {
+  cursor: pointer;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: row;
   width: 100%;
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    opacity: 0.8;
+    border: none;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 }
 
 .accordion__title {
