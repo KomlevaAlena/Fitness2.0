@@ -91,7 +91,7 @@ footer {
 @include vp-767 {
   .footer {
     width: 320px;
-    padding-top: 10px;
+    padding-top: 30px;
     padding-bottom: 45px;
     display: flex;
     flex-wrap: wrap;
@@ -104,13 +104,13 @@ footer {
     display: block;
     font-size: 20px;
     line-height: 20px;
-    margin-left: 7px;
+    margin-left: 0;
     letter-spacing: 0;
     mask-image: url("../img/stack.svg#sprite_supergym-footer-mobile");
-    width: 100px;
+    width: 120px;
     height: 15px;
     mask-repeat: no-repeat;
-    mask-size: 107px 15px;
+    mask-size: 122px 15px;
     background-color: rgba(255, 255, 255, 1);
   }
 }
