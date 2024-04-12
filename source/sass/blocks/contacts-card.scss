@@ -9,7 +9,7 @@
   border: 1px solid rgba(255, 255, 255, 0);
 
   &:first-of-type {
-    margin-top: 36px;
+    margin-top: 40px;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -21,7 +21,7 @@
   }
 
   &:nth-of-type(2n) {
-    margin-top: 4px;
+    margin-top: 9px;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
@@ -34,7 +34,7 @@
   }
 
   &:nth-of-type(3n) {
-    margin-top: 36px;
+    margin-top: 40px;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -46,7 +46,7 @@
   }
 
   &:nth-of-type(4n) {
-    margin-top: 4px;
+    margin-top: 9px;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -60,7 +60,6 @@
 
 .contacts-card__title {
   display: block;
-  //width: 220px;
   font-family: "AlumniSans-Regular", "Arial", sans-serif;
   font-size: 26px;
   font-weight: 400;
@@ -76,7 +75,6 @@
   margin-left: -1px;
   padding: 0;
   padding-top: 4px;
-  //width: 220px;
   border: 1px solid rgba(255, 255, 255, 0);
   font-family: "AlumniSans-Regular", "Arial", sans-serif;
   font-size: 18px;
